@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div className="relative">
       <Hero />
-      <nav className=" text-white">
+      <nav className="text-white">
         <a href="blank_">
           <img src={logo} className="fixed top-4 left-4" />
         </a>
@@ -30,12 +30,30 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <div className="flex items-center text-[14.5px] border border-gray-100 rounded-full h-12 p-4 mt-10 mr-20 z-10 hover:bg-red-700 hover:border-none duration-700">
+          <div className="flex items-center justify-center text-[14.5px] border border-gray-100 rounded-full h-12 w-36 mt-10 mr-20 z-10 hover:bg-red-700 hover:border-none duration-700">
             <a href="blank_">Build & Price</a>
             <FaArrowRightLong className="ml-3 text-xl" />
           </div>
         </div>
       </nav>
+
+      <div className="text-white relative mt-[420px]">
+        <h2 className="flex justify-center text-[44px]">
+          Adventure Ready
+        </h2>
+
+        <div className="flex justify-center indent-5">
+          <p>Starting at $28,850 [*]</p>
+          <a href="blank_">View Offers</a>
+        </div>
+
+        <div className="flex items-center justify-center mt-6">
+          <div className="flex items-center justify-center text-[14.5px] border border-gray-100 rounded-full h-12 w-48 hover:bg-white hover:text-red-700 hover:border-none duration-300">
+            <a href="blank_">Explore Vehicles®</a>
+            <FaArrowRightLong className="ml-3 text-xl" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
