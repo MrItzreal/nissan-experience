@@ -2,7 +2,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import logo from "../assets/logos/logo.svg";
 import Hero from "./Hero";
 
-const Navbar = () => {
+const Home = () => {
   return (
     <div className="relative">
       <Hero />
@@ -30,7 +30,7 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <div className="flex items-center justify-center text-[14.5px] border border-gray-100 rounded-full h-12 w-36 mt-10 mr-20 z-10 hover:bg-red-700 hover:border-none duration-700">
+          <div className="flex items-center justify-center text-[14.5px] border border-gray-100 rounded-full h-10 w-36 mt-10 mr-20 z-10 hover:bg-red-700 hover:border-none duration-700">
             <a href="blank_">Build & Price</a>
             <FaArrowRightLong className="ml-3 text-xl" />
           </div>
@@ -38,9 +38,7 @@ const Navbar = () => {
       </nav>
 
       <div className="text-white relative mt-[420px]">
-        <h2 className="flex justify-center text-[44px]">
-          Adventure Ready
-        </h2>
+        <h2 className="flex justify-center text-[44px]">Adventure Ready</h2>
 
         <div className="flex justify-center indent-5">
           <p>Starting at $28,850 [*]</p>
@@ -58,4 +56,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Home;
