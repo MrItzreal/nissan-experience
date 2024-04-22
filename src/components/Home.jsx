@@ -1,4 +1,5 @@
 import { FaArrowRightLong } from "react-icons/fa6";
+import { IoChevronDownOutline } from "react-icons/io5";
 import logo from "../assets/logos/logo.svg";
 import rogue from "../assets/images/rogue.avif";
 
@@ -41,7 +42,7 @@ const Home = () => {
         </nav>
       </header>
 
-      <section className="text-white relative ">
+      <section className="text-white absolute inset-x-0 bottom-1/3">
         <h2 className="text-4xl text-center">Adventure Ready</h2>
         <div className="flex justify-center mt-4">
           <p>Starting at $28,850 [*]</p>
@@ -56,11 +57,20 @@ const Home = () => {
             <FaArrowRightLong className="ml-2 text-xl" />
           </div>
         </div>
+
+        {/* Car Preview */}
+        <div className="flex justify-center z-10">
+          <div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <IoChevronDownOutline className="ml-2 text-xl text-slate-500	" />
+          </div>
+        </div>
       </section>
     </main>
   );
 };
 
 export default Home;
-
-// className="flex items-center justify-center text-[14.5px] border border-gray-100 rounded-full h-10 w-36 mt-10 mr-20 hover:bg-red-700 hover:border-none duration-700"
