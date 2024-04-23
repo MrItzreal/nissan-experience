@@ -1,7 +1,7 @@
 import { FaArrowRightLong } from "react-icons/fa6";
-import { IoChevronDownOutline } from "react-icons/io5";
 import logo from "../assets/logos/logo.svg";
 import rogue from "../assets/images/rogue.avif";
+import CarPreview from "./CarPreview";
 
 const Home = () => {
   return (
@@ -17,7 +17,7 @@ const Home = () => {
           <a href="blank_">
             <img src={logo} alt="Logo" className="absolute left-4 h-30 top-7" />
           </a>
-          <ul className="flex gap-6 text-white font-medium px-16 py-16">
+          <ul className="flex gap-6 text-white font-medium px-10 py-16">
             <li>
               <a href="blank_">Vehicles</a>
             </li>
@@ -42,7 +42,7 @@ const Home = () => {
         </nav>
       </header>
 
-      <section className="text-white absolute inset-x-0 bottom-1/3">
+      <section className="text-white absolute inset-x-0 bottom-1/4">
         <h2 className="text-4xl text-center">Adventure Ready</h2>
         <div className="flex justify-center mt-4">
           <p>Starting at $28,850 [*]</p>
@@ -58,16 +58,8 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Car Preview */}
-        <div className="flex justify-center z-10">
-          <div>
-            <div></div>
-            <div></div>
-          </div>
-          <div>
-            <IoChevronDownOutline className="ml-2 text-xl text-slate-500	" />
-          </div>
-        </div>
+        {/* Car Model's Preview */}
+        <CarPreview />
       </section>
     </main>
   );
