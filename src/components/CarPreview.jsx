@@ -1,10 +1,10 @@
 import { IoChevronDownOutline } from "react-icons/io5";
-import rogue from "../assets/thumbnails/rogue.avif";
-import pathfinder from "../assets/thumbnails/pathfinder.jpg";
-import ariya from "../assets/thumbnails/ariya.avif";
-import kicks from "../assets/thumbnails/kicks.avif";
-import murano from "../assets/thumbnails/murano.avif";
-import armada from "../assets/thumbnails/armada.avif";
+import rogue from "../assets/thumbnails/rogue-thumb.avif";
+import pathfinder from "../assets/thumbnails/pathfinder-thumb.jpg";
+import ariya from "../assets/thumbnails/ariya-thumb.avif";
+import kicks from "../assets/thumbnails/kicks-thumb.avif";
+import murano from "../assets/thumbnails/murano-thumb.avif";
+import armada from "../assets/thumbnails/armada-thumb.avif";
 
 const CarPreview = () => {
   return (

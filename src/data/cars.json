@@ -1,0 +1,157 @@
+{
+  "cars": [
+    {
+      "id": "rogue",
+      "category": "Crossover & SUVs",
+      "model": "Rogue",
+      "image": "",
+      "features": "",
+      "description": "",
+      "price": ""
+    },
+    {
+      "id": "pathfinder",
+      "category": "Crossover & SUVs",
+      "model": "Pathfinder",
+      "image": "",
+      "features": "",
+      "description": "",
+      "price": ""
+    },
+    {
+      "id": "ariya",
+      "category": "Crossover & SUVs",
+      "model": "Ariya",
+      "image": "",
+      "features": "",
+      "description": "",
+      "price": ""
+    },
+    {
+      "id": "kicks",
+      "category": "Crossover & SUVs",
+      "model": "Kicks",
+      "image": "",
+      "features": "",
+      "description": "",
+      "price": ""
+    },
+    {
+      "id": "murano",
+      "category": "Crossover & SUVs",
+      "model": "Murano",
+      "image": "",
+      "features": "",
+      "description": "",
+      "price": ""
+    },
+    {
+      "id": "armada",
+      "category": "Crossover & SUVs",
+      "model": "Armada",
+      "image": "",
+      "features": "",
+      "description": "",
+      "price": ""
+    },
+    {
+      "id": "altima",
+      "category": "Cars",
+      "model": "Altima",
+      "image": "",
+      "features": "",
+      "description": "",
+      "price": ""
+    },
+    {
+      "id": "sentra",
+      "category": "Cars",
+      "model": "Sentra",
+      "image": "",
+      "features": "",
+      "description": "",
+      "price": ""
+    },
+    {
+      "id": "versa",
+      "category": "Cars",
+      "model": "Versa",
+      "image": "",
+      "features": "",
+      "description": "",
+      "price": ""
+    },
+    {
+      "id": "nissan-leaf",
+      "category": "Cars",
+      "model": "Nissan-Leaf",
+      "image": "",
+      "features": "",
+      "description": "",
+      "price": ""
+    },
+    {
+      "id": "maxima",
+      "category": "Cars",
+      "model": "Maxima",
+      "image": "",
+      "features": "",
+      "description": "",
+      "price": ""
+    },
+    {
+      "id": "frontier",
+      "category": "Trucks",
+      "model": "Frontier",
+      "image": "",
+      "features": "",
+      "description": "",
+      "price": ""
+    },
+    {
+      "id": "titan",
+      "category": "Trucks",
+      "model": "TITAN",
+      "image": "",
+      "features": "",
+      "description": "",
+      "price": ""
+    },
+    {
+      "id": "nissan-z",
+      "category": "Sports Cars",
+      "model": "Nissan Z",
+      "image": "",
+      "features": "",
+      "description": "",
+      "price": ""
+    },
+    {
+      "id": "gt-r",
+      "category": "Sports Cars",
+      "model": "GT-R",
+      "image": "",
+      "features": "",
+      "description": "",
+      "price": ""
+    },
+    {
+      "id": "nissan-leaf-ev",
+      "category": "Electric Cars",
+      "model": "Nissan-Leaf",
+      "image": "",
+      "features": "",
+      "description": "",
+      "price": ""
+    },
+    {
+      "id": "ariya-ev",
+      "category": "Electric Cars",
+      "model": "Ariya",
+      "image": "",
+      "features": "",
+      "description": "",
+      "price": ""
+    }
+  ]
+}
