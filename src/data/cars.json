@@ -4,7 +4,7 @@
       "id": "rogue",
       "category": "Crossover & SUVs",
       "model": "Rogue",
-      "image": "",
+      "image": "../assets/images/rogue.avif",
       "features": "",
       "description": "",
       "price": ""
@@ -13,7 +13,7 @@
       "id": "pathfinder",
       "category": "Crossover & SUVs",
       "model": "Pathfinder",
-      "image": "",
+      "image": "../assets/images/pathfinder.avif",
       "features": "",
       "description": "",
       "price": ""
@@ -22,7 +22,7 @@
       "id": "ariya",
       "category": "Crossover & SUVs",
       "model": "Ariya",
-      "image": "",
+      "image": "../assets/images/ariya.avif",
       "features": "",
       "description": "",
       "price": ""
@@ -31,7 +31,7 @@
       "id": "kicks",
       "category": "Crossover & SUVs",
       "model": "Kicks",
-      "image": "",
+      "image": "../assets/images/kicks.avif",
       "features": "",
       "description": "",
       "price": ""
@@ -40,7 +40,7 @@
       "id": "murano",
       "category": "Crossover & SUVs",
       "model": "Murano",
-      "image": "",
+      "image": "../assets/images/murano.webp",
       "features": "",
       "description": "",
       "price": ""
@@ -49,7 +49,7 @@
       "id": "armada",
       "category": "Crossover & SUVs",
       "model": "Armada",
-      "image": "",
+      "image": "../assets/images/armada.avif",
       "features": "",
       "description": "",
       "price": ""
@@ -58,7 +58,7 @@
       "id": "altima",
       "category": "Cars",
       "model": "Altima",
-      "image": "",
+      "image": "../assets/images/altima.avif",
       "features": "",
       "description": "",
       "price": ""
@@ -67,7 +67,7 @@
       "id": "sentra",
       "category": "Cars",
       "model": "Sentra",
-      "image": "",
+      "image": "../assets/images/sentra.avif",
       "features": "",
       "description": "",
       "price": ""
@@ -76,7 +76,7 @@
       "id": "versa",
       "category": "Cars",
       "model": "Versa",
-      "image": "",
+      "image": "../assets/images/versa.avif",
       "features": "",
       "description": "",
       "price": ""
@@ -85,7 +85,7 @@
       "id": "nissan-leaf",
       "category": "Cars",
       "model": "Nissan-Leaf",
-      "image": "",
+      "image": "../assets/images/leaf.avif",
       "features": "",
       "description": "",
       "price": ""
@@ -94,7 +94,7 @@
       "id": "maxima",
       "category": "Cars",
       "model": "Maxima",
-      "image": "",
+      "image": "../assets/images/maxima.jpg",
       "features": "",
       "description": "",
       "price": ""
@@ -103,7 +103,7 @@
       "id": "frontier",
       "category": "Trucks",
       "model": "Frontier",
-      "image": "",
+      "image": "../assets/images/frontier.avif",
       "features": "",
       "description": "",
       "price": ""
@@ -112,7 +112,7 @@
       "id": "titan",
       "category": "Trucks",
       "model": "TITAN",
-      "image": "",
+      "image": "../assets/images/titan.avif",
       "features": "",
       "description": "",
       "price": ""
@@ -121,7 +121,7 @@
       "id": "nissan-z",
       "category": "Sports Cars",
       "model": "Nissan Z",
-      "image": "",
+      "image": "../assets/images/nissan-z.avif",
       "features": "",
       "description": "",
       "price": ""
@@ -130,7 +130,7 @@
       "id": "gt-r",
       "category": "Sports Cars",
       "model": "GT-R",
-      "image": "",
+      "image": "../assets/images/gt-r.avif",
       "features": "",
       "description": "",
       "price": ""
@@ -139,7 +139,7 @@
       "id": "nissan-leaf-ev",
       "category": "Electric Cars",
       "model": "Nissan-Leaf",
-      "image": "",
+      "image": "../assets/images/leaf.avif",
       "features": "",
       "description": "",
       "price": ""
@@ -148,7 +148,7 @@
       "id": "ariya-ev",
       "category": "Electric Cars",
       "model": "Ariya",
-      "image": "",
+      "image": "../assets/images/ariya.avif",
       "features": "",
       "description": "",
       "price": ""
