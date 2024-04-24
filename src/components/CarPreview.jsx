@@ -1,47 +1,74 @@
+import { useState } from "react";
 import { IoChevronDownOutline } from "react-icons/io5";
-import rogue from "../assets/thumbnails/rogue-thumb.avif";
-import pathfinder from "../assets/thumbnails/pathfinder-thumb.jpg";
-import ariya from "../assets/thumbnails/ariya-thumb.avif";
-import kicks from "../assets/thumbnails/kicks-thumb.avif";
-import murano from "../assets/thumbnails/murano-thumb.avif";
-import armada from "../assets/thumbnails/armada-thumb.avif";
 
-const vehicles = [
-  { name: "Rogue", image: rogue, alt: "Rogue" },
-  { name: "Pathfinder", image: pathfinder, alt: "Pathfinder" },
-  { name: "Ariya", image: ariya, alt: "Ariya" },
-  { name: "Kicks", image: kicks, alt: "Kicks" },
-  { name: "Murano", image: murano, alt: "Murano" },
-  { name: "Armada", image: armada, alt: "Armada" },
-];
+//eslint-disable-next-line react/prop-types
+const CarPreview = ({ carData }) => {
+  //name of state, function name of state.
+  const [selectedCategory, setSelectedCategory] = useState("All"); // Initial state
 
-const categories = [
-  { title: "Crossover & SUVs" },
-  { title: "Cars" },
-  { title: "Trucks" },
-  { title: "Sports Cars" },
-  { title: "Electric Cars" },
-];
+  //filters by category
+  // eslint-disable-next-line react/prop-types
+  const filteredCars = carData.cars.filter(
+    (car) => car.category === selectedCategory || selectedCategory === "All"
+  );
 
-const CarPreview = () => {
+  //handles our clicks in each button
+  const handleCategoryClick = (category) => {
+    setSelectedCategory(category);
+  };
+
   return (
     // categories
     <main className="flex justify-center">
       <nav className="absolute">
-        <div className="categories flex justify-center gap-6 mt-6 tracking-wide	">
-          {categories.map((category) => (
-            <button key={category} className="hover:underline">
-              {category.title}
-            </button>
-          ))}
+        <div className="flex justify-center gap-6 mt-6 tracking-wide">
+          <button
+            onClick={() => handleCategoryClick("Crossover & SUVs")}
+            className="hover:underline active"
+          >
+            Crossover & SUVs
+          </button>
+
+          <button
+            onClick={() => handleCategoryClick("Cars")}
+            className="hover:underline"
+          >
+            Cars
+          </button>
+
+          <button
+            onClick={() => handleCategoryClick("Trucks")}
+            className="hover:underline"
+          >
+            Trucks
+          </button>
+
+          <button
+            onClick={() => handleCategoryClick("Sports Cars")}
+            className="hover:underline"
+          >
+            Sports Cars
+          </button>
+
+          <button
+            onClick={() => handleCategoryClick("Electric Cars")}
+            className="hover:underline"
+          >
+            Electric Cars
+          </button>
         </div>
 
         {/* Thumbnails for vehicles  */}
-        <section className="thumbnails flex mt-5">
-          {vehicles.map((vehicle) => (
-            <button key={vehicle} className="flex relative justify-center ">
-              <img src={vehicle.image} alt={vehicle.alt} className="w-44" />
-              <p className="absolute bottom-1 text-xs">{vehicle.name}®</p>
+        <section className="flex justify-center mt-5">
+          {filteredCars.map((car) => (
+            <button key={car.id} className="flex relative justify-center ">
+              <img
+                src={car.image}
+                alt={car.alt}
+                className="w-44 hover:transition duration-75 ease-in-out transform 
+                hover:translate-y-1 hover:scale-110 "
+              />
+              <p className="absolute bottom-1 text-xs">{car.model}®</p>
             </button>
           ))}
         </section>

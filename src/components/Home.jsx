@@ -2,6 +2,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import logo from "../assets/logos/logo.svg";
 import rogue from "../assets/images/rogue.avif";
 import CarPreview from "./CarPreview";
+import carData from "../data/cars.json";
 
 const Home = () => {
   return (
@@ -59,7 +60,7 @@ const Home = () => {
         </div>
 
         {/* Car Model's Preview */}
-        <CarPreview />
+        <CarPreview carData={carData} />
       </section>
     </main>
   );
