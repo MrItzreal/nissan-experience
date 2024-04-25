@@ -259,7 +259,7 @@ const Footer = () => {
             </li>
           </ul>
           <p className="mt-4 text-sm text-gray-500 sm:mt-0 dark:text-gray-300">
-            © NISSAN USA 2024.
+            © NISSAN USA 2024
           </p>
         </div>
       </div>
