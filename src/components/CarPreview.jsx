@@ -4,7 +4,7 @@ import { IoChevronDownOutline } from "react-icons/io5";
 //eslint-disable-next-line react/prop-types
 const CarPreview = ({ carData }) => {
   //name of state, function name of state.
-  const [selectedCategory, setSelectedCategory] = useState("All"); // Initial state
+  const [selectedCategory, setSelectedCategory] = useState("Crossover & SUVs"); // Initial state
 
   //filters by category
   // eslint-disable-next-line react/prop-types
@@ -24,35 +24,35 @@ const CarPreview = ({ carData }) => {
         <div className="flex justify-center gap-6 mt-6 tracking-wide">
           <button
             onClick={() => handleCategoryClick("Crossover & SUVs")}
-            className="hover:underline active"
+            className="hover:underline focus:font-bold"
           >
             Crossover & SUVs
           </button>
 
           <button
             onClick={() => handleCategoryClick("Cars")}
-            className="hover:underline"
+            className="hover:underline focus:font-bold"
           >
             Cars
           </button>
 
           <button
             onClick={() => handleCategoryClick("Trucks")}
-            className="hover:underline"
+            className="hover:underline focus:font-bold"
           >
             Trucks
           </button>
 
           <button
             onClick={() => handleCategoryClick("Sports Cars")}
-            className="hover:underline"
+            className="hover:underline focus:font-bold"
           >
             Sports Cars
           </button>
 
           <button
             onClick={() => handleCategoryClick("Electric Cars")}
-            className="hover:underline"
+            className="hover:underline focus:font-bold"
           >
             Electric Cars
           </button>
