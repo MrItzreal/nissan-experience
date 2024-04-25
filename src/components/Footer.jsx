@@ -1,23 +1,26 @@
 import { TiChevronRight } from "react-icons/ti";
+import { IoChatbubbleOutline } from "react-icons/io5";
+import { FaChevronDown } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="bg-neutral-900">
-      <div className="container px-6 py-12 mx-auto">
-        <div className="flex text-center">
-          <span className="flex text-sm text-gray-800 dark:text-white">
+      <div className="container px-8 py-12 mx-auto">
+        <div className="flex justify-between text-center">
+          <span className="flex text-sm text-gray-800 dark:text-white tracking-wide	">
             Nissan USA
-            <TiChevronRight className="text-xl mb-1 ml-1 text-neutral-500" />
+            <TiChevronRight className="text-xl text-neutral-500" />
             <p className="ml-2 font-bold">Home</p>
           </span>
-          <span className="max-w-md mx-auto text-gray-800 dark:text-white">
-            ADD SOMETHING
-          </span>
 
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-center">
-            <button className="w-full  -my-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-md sm:mx-2 sm:order-2 sm:w-auto hover:bg-blue-500">
-              Get started
+          <div className="flex sm:flex-row sm:items-center sm:justify-center ">
+            <button className="flex text-sm font-medium tracking-wide text-white mx-8">
+              English
+              <FaChevronDown className="text-xl text-neutral-500 ml-1" />
             </button>
+            <a href="#" className="flex text-sm text-white tracking-wide">
+              Live Chat <IoChatbubbleOutline className="ml-1" />
+            </a>
           </div>
         </div>
 
@@ -222,7 +225,39 @@ const Footer = () => {
 
         <hr className="my-6 border-gray-200 md:my-10 dark:border-gray-700" />
 
-        <div className="flex flex-col items-center justify-end sm:flex-row">
+        <div className="flex items-center justify-between sm:flex-row ">
+          <ul className="flex">
+            <li className="bg-white rounded-md mx-2">
+              <a href="blank_">
+                <img src="./src/assets/logos/tiktok.svg" />
+              </a>
+            </li>
+            <li className="bg-white rounded-md mx-2">
+              <a href="blank_">
+                <img src="./src/assets/logos/instagram.svg" />
+              </a>
+            </li>
+            <li className="bg-white rounded-md mx-2">
+              <a href="blank_">
+                <img src="./src/assets/logos/youtube.svg" />
+              </a>
+            </li>
+            <li className="rounded-md bg-white mx-2">
+              <a href="blank_">
+                <img src="./src/assets/logos/x.svg" />
+              </a>
+            </li>
+            <li className="bg-white rounded-md mx-2">
+              <a href="blank_">
+                <img src="./src/assets/logos/facebook.svg" />
+              </a>
+            </li>
+            <li className="bg-white rounded-md mx-2">
+              <a href="blank_">
+                <img src="./src/assets/logos/pinterest.svg" />
+              </a>
+            </li>
+          </ul>
           <p className="mt-4 text-sm text-gray-500 sm:mt-0 dark:text-gray-300">
             © NISSAN USA 2024.
           </p>
