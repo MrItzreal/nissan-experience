@@ -1,18 +1,21 @@
+import { TiChevronRight } from "react-icons/ti";
+
 const Footer = () => {
   return (
     <footer className="bg-neutral-900">
       <div className="container px-6 py-12 mx-auto">
-        <div className="text-center">
-          <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
+        <div className="flex text-center">
+          <span className="flex text-sm text-gray-800 dark:text-white">
+            Nissan USA
+            <TiChevronRight className="text-xl mb-1 ml-1 text-neutral-500" />
+            <p className="ml-2 font-bold">Home</p>
+          </span>
+          <span className="max-w-md mx-auto text-gray-800 dark:text-white">
             ADD SOMETHING
-          </h2>
+          </span>
 
-          <p className="max-w-md mx-auto mt-2 text-gray-500 dark:text-gray-400">
-            ADD SOMETHING
-          </p>
-
-          <div className="flex flex-col mt-6 sm:flex-row sm:items-center sm:justify-center">
-            <button className="w-full px-5 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-md sm:mx-2 sm:order-2 sm:w-auto hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-center">
+            <button className="w-full  -my-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-md sm:mx-2 sm:order-2 sm:w-auto hover:bg-blue-500">
               Get started
             </button>
           </div>
