@@ -1,29 +1,56 @@
+import { useState } from "react";
 import { TiChevronRight } from "react-icons/ti";
 import { IoChatbubbleOutline } from "react-icons/io5";
-import { FaChevronDown } from "react-icons/fa";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 const Footer = () => {
+  //name of state, function name of state.
+  const [selectedLanguage, setSelectedLanguage] = useState("English");
+
+  const toggleLanguage = () => {
+    setSelectedLanguage((prevLanguage) =>
+      prevLanguage === "English" ? "Spanish" : "English"
+    );
+  };
+
   return (
     <footer className="bg-neutral-900">
-      <div className="container px-8 py-12 mx-auto">
-        <div className="flex justify-between text-center">
-          <span className="flex text-sm text-gray-800 dark:text-white tracking-wide	">
+      <main className="container px-8 py-12 mx-auto">
+        <section className="flex justify-between text-center">
+          <span className="flex text-sm text-gray-800 dark:text-white tracking-wide">
             Nissan USA
             <TiChevronRight className="text-xl text-neutral-500" />
             <p className="ml-2 font-bold">Home</p>
           </span>
 
-          <div className="flex sm:flex-row sm:items-center sm:justify-center ">
-            <button className="flex text-sm font-medium tracking-wide text-white mx-8">
-              English
-              <FaChevronDown className="text-xl text-neutral-500 ml-1" />
-            </button>
-            <a href="#" className="flex text-sm text-white tracking-wide">
+          <div className="flex sm:flex-row sm:items-center sm:justify-center">
+            <div className="flex justify-between items-center w-full">
+              <p className="flex text-sm font-bold tracking-wide text-white hover:underline">
+                {selectedLanguage}
+              </p>
+
+              <button
+                className="flex	justify-center mx-8"
+                onClick={toggleLanguage}
+              >
+                {selectedLanguage === "English" ? (
+                  <FaChevronDown className="text-xl text-neutral-500 " />
+                ) : (
+                  <FaChevronUp className="text-xl text-neutral-500  " />
+                )}
+              </button>
+            </div>
+
+            <a
+              href="#"
+              className="flex text-sm text-white tracking-wide w-full"
+            >
               Live Chat <IoChatbubbleOutline className="ml-1" />
             </a>
           </div>
-        </div>
+        </section>
 
+        {/* FOOTER OPTIONS */}
         <div className=" grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-12 justify-items-center">
           <div>
             <h3 className="text-sm font-medium text-gray-500 dark:text-gray-400">
@@ -223,9 +250,9 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* SOCIAL MEDIA ICONS */}
         <hr className="my-6 border-gray-200 md:my-10 dark:border-gray-700" />
-
-        <div className="flex items-center justify-between sm:flex-row ">
+        <section className="flex items-center justify-between sm:flex-row ">
           <ul className="flex">
             <li className="bg-white rounded-md mx-2">
               <a href="blank_">
@@ -261,8 +288,8 @@ const Footer = () => {
           <p className="mt-4 text-sm text-gray-500 sm:mt-0 dark:text-gray-300">
             © NISSAN USA 2024
           </p>
-        </div>
-      </div>
+        </section>
+      </main>
     </footer>
   );
 };
