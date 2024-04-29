@@ -75,7 +75,7 @@ const CarPreview = ({ carData, setCarBackgroundImage }) => {
                 src={car.thumbnail}
                 alt={car.alt}
                 className="w-44 hover:transition duration-75 ease-in-out transform 
-                hover:translate-y-1 hover:scale-110 "
+                hover:translate-y-1 hover:scale-110"
               />
               <p className="absolute bottom-1 text-xs">{car.model}®</p>
             </button>

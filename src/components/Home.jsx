@@ -18,7 +18,7 @@ const Home = () => {
     <main className="h-screen relative ">
       <img
         src={backgroundImage}
-        className="absolute w-full h-full object-cover z-0"
+        className="absolute w-full h-full object-cover"
       />
 
       <header className="absolute z-10 top-0 left-0 right-0 px-4">
