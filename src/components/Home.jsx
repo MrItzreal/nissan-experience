@@ -1,17 +1,26 @@
+import { useState } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import logo from "../assets/logos/logo.svg";
-import rogue from "../assets/images/rogue.avif";
 import CarPreview from "./CarPreview";
 import carData from "../data/cars.json";
 
 const Home = () => {
+  //name of state, function name of state.
+  const [backgroundImage, setBackgroundImage] = useState();
+
+  const setCarBackgroundImage = (car) => {
+    setBackgroundImage(car);
+  };
+
   return (
     <main className="h-screen relative ">
-      <img
-        src={rogue}
-        alt="Background Image"
-        className="absolute w-full h-full object-cover z-0"
-      />
+      {backgroundImage && (
+        <img
+          src={backgroundImage}
+          alt="Background Image"
+          className="absolute w-full h-full object-cover z-0"
+        />
+      )}
 
       <header className="absolute z-10 top-0 left-0 right-0 px-4">
         <nav className="flex items-center justify-end">
@@ -60,7 +69,10 @@ const Home = () => {
         </div>
 
         {/* Car Model's Preview */}
-        <CarPreview carData={carData} />
+        <CarPreview
+          carData={carData}
+          setCarBackgroundImage={setCarBackgroundImage}
+        />
       </section>
     </main>
   );

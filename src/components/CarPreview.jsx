@@ -2,7 +2,7 @@ import { useState } from "react";
 import { IoChevronDownOutline } from "react-icons/io5";
 
 //eslint-disable-next-line react/prop-types
-const CarPreview = ({ carData }) => {
+const CarPreview = ({ carData, setCarBackgroundImage }) => {
   //name of state, function name of state.
   const [selectedCategory, setSelectedCategory] = useState("Crossover & SUVs"); // Initial state
 
@@ -12,9 +12,14 @@ const CarPreview = ({ carData }) => {
     (car) => car.category === selectedCategory || selectedCategory === "All"
   );
 
-  //handles our clicks in each button
+  //handles category selection with our clicks in each button
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
+  };
+
+  //handles car selection with our clicks
+  const handleCarClick = (car) => {
+    setCarBackgroundImage(car);
   };
 
   return (
@@ -61,7 +66,11 @@ const CarPreview = ({ carData }) => {
         {/* Thumbnails for vehicles  */}
         <section className="flex justify-center mt-5">
           {filteredCars.map((car) => (
-            <button key={car.id} className="flex relative justify-center ">
+            <button
+              key={car.id}
+              className="flex relative justify-center"
+              onClick={() => handleCarClick(car.image)}
+            >
               <img
                 src={car.image}
                 alt={car.alt}
