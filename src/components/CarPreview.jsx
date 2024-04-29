@@ -63,7 +63,7 @@ const CarPreview = ({ carData, setCarBackgroundImage }) => {
           </button>
         </div>
 
-        {/* Thumbnails for vehicles  */}
+        {/* Thumbnails for vehicles & Background Image when clicked  */}
         <section className="flex justify-center mt-5">
           {filteredCars.map((car) => (
             <button
@@ -72,7 +72,7 @@ const CarPreview = ({ carData, setCarBackgroundImage }) => {
               onClick={() => handleCarClick(car.image)}
             >
               <img
-                src={car.image}
+                src={car.thumbnail}
                 alt={car.alt}
                 className="w-44 hover:transition duration-75 ease-in-out transform 
                 hover:translate-y-1 hover:scale-110 "
