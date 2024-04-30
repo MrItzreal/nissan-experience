@@ -81,7 +81,7 @@ const CarPreview = ({ carData, setCarBackgroundImage }) => {
             </button>
           ))}
         </section>
-        <div className="flex justify-center text-2xl text-gray-500 mt-2 ">
+        <div className="flex justify-center text-2xl text-gray-500 mt-2">
           <IoChevronDownOutline />
         </div>
       </nav>

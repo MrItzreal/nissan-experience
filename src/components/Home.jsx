@@ -15,11 +15,8 @@ const Home = () => {
   };
 
   return (
-    <main className="h-screen relative ">
-      <img
-        src={backgroundImage}
-        className="absolute w-full h-full object-cover"
-      />
+    <main className="h-screen relative">
+      <img src={backgroundImage} className="w-full h-full object-cover" />
 
       <header className="absolute z-10 top-0 left-0 right-0 px-4">
         <nav className="flex items-center justify-end">
