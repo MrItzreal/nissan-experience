@@ -20,7 +20,7 @@ const Home = () => {
   const [menuActive, setMenuActive] = useState(false);
 
   const toggleNavbar = () => {
-    setMenuActive(!menuActive);
+    setMenuActive(!menuActive); //Toggles navigation bar icons.
   };
 
   return (
@@ -32,7 +32,7 @@ const Home = () => {
           <a href="blank_">
             <img src={logo} alt="Logo" className="absolute left-4 h-30 top-7" />
           </a>
-          <ul className="hidden md:flex gap-6 text-white font-medium px-10 py-16">
+          <ul className="hidden md:flex gap-6 text-white font-medium px-10 py-16  transition duration-300 ease-in-out">
             <li>
               <a href="blank_">Vehicles</a>
             </li>
