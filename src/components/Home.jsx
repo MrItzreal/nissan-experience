@@ -3,6 +3,8 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import logo from "../assets/logos/logo.svg";
 import CarPreview from "./CarPreview";
 import carData from "../data/cars.json";
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import { IoMdClose } from "react-icons/io";
 
 const Home = () => {
   //name of state, function name of state.
@@ -14,6 +16,13 @@ const Home = () => {
     setBackgroundImage(car);
   };
 
+  //name of state, function name of state.
+  const [menuActive, setMenuActive] = useState(false);
+
+  const toggleNavbar = () => {
+    setMenuActive(!menuActive);
+  };
+
   return (
     <main className="h-screen relative">
       <img src={backgroundImage} className="w-full h-full object-cover" />
@@ -23,7 +32,7 @@ const Home = () => {
           <a href="blank_">
             <img src={logo} alt="Logo" className="absolute left-4 h-30 top-7" />
           </a>
-          <ul className="flex gap-6 text-white font-medium px-10 py-16">
+          <ul className="hidden md:flex gap-6 text-white font-medium px-10 py-16">
             <li>
               <a href="blank_">Vehicles</a>
             </li>
@@ -41,10 +50,17 @@ const Home = () => {
             </li>
           </ul>
 
-          <div className="flex items-center justify-center text-[13.5px] text-white mr-16 border border-gray-100 rounded-full h-10 w-40 z-10 hover:bg-red-700 hover:border-none duration-700">
+          <div className="hidden md:flex items-center justify-center text-[13.5px] text-white mr-5 border border-gray-100 rounded-full h-10 w-40 z-10 hover:bg-red-700 hover:border-none duration-700">
             <a href="blank_">Build & Price</a>
             <FaArrowRightLong className="ml-3 text-xl" />
           </div>
+          <button onClick={toggleNavbar} className="flex md:hidden px-5 py-16 ">
+            {menuActive ? (
+              <IoMdClose className="text-white text-3xl ml-3" />
+            ) : (
+              <HiOutlineMenuAlt3 className="text-white text-3xl ml-3" />
+            )}
+          </button>
         </nav>
       </header>
 
