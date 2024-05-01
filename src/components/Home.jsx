@@ -32,7 +32,7 @@ const Home = () => {
           <a href="blank_">
             <img src={logo} alt="Logo" className="absolute left-4 h-30 top-7" />
           </a>
-          <ul className="hidden md:flex gap-6 text-white font-medium px-10 py-16  transition duration-300 ease-in-out">
+          <ul className="hidden md:flex gap-6 text-white font-medium px-10 py-16">
             <li>
               <a href="blank_">Vehicles</a>
             </li>
