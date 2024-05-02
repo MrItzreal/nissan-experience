@@ -1,10 +1,31 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
 import logo from "../assets/logos/logo.svg";
 import CarPreview from "./CarPreview";
 import carData from "../data/cars.json";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
+import { IoChevronForward } from "react-icons/io5";
+
+const NavLinks = () => {
+  return (
+    <>
+      <NavLink to="/">Vehicles</NavLink>
+      <NavLink to="/">Shop</NavLink>
+      <NavLink to="/">Electric</NavLink>
+      <NavLink to="/">Owners</NavLink>
+      <NavLink to="/">Dealers</NavLink>
+      <NavLink
+        to="/"
+        className="flex items-center justify-center text-[13.5px] border border-gray-100 rounded-full h-10 w-40 -my-2 hover:bg-red-700 hover:border-none duration-700"
+      >
+        Build & Price
+        <FaArrowRightLong className="ml-3 text-xl" />
+      </NavLink>
+    </>
+  );
+};
 
 const Home = () => {
   //name of state, function name of state.
@@ -17,60 +38,48 @@ const Home = () => {
   };
 
   //name of state, function name of state.
-  const [menuActive, setMenuActive] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleNavbar = () => {
-    setMenuActive(!menuActive); //Toggles navigation bar icons.
+    setIsOpen(!isOpen); //Toggles navigation bar icons.
   };
 
   return (
     <main className="h-screen relative">
-      <img src={backgroundImage} className="w-full h-full object-cover" />
+      <img
+        src={backgroundImage}
+        className="absolute w-full h-full object-cover"
+      />
+      <img src={logo} alt="Logo" className="absolute left-4 h-30 top-7" />
 
-      <header className="absolute z-10 top-0 left-0 right-0 px-4">
-        <nav className="flex items-center justify-end">
-          <a href="blank_">
-            <img src={logo} alt="Logo" className="absolute left-4 h-30 top-7" />
-          </a>
-          <ul className="hidden md:flex gap-6 text-white font-medium px-10 py-16">
-            <li>
-              <a href="blank_">Vehicles</a>
-            </li>
-            <li>
-              <a href="blank_">Shop</a>
-            </li>
-            <li>
-              <a href="blank_">Electric</a>
-            </li>
-            <li>
-              <a href="blank_">Owners</a>
-            </li>
-            <li>
-              <a href="blank_">Dealers</a>
-            </li>
-          </ul>
-
-          <div className="hidden md:flex items-center justify-center text-[13.5px] text-white mr-5 border border-gray-100 rounded-full h-10 w-40 z-10 hover:bg-red-700 hover:border-none duration-700">
-            <a href="blank_">Build & Price</a>
-            <FaArrowRightLong className="ml-3 text-xl" />
+      <>
+        <nav className="flex justify-end">
+          <div className="hidden w-full justify-end z-10 md:flex gap-6 text-white font-medium px-10 py-16">
+            <NavLinks />
           </div>
-          <button onClick={toggleNavbar} className="flex md:hidden px-5 py-16 ">
-            {menuActive ? (
-              <IoMdClose className="text-white text-3xl ml-3" />
-            ) : (
-              <HiOutlineMenuAlt3 className="text-white text-3xl ml-3" />
-            )}
-          </button>
+          <div className="md:hidden z-10">
+            <button onClick={toggleNavbar}>
+              {isOpen ? (
+                <IoMdClose className="text-white text-3xl mr-3 mt-4" />
+              ) : (
+                <HiOutlineMenuAlt3 className="text-white text-3xl mr-3 mt-4" />
+              )}
+            </button>
+          </div>
         </nav>
-      </header>
+        {isOpen && (
+          <div className="relative flex flex-col items-center gap-4  text-white md:hidden">
+            <NavLinks />
+          </div>
+        )}
+      </>
 
       <section className="text-white absolute inset-x-0 bottom-1/4">
         <h2 className="text-4xl text-center">Adventure Ready</h2>
         <div className="flex justify-center mt-4">
-          <p>Starting at $28,850 [*]</p>
-          <a href="blank_" className="ml-4">
-            View Offers
-          </a>
+          <NavLink to="/" className="flex items-center">
+            View Offers <IoChevronForward className="text-xl" />
+          </NavLink>
         </div>
 
         <div className="flex justify-center mt-8">

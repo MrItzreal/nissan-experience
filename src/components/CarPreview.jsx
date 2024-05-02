@@ -26,7 +26,7 @@ const CarPreview = ({ carData, setCarBackgroundImage }) => {
     // categories
     <main className="flex justify-center">
       <nav className="absolute">
-        <div className="flex justify-center gap-6 mt-6 tracking-wide">
+        <div className="flex justify-center gap-6 mt-6 tracking-wide text-xs md:text-lg">
           <button
             onClick={() => handleCategoryClick("Crossover & SUVs")}
             className="hover:underline focus:font-bold"
