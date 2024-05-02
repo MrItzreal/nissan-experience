@@ -50,7 +50,7 @@ const Home = () => {
         src={backgroundImage}
         className="absolute w-full h-full object-cover"
       />
-      <img src={logo} alt="Logo" className="absolute left-4 h-30 top-7" />
+      <img src={logo} alt="Logo" className="absolute left-4 h-30 top-7 z-10" />
 
       <>
         <nav className="flex justify-end">
@@ -60,7 +60,7 @@ const Home = () => {
           <div className="md:hidden z-10">
             <button onClick={toggleNavbar}>
               {isOpen ? (
-                <IoMdClose className="text-white text-3xl mr-3 mt-4" />
+                <IoMdClose className="absolute right-4 text-3xl  text-white" />
               ) : (
                 <HiOutlineMenuAlt3 className="text-white text-3xl mr-3 mt-4" />
               )}
@@ -68,7 +68,7 @@ const Home = () => {
           </div>
         </nav>
         {isOpen && (
-          <div className="relative flex flex-col items-center gap-4  text-white md:hidden">
+          <div className="relative h-full flex flex-col items-center gap-4 -my-6 py-24 text-white md:hidden bg-slate-950">
             <NavLinks />
           </div>
         )}

@@ -15,9 +15,9 @@ const Footer = () => {
 
   return (
     <footer className="bg-neutral-900">
-      <main className="container px-8 py-12 mx-auto">
+      <main className="container px-8 py-14 mx-auto">
         <section className="flex justify-between text-center">
-          <span className="flex text-sm text-gray-800 dark:text-white tracking-wide">
+          <span className="flex items-center text-sm text-gray-800 dark:text-white tracking-wide">
             Nissan USA
             <TiChevronRight className="text-xl text-neutral-500" />
             <p className="ml-2 font-bold">Home</p>
@@ -25,12 +25,12 @@ const Footer = () => {
 
           <div className="flex sm:flex-row sm:items-center sm:justify-center">
             <div className="flex justify-between items-center w-full">
-              <p className="flex text-sm font-bold tracking-wide text-white hover:underline">
+              <p className="flex text-sm p-4 font-bold tracking-wide text-white hover:underline">
                 {selectedLanguage}
               </p>
 
               <button
-                className="flex	justify-center mx-8"
+                className="flex	justify-center mx-4"
                 onClick={toggleLanguage}
               >
                 {selectedLanguage === "English" ? (
@@ -43,7 +43,7 @@ const Footer = () => {
 
             <a
               href="#"
-              className="flex text-sm text-white tracking-wide w-full"
+              className="flex items-center whitespace-nowrap text-sm text-white"
             >
               Live Chat <IoChatbubbleOutline className="ml-1" />
             </a>
