@@ -7,6 +7,7 @@ import carData from "../data/cars.json";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
 import { IoChevronForward } from "react-icons/io5";
+import { motion } from "framer-motion";
 
 const NavLinks = () => {
   return (
@@ -58,19 +59,23 @@ const Home = () => {
             <NavLinks />
           </div>
           <div className="md:hidden z-10">
-            <button onClick={toggleNavbar}>
+            <motion.button whileTap={{ rotate: 20 }} onClick={toggleNavbar}>
               {isOpen ? (
-                <IoMdClose className="absolute right-4 text-3xl  text-white" />
+                <IoMdClose className="absolute right-4 text-3xl text-white" />
               ) : (
                 <HiOutlineMenuAlt3 className="text-white text-3xl mr-3 mt-4" />
               )}
-            </button>
+            </motion.button>
           </div>
         </nav>
         {isOpen && (
-          <div className="relative h-full flex flex-col items-center gap-4 -my-6 py-24 text-white md:hidden bg-slate-950">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            className="relative h-full flex flex-col items-center gap-4 -my-6 py-24 text-white md:hidden bg-gradient-to-r from-slate-600 to-slate-950 "
+          >
             <NavLinks />
-          </div>
+          </motion.div>
         )}
       </>
 
@@ -84,7 +89,7 @@ const Home = () => {
 
         <div className="flex justify-center mt-8">
           <div className="flex items-center justify-center text-[14.5px] border border-gray-100 rounded-full h-12 w-48 hover:bg-white hover:text-red-700 hover:border-none duration-300">
-            <a href="blank_">Explore Vehicles®</a>
+            <NavLink to="/">Explore Vehicles®</NavLink>
             <FaArrowRightLong className="ml-2 text-xl" />
           </div>
         </div>
