@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { IoChevronDownOutline } from "react-icons/io5";
+import { motion } from "framer-motion";
 
 //eslint-disable-next-line react/prop-types
 const CarPreview = ({ carData, setCarBackgroundImage }) => {
@@ -26,7 +27,14 @@ const CarPreview = ({ carData, setCarBackgroundImage }) => {
     // categories
     <main className="flex justify-center">
       <nav className="absolute">
-        <div className="flex justify-center gap-6 mt-6 tracking-wide text-xs md:text-lg">
+        <motion.div
+          className="flex justify-center gap-6 mt-6 tracking-wide text-xs md:text-lg"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.4,
+          }}
+        >
           <button
             onClick={() => handleCategoryClick("Crossover & SUVs")}
             className="hover:underline focus:font-bold"
@@ -61,7 +69,7 @@ const CarPreview = ({ carData, setCarBackgroundImage }) => {
           >
             Electric Cars
           </button>
-        </div>
+        </motion.div>
 
         {/* Thumbnails for vehicles & Background Image when clicked  */}
         <section className="flex justify-center mt-5">
