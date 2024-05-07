@@ -47,9 +47,11 @@ const Home = () => {
 
   return (
     <main className="h-screen relative">
-      <img
+      <motion.img
         src={backgroundImage}
         className="absolute w-full h-full object-cover"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
       />
       <img src={logo} alt="Logo" className="absolute left-4 h-30 top-7 z-10" />
 
