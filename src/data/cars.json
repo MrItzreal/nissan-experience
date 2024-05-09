@@ -10,7 +10,7 @@
       "alt": "Rogue",
       "features": "",
       "description": "",
-      "price": ""
+      "price": "30,000"
     },
     {
       "id": "pathfinder",
@@ -111,7 +111,7 @@
     {
       "id": "nissan-leaf",
       "category": "Cars",
-      "model": "Nissan-Leaf",
+      "model": "Leaf",
       "thumbnail": "src/assets/thumbnails/leaf-thumb.avif",
       "image": "src/assets/images/leaf.avif",
       "profilephoto": "src/assets/profilephotos/leaf-profile.avif",
@@ -183,7 +183,7 @@
     {
       "id": "nissan-leaf-ev",
       "category": "Electric Cars",
-      "model": "Nissan-Leaf",
+      "model": "Leaf",
       "thumbnail": "src/assets/thumbnails/leaf-thumb.avif",
       "image": "src/assets/images/leaf.avif",
       "profilephoto": "src/assets/profilephotos/leaf-profile.avif",
