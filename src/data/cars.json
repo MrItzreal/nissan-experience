@@ -181,7 +181,7 @@
       "price": ""
     },
     {
-      "id": "nissan-leaf-ev",
+      "id": "nissan-leaf",
       "category": "Electric Cars",
       "model": "Leaf",
       "thumbnail": "src/assets/thumbnails/leaf-thumb.avif",
@@ -193,7 +193,7 @@
       "price": ""
     },
     {
-      "id": "ariya-ev",
+      "id": "ariya",
       "category": "Electric Cars",
       "model": "Ariya",
       "thumbnail": "src/assets/thumbnails/ariya-thumb.avif",

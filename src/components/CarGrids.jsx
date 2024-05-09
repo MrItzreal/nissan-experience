@@ -1,11 +1,20 @@
 /* eslint-disable react/no-unescaped-entities */
-// import { useState } from "react";
 import carData from "../data/cars.json";
 
-const CarGrids = () => {
-  //This will display all vehicles through map array.
-  const displayCars = carData.cars;
+//This will filter and remove duplicate car objects with the same ID.
+const filterDuplicateCars = (cars) => {
+  const seenIds = new Set();
+  return cars.filter((car) => {
+    const hasSeenId = seenIds.has(car.id);
+    seenIds.add(car.id);
+    return !hasSeenId;
+  });
+};
 
+//This will display all vehicles through map array.
+const displayCars = filterDuplicateCars(carData.cars);
+
+const CarGrids = () => {
   return (
     <main className="bg-neutral-900">
       <div className="container mx-auto px-8 py-2">
