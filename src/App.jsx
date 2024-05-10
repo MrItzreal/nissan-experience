@@ -1,15 +1,15 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
-import CarGrids from "./components/CarGrids";
+import CarDetails from "./components/CarDetails";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/cardetails" element={<CarDetails />} />
       </Routes>
-      <CarGrids/>
       <Footer />
     </BrowserRouter>
   );

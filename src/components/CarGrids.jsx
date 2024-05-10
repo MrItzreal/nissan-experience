@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import carData from "../data/cars.json";
+import { NavLink } from "react-router-dom";
 
 //This will filter and remove duplicate car objects with the same ID.
 const filterDuplicateCars = (cars) => {
@@ -49,7 +50,12 @@ const CarGrids = () => {
               </div>
 
               <button className="absolute bottom-0 left-0 h-16  w-full  rounded border border-gray-100 bg-gray-800 hover:bg-red-700 duration-700">
-                <p className="text-white text-base md:text-lg">Details</p>
+                <NavLink
+                  to="/cardetails"
+                  className="text-white text-base md:text-lg"
+                >
+                  Details
+                </NavLink>
               </button>
             </div>
           ))}
