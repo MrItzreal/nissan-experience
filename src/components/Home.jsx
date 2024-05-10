@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
 import logo from "../assets/logos/logo.svg";
 import CarPreview from "./CarPreview";

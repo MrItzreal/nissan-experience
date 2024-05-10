@@ -23,7 +23,7 @@ const NavLinks = () => {
 
 const CarDetails = () => {
   return (
-    <main className="border-box mb-">
+    <main className="h-screen relative">
       <Link to="/">
         <img
           src={logo}
@@ -32,7 +32,7 @@ const CarDetails = () => {
         />
       </Link>
 
-      <div>
+      <div className="flex justify-center gap-6 py-16">
         <NavLinks />
       </div>
     </main>
