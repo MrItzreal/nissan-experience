@@ -34,55 +34,57 @@ const CarDetails = () => {
     setIsOpen(!isOpen); //Toggles navigation bar icons.
   };
   return (
-    <main className="relative h-screen bg-gradient-to-r from-stone-200 to-slate-800 z-0">
-      <motion.img
-        src={temporarybackground}
-        className="absolute w-full"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-      />
-      <Link to="/">
-        <img
-          src={logo}
-          alt="Logo"
-          className="absolute left-4 h-30 top-7 z-10"
+    <main className="relative h-screen bg-gradient-to-r from-stone-200 to-slate-800">
+      <div>
+        <motion.img
+          src={temporarybackground}
+          className="absolute w-full"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
         />
-      </Link>
-      <>
-        <nav className="flex justify-end">
-          <div className="hidden justify-end md:flex gap-6 text-white font-medium px-12 py-16 z-0">
-            <NavLinks />
-          </div>
-          <div className="md:hidden z-10">
-            <motion.button whileTap={{ rotate: 20 }} onClick={toggleNavbar}>
-              {isOpen ? (
-                <IoMdClose className="absolute right-4 text-3xl text-white" />
-              ) : (
-                <HiOutlineMenuAlt3 className="text-white text-3xl mr-3 mt-4" />
-              )}
-            </motion.button>
-          </div>
-        </nav>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            className="relative h-full flex flex-col items-center gap-4 -my-6 py-24 text-white md:hidden bg-gradient-to-r from-slate-600 to-slate-950 "
-          >
-            <NavLinks />
-          </motion.div>
-        )}
-      </>
-      <div className="relative flex flex-col mt-20 text-white whitespace-nowrap">
-        <span className="px-44 md:px-48 -mx-12 md:mx-80 text-sm md:text-base lg:text-lg">
-          2024 NISSAN
-        </span>
-        <span className="px-40 md:px-44 -mx-2 md:mx-80 text-sm md:text-base lg:text-6xl">
-          GT-R
-        </span>
-        <span className="px-44 md:px-80 -my-6 md:-my-16 mx-3 md:mx-80 text-xs md:text-sm lg:text-base">
-          ®
-        </span>
+        <Link to="/">
+          <img
+            src={logo}
+            alt="Logo"
+            className="absolute left-4 h-30 top-7 z-10"
+          />
+        </Link>
+        <>
+          <nav className="flex justify-end">
+            <div className="hidden justify-end md:flex gap-6 text-white font-medium px-12 py-16 z-0">
+              <NavLinks />
+            </div>
+            <div className="md:hidden z-10">
+              <motion.button whileTap={{ rotate: 20 }} onClick={toggleNavbar}>
+                {isOpen ? (
+                  <IoMdClose className="absolute right-4 text-3xl text-white" />
+                ) : (
+                  <HiOutlineMenuAlt3 className=" text-white text-3xl mr-3 mt-4" />
+                )}
+              </motion.button>
+            </div>
+          </nav>
+          {isOpen && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              className="relative h-full flex flex-col items-center gap-4 -my-6 py-24 text-white md:hidden bg-gradient-to-r from-slate-600 to-slate-950 "
+            >
+              <NavLinks />
+            </motion.div>
+          )}
+        </>
+        <div className="absolute my-24 ml-8 flex flex-col items-center mr-6 whitespace-nowrap">
+          <span className="text-white text-sm md:text-base lg:text-lg">
+            2024 NISSAN
+          </span>
+          <span className="text-white text-sm md:text-base lg:text-6xl">
+            GT-R
+          </span>
+          <span className="ml-20 -my-6 md:-my-16 text-white text-xs md:text-sm lg:text-base">
+            ®
+          </span>
+        </div>
       </div>
     </main>
   );
