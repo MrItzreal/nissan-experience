@@ -5,7 +5,7 @@ import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
 import logo from "../assets/logos/logo.svg";
 import { motion } from "framer-motion";
-import temporarybackground from "../assets/largephotos/gt-r-xl.webp";
+import temporarybackground from "../assets/largephotos/kicks-xl.webp";
 
 const NavLinks = () => {
   return (
@@ -73,12 +73,16 @@ const CarDetails = () => {
           </motion.div>
         )}
       </>
-      <div className="relative text-white">
-        <div className="flex flex-col mt-20 -mx-14">
-          <span className="px-44 -mx-12 text-sm ">2024 NISSAN</span>
-          <span className="px-40 -mx-2 text-sm">GT-R</span>
-          <span className="px-44 -my-6 mx-3 text-xs">®</span>
-        </div>
+      <div className="relative flex flex-col mt-20 text-white whitespace-nowrap">
+        <span className="px-44 md:px-48 -mx-12 md:mx-80 text-sm md:text-base lg:text-lg">
+          2024 NISSAN
+        </span>
+        <span className="px-40 md:px-44 -mx-2 md:mx-80 text-sm md:text-base lg:text-6xl">
+          GT-R
+        </span>
+        <span className="px-44 md:px-80 -my-6 md:-my-16 mx-3 md:mx-80 text-xs md:text-sm lg:text-base">
+          ®
+        </span>
       </div>
     </main>
   );
