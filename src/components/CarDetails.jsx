@@ -34,7 +34,7 @@ const CarDetails = () => {
     setIsOpen(!isOpen); //Toggles navigation bar icons.
   };
   return (
-    <main className="h-screen relative bg-gradient-to-r from-stone-200 to-slate-800 z-0">
+    <main className="relative h-screen bg-gradient-to-r from-stone-200 to-slate-800 z-0">
       <motion.img
         src={temporarybackground}
         className="absolute w-full"
@@ -73,8 +73,12 @@ const CarDetails = () => {
           </motion.div>
         )}
       </>
-      <div className="flex justify-end mx-16 ">
-        <span className=" text-white z-10 mt-80">2024 NISSAN GT-R</span>
+      <div className="relative text-white">
+        <div className="flex flex-col mt-20 -mx-14">
+          <span className="px-44 -mx-12 text-sm ">2024 NISSAN</span>
+          <span className="px-40 -mx-2 text-sm">GT-R</span>
+          <span className="px-44 -my-6 mx-3 text-xs">®</span>
+        </div>
       </div>
     </main>
   );
