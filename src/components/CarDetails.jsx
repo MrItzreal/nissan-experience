@@ -68,21 +68,27 @@ const CarDetails = () => {
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              className="relative h-full flex flex-col items-center gap-4 -my-6 py-24 text-white md:hidden bg-gradient-to-r from-slate-600 to-slate-950 "
+              className="relative h-full flex flex-col items-center gap-4 -my-6 py-24 text-white md:hidden bg-gradient-to-r from-slate-600 to-slate-950"
             >
               <NavLinks />
             </motion.div>
           )}
         </>
-        <div className="absolute my-24 ml-8 flex flex-col items-center mr-6 whitespace-nowrap">
+
+        {/* Car Model Display */}
+        <div
+          className={`absolute flex flex-col items-center my-20 ml-8 whitespace-nowrap ${
+            isOpen ? "hidden" : ""
+          }`}
+        >
           <span className="text-white text-sm md:text-base lg:text-lg">
             2024 NISSAN
           </span>
-          <span className="text-white text-sm md:text-base lg:text-6xl">
-            GT-R
-          </span>
-          <span className="ml-20 -my-6 md:-my-16 text-white text-xs md:text-sm lg:text-base">
-            ®
+          <span className="relative text-white text-sm md:text-base lg:text-6xl ">
+            LEAF
+            <p className="absolute top-0 right-0 -mx-4 text-white text-xs md:text-sm lg:text-base">
+              ®
+            </p>
           </span>
         </div>
       </div>
