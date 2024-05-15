@@ -5,9 +5,9 @@ import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
 import logo from "../../assets/logos/logo.svg";
 import { motion } from "framer-motion";
-import temporarybackground from "../../assets/xlargephotos/gt-r-xl.webp";
-import mediumBackground from "../../assets/mediumphotos/gt-r-md.webp";
-import smallBackground from "../../assets/smallphotos/gt-r-sm.webp";
+import largebackground from "../../assets/xlargephotos/pathfinder-xl.webp";
+import mediumBackground from "../../assets/mediumphotos/pathfinder-md.webp";
+import smallBackground from "../../assets/smallphotos/pathfinder-sm.webp";
 import Overview from "./Overview";
 
 const NavLinks = () => {
@@ -38,26 +38,34 @@ const CarDetails = () => {
   return (
     <>
       <main className="relative h-svh bg-gradient-to-r from-stone-200 to-slate-800 ">
-        <div>
-          <motion.img
-            src={temporarybackground}
-            className="absolute top-0 left-0 w-full h-full object-cover z-0"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-          />
-          <img
-            src={mediumBackground}
-            alt="Background Image (Medium)"
-            className="absolute top-0 left-0 w-full h-full object-cover z-1"
-          />
-          <img
-            src={smallBackground}
-            alt="Background Image (Small)"
-            className="absolute top-0 left-0 w-full h-full object-cover z-2"
-          />
+        <div className="absolute top-0 left-0 w-full h-full">
+          {/* Large Background (Large Screens) */}
+          <div>
+            <motion.img
+              src={largebackground}
+              className="absolute top-0 left-0 w-full h-full object-cover z-0"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+            />
+          </div>
 
+          {/* Medium Background (Medium Screens) */}
+          <div className="lg:hidden">
+            <img
+              src={mediumBackground}
+              alt="Background Image (Medium)"
+              className="absolute top-0 left-0 w-full h-full object-cover z-1"
+            />
+          </div>
 
-
+          {/* Small Background (Small Screens) */}
+          <div className="md:hidden lg:hidden xl:hidden">
+            <img
+              src={smallBackground}
+              alt="Background Image (Small)"
+              className="absolute top-0 left-0 w-full h-full object-cover z-2"
+            />
+          </div>
 
           {/* NISSAN LOGO DO NOT TOUCH THIS */}
           <Link to="/">
