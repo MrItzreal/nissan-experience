@@ -5,9 +5,9 @@ import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
 import logo from "../../assets/logos/logo.svg";
 import { motion } from "framer-motion";
-import largebackground from "../../assets/xlargephotos/gt-r-xl.webp";
-import mediumBackground from "../../assets/mediumphotos/gt-r-md.webp";
-import smallBackground from "../../assets/smallphotos/gt-r-sm.webp";
+import largebackground from "../../assets/xlargephotos/rogue-xl.webp";
+import mediumBackground from "../../assets/mediumphotos/rogue-md.webp";
+import smallBackground from "../../assets/smallphotos/rogue-sm.webp";
 import Overview from "./Overview";
 
 const NavLinks = () => {
@@ -16,7 +16,7 @@ const NavLinks = () => {
       <NavLink to="">Overview</NavLink>
       <NavLink to="">Features</NavLink>
       <NavLink to="">Specs</NavLink>
-      <NavLink to="">Offers</NavLink>
+
       <NavLink
         to="/"
         className="flex items-center justify-center text-[13.5px] border border-gray-100 rounded-full h-10 w-40 -my-2 hover:bg-red-700 hover:border-none duration-700"
