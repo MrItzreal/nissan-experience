@@ -1,17 +1,17 @@
 const Overview = () => {
   return (
     <main className="bg-neutral-900">
-      <div className="container mx-auto px-8 py-4">
-        <h1 className="text-center text-white text-xl md:text-3xl font-bold whitespace-nowrap">
+      <section className="container mx-auto px-8 py-6 border-2 rounded-lg sm:border-none sm:rounded-none">
+        <h1 className="text-center text-white text-xl md:text-3xl  whitespace-nowrap">
           Built to Move You: GT-R
         </h1>
-        <div className="grid grid-cols-1 gap-4 mt-4">
+        <div className="grid grid-cols-1 gap-4 mt-4 ">
           <p className="text-center text-white text-lg md:text-2xl">
-            Starting at: $121,090
+            Starting At: $121,090
           </p>
 
           <div className="md:px-32">
-            <p className="text-center text-white text-lg tracking-wide text-wrap">
+            <p className="text-left md:text-center text-white text-lg tracking-wide text-wrap">
               An unmatched blend of power and soul: the Nissan GT-R. Experience
               the singular supercar that sculpts the wind, with enhanced
               aerodynamics to improve ride and handling for 2024. The 2024 GT-R
@@ -21,8 +21,8 @@ const Overview = () => {
             </p>
           </div>
         </div>
-        <hr className="border-gray-200 my-4" />
-      </div>
+        <hr className="border-gray-200 my-4 " />
+      </section>
     </main>
   );
 };
