@@ -5,9 +5,9 @@ import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
 import logo from "../../assets/logos/logo.svg";
 import { motion } from "framer-motion";
-import largebackground from "../../assets/xlargephotos/pathfinder-xl.webp";
-import mediumBackground from "../../assets/mediumphotos/pathfinder-md.webp";
-import smallBackground from "../../assets/smallphotos/pathfinder-sm.webp";
+import largebackground from "../../assets/xlargephotos/gt-r-xl.webp";
+import mediumBackground from "../../assets/mediumphotos/gt-r-md.webp";
+import smallBackground from "../../assets/smallphotos/gt-r-sm.webp";
 import Overview from "./Overview";
 
 const NavLinks = () => {
