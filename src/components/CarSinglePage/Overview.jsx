@@ -1,28 +1,28 @@
 const Overview = () => {
   return (
     <main className="bg-neutral-900">
-      <section className="container mx-auto px-8 py-6 border-2 rounded-lg sm:border-none sm:rounded-none">
-        <h1 className="text-center text-white text-xl md:text-3xl  whitespace-nowrap">
-          Built to Move You: GT-R
-        </h1>
-        <div className="grid grid-cols-1 gap-4 mt-4 ">
-          <p className="text-center text-white text-lg md:text-2xl">
-            Starting At: $121,090
-          </p>
+      <div className="container mx-auto px-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center text-white md:whitespace-normal whitespace-nowrap	">
+          <div className="m-4 p-2 md:m-8 md:p-6 text-2xl md:text-7xl ">
+            <p>Where To Explore Next?</p>
+          </div>
 
-          <div className="md:px-32">
-            <p className="text-left md:text-center text-white text-lg tracking-wide text-wrap">
-              An unmatched blend of power and soul: the Nissan GT-R. Experience
-              the singular supercar that sculpts the wind, with enhanced
-              aerodynamics to improve ride and handling for 2024. The 2024 GT-R
-              features a redesigned front bumper, front lip, and canards. At the
-              rear, bumper sides and a revised rear spoiler help the GT-R add
-              downforce without increasing drag.
+          <div className="flex flex-col justify-center text-center md:text-left gap-4 md:gap-6">
+            <p className="text-xl -mt-8 md:mt-4">Starting At</p>
+            <p className="text-5xl">
+              <span>$28,850</span>
+            </p>
+            <p className="text-base md:text-lg text-pretty tracking-wide ">
+              The 2024 Rogue is a mid-size crossover with a big appetite for
+              adventure. There’s a bold new look, updated tech, plus loads of
+              room for cargo and friends. And with great mileage and available
+              Intelligent AWD, Rogue is the answer: from your daily commute to
+              your next road trip.
             </p>
           </div>
         </div>
-        <hr className="border-gray-200 my-4 " />
-      </section>
+        <hr className=" border-gray-200 mx-auto mt-8" />
+      </div>
     </main>
   );
 };
