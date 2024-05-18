@@ -5,9 +5,9 @@ import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
 import logo from "../../assets/logos/logo.svg";
 import { motion } from "framer-motion";
-import largebackground from "../../assets/xlargephotos/rogue-xl.webp";
-import mediumBackground from "../../assets/mediumphotos/rogue-md.webp";
-import smallBackground from "../../assets/smallphotos/rogue-sm.webp";
+import largebackground from "../../assets/xlargephotos/ariya-xl.webp";
+import mediumBackground from "../../assets/mediumphotos/ariya-md.webp";
+import smallBackground from "../../assets/smallphotos/ariya-sm.webp";
 import Overview from "./Overview";
 
 const NavLinks = () => {
@@ -103,20 +103,20 @@ const CarDetails = () => {
           </>
 
           {/* Car Model Display */}
-          <div
-            className={`absolute flex flex-col items-center my-20 ml-8 whitespace-nowrap ${
-              isOpen ? "hidden" : ""
-            }`}
-          >
-            <span className="text-white text-sm md:text-base lg:text-lg">
-              2024 NISSAN
-            </span>
-            <span className="relative text-white text-sm md:text-base lg:text-6xl ">
-              LEAF
-              <p className="absolute top-0 right-0 -mx-4 text-white text-xs md:text-sm lg:text-base">
-                ®
-              </p>
-            </span>
+          <div className="relative p-6 top-96 py-40 md:p-80 md:top-20 md:py-10 lg:p-80 lg:top-20 lg:py-10  italic ">
+            <div
+              className={`absolute flex flex-col items-center whitespace-nowrap ${
+                isOpen ? "hidden" : ""
+              }`}
+            >
+              <span className="text-white text-lg">2024 NISSAN</span>
+              <span className="relative text-white text-5xl">
+                PATHFINDER
+                <p className="absolute top-0 right-0 -mx-4 text-white text-xs md:text-sm lg:text-base">
+                  ®
+                </p>
+              </span>
+            </div>
           </div>
         </div>
       </main>

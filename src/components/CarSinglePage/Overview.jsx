@@ -27,7 +27,7 @@ const Overview = () => {
       {/* PERFORMANCE SECTION */}
 
       <div className="text-white text-center md:whitespace-normal whitespace-nowrap">
-        <div className="m-4 p-2 text-2xl mb-4  ">
+        <div className="m-4 p-2 text-2xl mb-4">
           <span>PERFORMANCE</span>
         </div>
 
