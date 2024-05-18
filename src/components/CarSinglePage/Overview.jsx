@@ -26,12 +26,12 @@ const Overview = () => {
 
       {/* PERFORMANCE SECTION */}
 
-      <div className="mx-auto text-white text-center md:whitespace-normal whitespace-nowrap">
-        <div className="m-4 p-2 text-2xl mb-4  md:ml-48">
+      <div className="text-white text-center md:whitespace-normal whitespace-nowrap">
+        <div className="m-4 p-2 text-2xl mb-4  ">
           <span>PERFORMANCE</span>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-6">
+        <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-6 md:mr-44">
           <div className="flex flex-col">
             <span className="text-5xl md:text-8xl">201</span>
             <p className="text-xl">Horsepower with a VC-Turbo® Engine</p>
