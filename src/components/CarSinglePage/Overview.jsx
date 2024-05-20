@@ -1,6 +1,6 @@
 import profilePhoto from "../../assets/profilephotos/rogue-profile.avif";
-// import smallPhoto from "../../assets/smallphotos/rogue-sm.webp";
-import mediumPhoto from "../../assets/mediumphotos/rogue-md.webp";
+import smallPhoto from "../../assets/smallphotos/rogue-sm.webp";
+// import mediumPhoto from "../../assets/mediumphotos/rogue-md.webp";
 
 const Overview = () => {
   return (
@@ -53,26 +53,17 @@ const Overview = () => {
 
       {/* SPECIFICATIONS & FEATURES */}
 
-      <div className="container mx-auto px-8 py-14 text-white ">
+      <div className="container mx-auto py-14 text-white ">
         <div className="flex justify-center">
-          <div className="relative flex flex-col md:flex-row">
-            <div className=" ">
-              <img
-                src={mediumPhoto}
-                className="h-[700px] w-[900px] border rounded-l-lg object-cover z-0"
-              />
-            </div>
+          <div className="flex flex-col lg:flex-row border-2 rounded-xl">
+            <>
+              <img src={smallPhoto} className="border object-cover " />
+              <img src={profilePhoto} className="border-2 object-cover " />
+            </>
 
-            <div className=" md:hidden lg:hidden xl:hidden">
-              <img
-                src={profilePhoto}
-                className="border rounded-b-xl  object-cover z-1"
-              />
-            </div>
-
-            <div className="flex flex-col justify-center border h-full rounded-r-xl ">
-              <div className="">
-                <ul className="whitespace-nowrap list-disc p-8 ">
+            <div className="container mx-auto">
+              <div className="flex flex-col justify-center text-center items-center border-2  h-full gap-36 ">
+                <ul className="whitespace-nowrap  ">
                   <h2 className="text-center"> FEATURES </h2>
                   <li>
                     <span>5 Drive Modes.</span>
@@ -90,10 +81,8 @@ const Overview = () => {
                     <span>Automatic Braking with Pedestrian Detection.</span>
                   </li>
                 </ul>
-              </div>
 
-              <div>
-                <ul className="whitespace-nowrap list-disc p-8">
+                <ul className="whitespace-nowrap ">
                   <h2 className="text-center">SPECIFICATIONS</h2>
                   <li>
                     <span>19" Unique aluminum-alloy wheels.</span>
