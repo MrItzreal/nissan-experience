@@ -1,3 +1,7 @@
+import profilePhoto from "../../assets/profilephotos/rogue-profile.avif";
+// import smallPhoto from "../../assets/smallphotos/rogue-sm.webp";
+import mediumPhoto from "../../assets/mediumphotos/rogue-md.webp";
+
 const Overview = () => {
   return (
     <main className="bg-neutral-900">
@@ -46,14 +50,70 @@ const Overview = () => {
           </div>
         </div>
       </div>
+
+      {/* SPECIFICATIONS & FEATURES */}
+
+      <div className="container mx-auto px-8 py-14 text-white text-xs md:text-base ">
+        <div className="flex justify-center">
+          <div className="flex justify-center items-center">
+            <img
+              src={mediumPhoto}
+              className="h-[700px] w-[900px] border rounded-l-lg 
+              "
+            />
+
+            <div className="flex flex-col justify-center border h-full rounded-r-xl ">
+              <div className="">
+                <ul className="whitespace-nowrap list-disc p-8 ">
+                  <h2 className="text-center"> FEATURES </h2>
+                  <li>
+                    <span>5 Drive Modes.</span>
+                  </li>
+                  <li>
+                    <span>All Wheel Drive (AWD) Capability. </span>
+                  </li>
+                  <li>
+                    <span>Seats Up To Five.</span>
+                  </li>
+                  <li>
+                    <span>Practical Cargo Space.</span>
+                  </li>
+                  <li>
+                    <span>Automatic Braking with Pedestrian Detection.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <ul className="whitespace-nowrap list-disc p-8">
+                  <h2 className="text-center">SPECIFICATIONS</h2>
+                  <li>
+                    <span>19" Unique aluminum-alloy wheels.</span>
+                  </li>
+                  <li>
+                    <span>Dual Panel Panoramic Moonroof.</span>
+                  </li>
+                  <li>
+                    <span>Quilted semi-aniline leather-appointed seats.</span>
+                  </li>
+                  <li>
+                    <span>Wireless Apple CarPlay® integration.</span>
+                  </li>
+                  <li>
+                    <span>ProPILOT Assist 1.1.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   );
 };
 
 export default Overview;
-{
-  /* <hr className="border-gray-200 w-2/3 mx-auto mt-4" /> */
-}
+
 // Possible taglines
 // [model]: Drive Your Story
 // [model]: Engineered for Every Adventure

@@ -5,9 +5,9 @@ import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
 import logo from "../../assets/logos/logo.svg";
 import { motion } from "framer-motion";
-import largebackground from "../../assets/xlargephotos/ariya-xl.webp";
-import mediumBackground from "../../assets/mediumphotos/ariya-md.webp";
-import smallBackground from "../../assets/smallphotos/ariya-sm.webp";
+import largebackground from "../../assets/xlargephotos/rogue-xl.webp";
+import mediumBackground from "../../assets/mediumphotos/rogue-md.webp";
+import smallBackground from "../../assets/smallphotos/rogue-sm.webp";
 import Overview from "./Overview";
 
 const NavLinks = () => {
