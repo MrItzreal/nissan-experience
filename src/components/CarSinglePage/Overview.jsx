@@ -53,14 +53,22 @@ const Overview = () => {
 
       {/* SPECIFICATIONS & FEATURES */}
 
-      <div className="container mx-auto px-8 py-14 text-white text-xs md:text-base ">
+      <div className="container mx-auto px-8 py-14 text-white ">
         <div className="flex justify-center">
-          <div className="flex justify-center items-center">
-            <img
-              src={mediumPhoto}
-              className="h-[700px] w-[900px] border rounded-l-lg 
-              "
-            />
+          <div className="relative flex flex-col md:flex-row">
+            <div className=" ">
+              <img
+                src={mediumPhoto}
+                className="h-[700px] w-[900px] border rounded-l-lg object-cover z-0"
+              />
+            </div>
+
+            <div className=" md:hidden lg:hidden xl:hidden">
+              <img
+                src={profilePhoto}
+                className="border rounded-b-xl  object-cover z-1"
+              />
+            </div>
 
             <div className="flex flex-col justify-center border h-full rounded-r-xl ">
               <div className="">
