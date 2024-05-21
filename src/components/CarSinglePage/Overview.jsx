@@ -54,11 +54,17 @@ const Overview = () => {
 
       {/* CAR IMAGES */}
       <div className="container mx-auto py-14 text-white ">
-        <div className="flex flex-col lg:flex-row">
+        <div className="flex flex-col lg:flex-row shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
           <>
-            <img src={smallPhoto} className="h-[650px] w-[450px] object-cover " />
+            <img
+              src={smallPhoto}
+              className="h-[650px] w-[450px] object-cover "
+            />
 
-            <img src={profilePhoto} className="h-[650px] w-[450px] object-cover " />
+            <img
+              src={profilePhoto}
+              className="h-[650px] w-[450px] object-cover "
+            />
             <img src={photo} className=" w-[650px] object-cover " />
           </>
         </div>
@@ -67,14 +73,14 @@ const Overview = () => {
           BUILT TO MOVE YOU!
         </h2>
 
-        <div className="flex justify-center  shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
+        <div className="flex justify-center shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
           <img src={bannerphoto} />
         </div>
 
+        {/* SPECIFICATIONS & FEATURES */}
         <div className="container mx-auto my-6">
-          {/* SPECIFICATIONS & FEATURES */}
-          <div className="text-center items-center border-2  h-full gap-36 ">
-            <ul className="whitespace-nowrap  ">
+          <div className="text-center items-center border-2  h-full gap-36 whitespace-nowrap ">
+            <ul>
               <h2 className="text-center"> FEATURES </h2>
               <li>
                 <span>5 Drive Modes.</span>
