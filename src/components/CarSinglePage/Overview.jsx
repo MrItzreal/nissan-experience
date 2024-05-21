@@ -1,5 +1,6 @@
 import profilePhoto from "../../assets/profilephotos/rogue-profile.avif";
 import smallPhoto from "../../assets/smallphotos/rogue-sm.webp";
+import photo from "../../assets/images/rogue.avif";
 // import mediumPhoto from "../../assets/mediumphotos/rogue-md.webp";
 
 const Overview = () => {
@@ -55,14 +56,22 @@ const Overview = () => {
 
       <div className="container mx-auto py-14 text-white ">
         <div className="flex justify-center">
-          <div className="flex flex-col lg:flex-row border-2 rounded-xl">
+          <div className="flex flex-col lg:flex-row ">
             <>
-              <img src={smallPhoto} className="border object-cover " />
-              <img src={profilePhoto} className="border-2 object-cover " />
+              <img
+                src={smallPhoto}
+                className="w-[450px]  object-cover "
+              />
+
+              <img src={profilePhoto} className="w-[450px] object-cover " />
+              <img
+                src={photo}
+                className="w-[650px]   object-cover "
+              />
             </>
 
-            <div className="container mx-auto">
-              <div className="flex flex-col justify-center text-center items-center border-2  h-full gap-36 ">
+            {/* <div className="container mx-auto">
+              <div className="flex justify-center text-center items-center border-2  h-full gap-36 ">
                 <ul className="whitespace-nowrap  ">
                   <h2 className="text-center"> FEATURES </h2>
                   <li>
@@ -101,7 +110,7 @@ const Overview = () => {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
