@@ -56,10 +56,10 @@ const Overview = () => {
       <div className="container mx-auto py-14 text-white ">
         <div className="flex flex-col lg:flex-row">
           <>
-            <img src={smallPhoto} className="w-[450px] object-cover " />
+            <img src={smallPhoto} className="h-[650px] w-[450px] object-cover " />
 
-            <img src={profilePhoto} className="w-[450px] object-cover " />
-            <img src={photo} className="w-[650px]   object-cover " />
+            <img src={profilePhoto} className="h-[650px] w-[450px] object-cover " />
+            <img src={photo} className=" w-[650px] object-cover " />
           </>
         </div>
 
@@ -67,7 +67,7 @@ const Overview = () => {
           BUILT TO MOVE YOU!
         </h2>
 
-        <div className="flex justify-center ">
+        <div className="flex justify-center  shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
           <img src={bannerphoto} />
         </div>
 
