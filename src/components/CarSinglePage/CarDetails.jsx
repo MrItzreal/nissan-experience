@@ -111,7 +111,7 @@ const CarDetails = () => {
             >
               <span className="text-white text-lg">2024 NISSAN</span>
               <span className="relative text-white text-5xl">
-                PATHFINDER
+                ROGUE
                 <p className="absolute top-0 right-0 -mx-4 text-white text-xs md:text-sm lg:text-base">
                   ®
                 </p>

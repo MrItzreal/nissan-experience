@@ -69,19 +69,21 @@ const Overview = () => {
           </>
         </div>
 
-        <h2 className="text-white text-center py-6 text-3xl italic font-medium	">
+        {/* HERO TEXT */}
+        <h2 className="text-white text-center py-6 text-2xl sm:text-3xl italic font-medium	">
           BUILT TO MOVE YOU!
         </h2>
 
+        {/* BANNER PHOTO */}
         <div className="flex justify-center shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
           <img src={bannerphoto} />
         </div>
 
         {/* SPECIFICATIONS & FEATURES */}
-        <div className="container mx-auto my-6">
-          <div className="text-center items-center border-2  h-full gap-36 whitespace-nowrap ">
-            <ul>
-              <h2 className="text-center"> FEATURES </h2>
+        <div className="flex justify-center my-8">
+          <div className="grid grid-cols-1 md:grid-cols-2  items-center text-white  whitespace-nowrap gap-12 p-4 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-stone-500 via-neutral-900 to-stone-900 w-full rounded-xl">
+            <h2 className="text-center text-3xl sm:text-5xl">FEATURES:</h2>
+            <ul className="text-base sm:text-xl list-disc whitespace-nowrap p-2">
               <li>
                 <span>5 Drive Modes.</span>
               </li>
@@ -99,10 +101,13 @@ const Overview = () => {
               </li>
             </ul>
 
-            <ul className="whitespace-nowrap ">
-              <h2 className="text-center">SPECIFICATIONS</h2>
+            <h2 className="text-center text-3xl sm:text-5xl md:text-4xl">
+              SPECIFICATIONS:
+            </h2>
+
+            <ul className="text-base sm:text-xl list-disc whitespace-nowrap p-2 ">
               <li>
-                <span>19" Unique aluminum-alloy wheels.</span>
+                <span>19&quot; Unique aluminum-alloy wheels.</span>
               </li>
               <li>
                 <span>Dual Panel Panoramic Moonroof.</span>
