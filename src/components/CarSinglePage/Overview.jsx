@@ -1,7 +1,7 @@
+import photo from "../../assets/images/rogue.avif";
 import profilePhoto from "../../assets/profilephotos/rogue-profile.avif";
 import smallPhoto from "../../assets/smallphotos/rogue-sm.webp";
-import photo from "../../assets/images/rogue.avif";
-// import mediumPhoto from "../../assets/mediumphotos/rogue-md.webp";
+import bannerphoto from "../../assets/bannerphotos/rogue-banner.webp";
 
 const Overview = () => {
   return (
@@ -36,7 +36,7 @@ const Overview = () => {
           <span>PERFORMANCE</span>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-6 md:mr-44">
+        <div className="flex flex-col lg:flex-row justify-center gap-4 md:gap-6 md:mr-44">
           <div className="flex flex-col">
             <span className="text-5xl md:text-8xl">201</span>
             <p className="text-xl">Horsepower with a VC-Turbo® Engine</p>
@@ -52,65 +52,65 @@ const Overview = () => {
         </div>
       </div>
 
-      {/* SPECIFICATIONS & FEATURES */}
-
+      {/* CAR IMAGES */}
       <div className="container mx-auto py-14 text-white ">
-        <div className="flex justify-center">
-          <div className="flex flex-col lg:flex-row ">
-            <>
-              <img
-                src={smallPhoto}
-                className="w-[450px]  object-cover "
-              />
+        <div className="flex flex-col lg:flex-row">
+          <>
+            <img src={smallPhoto} className="w-[450px] object-cover " />
 
-              <img src={profilePhoto} className="w-[450px] object-cover " />
-              <img
-                src={photo}
-                className="w-[650px]   object-cover "
-              />
-            </>
+            <img src={profilePhoto} className="w-[450px] object-cover " />
+            <img src={photo} className="w-[650px]   object-cover " />
+          </>
+        </div>
 
-            {/* <div className="container mx-auto">
-              <div className="flex justify-center text-center items-center border-2  h-full gap-36 ">
-                <ul className="whitespace-nowrap  ">
-                  <h2 className="text-center"> FEATURES </h2>
-                  <li>
-                    <span>5 Drive Modes.</span>
-                  </li>
-                  <li>
-                    <span>All Wheel Drive (AWD) Capability. </span>
-                  </li>
-                  <li>
-                    <span>Seats Up To Five.</span>
-                  </li>
-                  <li>
-                    <span>Practical Cargo Space.</span>
-                  </li>
-                  <li>
-                    <span>Automatic Braking with Pedestrian Detection.</span>
-                  </li>
-                </ul>
+        <h2 className="text-white text-center py-6 text-3xl italic font-medium	">
+          BUILT TO MOVE YOU!
+        </h2>
 
-                <ul className="whitespace-nowrap ">
-                  <h2 className="text-center">SPECIFICATIONS</h2>
-                  <li>
-                    <span>19" Unique aluminum-alloy wheels.</span>
-                  </li>
-                  <li>
-                    <span>Dual Panel Panoramic Moonroof.</span>
-                  </li>
-                  <li>
-                    <span>Quilted semi-aniline leather-appointed seats.</span>
-                  </li>
-                  <li>
-                    <span>Wireless Apple CarPlay® integration.</span>
-                  </li>
-                  <li>
-                    <span>ProPILOT Assist 1.1.</span>
-                  </li>
-                </ul>
-              </div>
-            </div> */}
+        <div className="flex justify-center ">
+          <img src={bannerphoto} />
+        </div>
+
+        <div className="container mx-auto my-6">
+          {/* SPECIFICATIONS & FEATURES */}
+          <div className="text-center items-center border-2  h-full gap-36 ">
+            <ul className="whitespace-nowrap  ">
+              <h2 className="text-center"> FEATURES </h2>
+              <li>
+                <span>5 Drive Modes.</span>
+              </li>
+              <li>
+                <span>All Wheel Drive (AWD) Capability. </span>
+              </li>
+              <li>
+                <span>Seats Up To Five.</span>
+              </li>
+              <li>
+                <span>Practical Cargo Space.</span>
+              </li>
+              <li>
+                <span>Automatic Braking with Pedestrian Detection.</span>
+              </li>
+            </ul>
+
+            <ul className="whitespace-nowrap ">
+              <h2 className="text-center">SPECIFICATIONS</h2>
+              <li>
+                <span>19" Unique aluminum-alloy wheels.</span>
+              </li>
+              <li>
+                <span>Dual Panel Panoramic Moonroof.</span>
+              </li>
+              <li>
+                <span>Quilted semi-aniline leather-appointed seats.</span>
+              </li>
+              <li>
+                <span>Wireless Apple CarPlay® integration.</span>
+              </li>
+              <li>
+                <span>ProPILOT Assist 1.1.</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
