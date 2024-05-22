@@ -8,9 +8,30 @@
       "image": "src/assets/images/rogue.avif",
       "profilephoto": "src/assets/profilephotos/rogue-profile.avif",
       "alt": "Rogue",
-      "features": "",
-      "description": "",
-      "price": "30,000"
+      "price": "28,850",
+      "overview": "The 2024 Rogue is a mid-size crossover with a big appetite for adventure. There’s a bold new look, updated tech, plus loads of room for cargo and friends. And with great mileage and available Intelligent AWD, Rogue is the answer: from your daily commute to your next road trip.",
+      "performance": {
+        "value1": "201",
+        "detail1": "Horsepower with a VC-Turbo® Engine",
+        "value2": "29/36",
+        "detail2": "Up to — MPG City/Highway",
+        "value3": "225",
+        "detail3": "lb-ft of Torque"
+      },
+      "features": {
+        "feat1": "",
+        "feat2": "",
+        "feat3": "",
+        "feat4": "",
+        "feat5": ""
+      },
+      "specifications": {
+        "spec1": "",
+        "spec2": "",
+        "spec3": "",
+        "spec4": "",
+        "spec5": ""
+      }
     },
     {
       "id": "pathfinder",
@@ -20,21 +41,63 @@
       "image": "src/assets/images/pathfinder.avif",
       "profilephoto": "src/assets/profilephotos/pathfinder-profile.jpg",
       "alt": "Pathfinder",
-      "features": "",
-      "description": "",
-      "price": ""
+      "price": "",
+      "overview": "",
+      "performance": {
+        "value1": "",
+        "detail1": "",
+        "value2": "",
+        "detail2": "",
+        "value3": "",
+        "detail3": ""
+      },
+      "features": {
+        "feat1": "",
+        "feat2": "",
+        "feat3": "",
+        "feat4": "",
+        "feat5": ""
+      },
+      "specifications": {
+        "spec1": "",
+        "spec2": "",
+        "spec3": "",
+        "spec4": "",
+        "spec5": ""
+      }
     },
     {
       "id": "ariya",
       "category": "Crossover & SUVs",
       "model": "Ariya",
-      "alt": "Ariya",
       "thumbnail": "src/assets/thumbnails/ariya-thumb.avif",
       "image": "src/assets/images/ariya.avif",
       "profilephoto": "src/assets/profilephotos/ariya-profile.avif",
-      "features": "",
-      "description": "",
-      "price": ""
+      "alt": "Ariya",
+      "price": "",
+      "overview": "",
+      "performance": {
+        "value1": "",
+        "detail1": "",
+        "value2": "",
+        "detail2": "",
+        "value3": "",
+        "detail3": ""
+      },
+      "features": {
+        "feat1": "",
+        "feat2": "",
+        "feat3": "",
+        "feat4": "",
+        "feat5": ""
+      },
+      "specifications": {
+        "spec1": "",
+        "spec2": "",
+        "spec3": "",
+        "spec4": "",
+        "spec5": ""
+      }
     },
     {
       "id": "kicks",
@@ -44,9 +107,30 @@
       "image": "src/assets/images/kicks.avif",
       "profilephoto": "src/assets/profilephotos/kicks-profile.avif",
       "alt": "Kicks",
-      "features": "",
-      "description": "",
-      "price": ""
+      "price": "",
+      "overview": "",
+      "performance": {
+        "value1": "",
+        "detail1": "",
+        "value2": "",
+        "detail2": "",
+        "value3": "",
+        "detail3": ""
+      },
+      "features": {
+        "feat1": "",
+        "feat2": "",
+        "feat3": "",
+        "feat4": "",
+        "feat5": ""
+      },
+      "specifications": {
+        "spec1": "",
+        "spec2": "",
+        "spec3": "",
+        "spec4": "",
+        "spec5": ""
+      }
     },
     {
       "id": "murano",
@@ -56,9 +140,30 @@
       "image": "src/assets/images/murano.webp",
       "profilephoto": "src/assets/profilephotos/murano-profile.webp",
       "alt": "Murano",
-      "features": "",
-      "description": "",
-      "price": ""
+      "price": "",
+      "overview": "",
+      "performance": {
+        "value1": "",
+        "detail1": "",
+        "value2": "",
+        "detail2": "",
+        "value3": "",
+        "detail3": ""
+      },
+      "features": {
+        "feat1": "",
+        "feat2": "",
+        "feat3": "",
+        "feat4": "",
+        "feat5": ""
+      },
+      "specifications": {
+        "spec1": "",
+        "spec2": "",
+        "spec3": "",
+        "spec4": "",
+        "spec5": ""
+      }
     },
     {
       "id": "armada",
@@ -68,9 +173,30 @@
       "image": "src/assets/images/armada.avif",
       "profilephoto": "src/assets/profilephotos/armada-profile.avif",
       "alt": "Armada",
-      "features": "",
-      "description": "",
-      "price": ""
+      "price": "",
+      "overview": "",
+      "performance": {
+        "value1": "",
+        "detail1": "",
+        "value2": "",
+        "detail2": "",
+        "value3": "",
+        "detail3": ""
+      },
+      "features": {
+        "feat1": "",
+        "feat2": "",
+        "feat3": "",
+        "feat4": "",
+        "feat5": ""
+      },
+      "specifications": {
+        "spec1": "",
+        "spec2": "",
+        "spec3": "",
+        "spec4": "",
+        "spec5": ""
+      }
     },
     {
       "id": "altima",
@@ -80,9 +206,30 @@
       "image": "src/assets/images/altima.avif",
       "profilephoto": "src/assets/profilephotos/altima-profile.avif",
       "alt": "Altima",
-      "features": "",
-      "description": "",
-      "price": ""
+      "price": "",
+      "overview": "",
+      "performance": {
+        "value1": "",
+        "detail1": "",
+        "value2": "",
+        "detail2": "",
+        "value3": "",
+        "detail3": ""
+      },
+      "features": {
+        "feat1": "",
+        "feat2": "",
+        "feat3": "",
+        "feat4": "",
+        "feat5": ""
+      },
+      "specifications": {
+        "spec1": "",
+        "spec2": "",
+        "spec3": "",
+        "spec4": "",
+        "spec5": ""
+      }
     },
     {
       "id": "sentra",
@@ -92,9 +239,30 @@
       "image": "src/assets/images/sentra.avif",
       "profilephoto": "src/assets/profilephotos/sentra-profile.avif",
       "alt": "Sentra",
-      "features": "",
-      "description": "",
-      "price": ""
+      "price": "",
+      "overview": "",
+      "performance": {
+        "value1": "",
+        "detail1": "",
+        "value2": "",
+        "detail2": "",
+        "value3": "",
+        "detail3": ""
+      },
+      "features": {
+        "feat1": "",
+        "feat2": "",
+        "feat3": "",
+        "feat4": "",
+        "feat5": ""
+      },
+      "specifications": {
+        "spec1": "",
+        "spec2": "",
+        "spec3": "",
+        "spec4": "",
+        "spec5": ""
+      }
     },
     {
       "id": "versa",
@@ -104,9 +272,30 @@
       "image": "src/assets/images/versa.avif",
       "profilephoto": "src/assets/profilephotos/versa-profile.avif",
       "alt": "Versa",
-      "features": "",
-      "description": "",
-      "price": ""
+      "price": "",
+      "overview": "",
+      "performance": {
+        "value1": "",
+        "detail1": "",
+        "value2": "",
+        "detail2": "",
+        "value3": "",
+        "detail3": ""
+      },
+      "features": {
+        "feat1": "",
+        "feat2": "",
+        "feat3": "",
+        "feat4": "",
+        "feat5": ""
+      },
+      "specifications": {
+        "spec1": "",
+        "spec2": "",
+        "spec3": "",
+        "spec4": "",
+        "spec5": ""
+      }
     },
     {
       "id": "nissan-leaf",
@@ -116,9 +305,30 @@
       "image": "src/assets/images/leaf.avif",
       "profilephoto": "src/assets/profilephotos/leaf-profile.avif",
       "alt": "Nissan-Leaf",
-      "features": "",
-      "description": "",
-      "price": ""
+      "price": "",
+      "overview": "",
+      "performance": {
+        "value1": "",
+        "detail1": "",
+        "value2": "",
+        "detail2": "",
+        "value3": "",
+        "detail3": ""
+      },
+      "features": {
+        "feat1": "",
+        "feat2": "",
+        "feat3": "",
+        "feat4": "",
+        "feat5": ""
+      },
+      "specifications": {
+        "spec1": "",
+        "spec2": "",
+        "spec3": "",
+        "spec4": "",
+        "spec5": ""
+      }
     },
     {
       "id": "maxima",
@@ -128,9 +338,30 @@
       "image": "src/assets/images/maxima.jpg",
       "profilephoto": "src/assets/profilephotos/maxima-profile.avif",
       "alt": "Maxima",
-      "features": "",
-      "description": "",
-      "price": ""
+      "price": "",
+      "overview": "",
+      "performance": {
+        "value1": "",
+        "detail1": "",
+        "value2": "",
+        "detail2": "",
+        "value3": "",
+        "detail3": ""
+      },
+      "features": {
+        "feat1": "",
+        "feat2": "",
+        "feat3": "",
+        "feat4": "",
+        "feat5": ""
+      },
+      "specifications": {
+        "spec1": "",
+        "spec2": "",
+        "spec3": "",
+        "spec4": "",
+        "spec5": ""
+      }
     },
     {
       "id": "frontier",
@@ -140,9 +371,30 @@
       "image": "src/assets/images/frontier.avif",
       "profilephoto": "src/assets/profilephotos/frontier-profile.avif",
       "alt": "Frontier",
-      "features": "",
-      "description": "",
-      "price": ""
+      "price": "",
+      "overview": "",
+      "performance": {
+        "value1": "",
+        "detail1": "",
+        "value2": "",
+        "detail2": "",
+        "value3": "",
+        "detail3": ""
+      },
+      "features": {
+        "feat1": "",
+        "feat2": "",
+        "feat3": "",
+        "feat4": "",
+        "feat5": ""
+      },
+      "specifications": {
+        "spec1": "",
+        "spec2": "",
+        "spec3": "",
+        "spec4": "",
+        "spec5": ""
+      }
     },
     {
       "id": "titan",
@@ -152,9 +404,30 @@
       "image": "src/assets/images/titan.avif",
       "profilephoto": "src/assets/profilephotos/titan-profile.avif",
       "alt": "TITAN",
-      "features": "",
-      "description": "",
-      "price": ""
+      "price": "",
+      "overview": "",
+      "performance": {
+        "value1": "",
+        "detail1": "",
+        "value2": "",
+        "detail2": "",
+        "value3": "",
+        "detail3": ""
+      },
+      "features": {
+        "feat1": "",
+        "feat2": "",
+        "feat3": "",
+        "feat4": "",
+        "feat5": ""
+      },
+      "specifications": {
+        "spec1": "",
+        "spec2": "",
+        "spec3": "",
+        "spec4": "",
+        "spec5": ""
+      }
     },
     {
       "id": "nissan-z",
@@ -164,9 +437,30 @@
       "image": "src/assets/images/nissan-z.avif",
       "profilephoto": "src/assets/profilephotos/nissan-z-profile.avif",
       "alt": "Nissan Z",
-      "features": "",
-      "description": "",
-      "price": ""
+      "price": "",
+      "overview": "",
+      "performance": {
+        "value1": "",
+        "detail1": "",
+        "value2": "",
+        "detail2": "",
+        "value3": "",
+        "detail3": ""
+      },
+      "features": {
+        "feat1": "",
+        "feat2": "",
+        "feat3": "",
+        "feat4": "",
+        "feat5": ""
+      },
+      "specifications": {
+        "spec1": "",
+        "spec2": "",
+        "spec3": "",
+        "spec4": "",
+        "spec5": ""
+      }
     },
     {
       "id": "gt-r",
@@ -176,9 +470,30 @@
       "image": "src/assets/images/gt-r.avif",
       "profilephoto": "src/assets/profilephotos/gt-r-profile.avif",
       "alt": "GT-R",
-      "features": "",
-      "description": "",
-      "price": ""
+      "price": "",
+      "overview": "",
+      "performance": {
+        "value1": "",
+        "detail1": "",
+        "value2": "",
+        "detail2": "",
+        "value3": "",
+        "detail3": ""
+      },
+      "features": {
+        "feat1": "",
+        "feat2": "",
+        "feat3": "",
+        "feat4": "",
+        "feat5": ""
+      },
+      "specifications": {
+        "spec1": "",
+        "spec2": "",
+        "spec3": "",
+        "spec4": "",
+        "spec5": ""
+      }
     },
     {
       "id": "nissan-leaf",
@@ -188,9 +503,30 @@
       "image": "src/assets/images/leaf.avif",
       "profilephoto": "src/assets/profilephotos/leaf-profile.avif",
       "alt": "Nissan-Leaf",
-      "features": "",
-      "description": "",
-      "price": ""
+      "price": "",
+      "overview": "",
+      "performance": {
+        "value1": "",
+        "detail1": "",
+        "value2": "",
+        "detail2": "",
+        "value3": "",
+        "detail3": ""
+      },
+      "features": {
+        "feat1": "",
+        "feat2": "",
+        "feat3": "",
+        "feat4": "",
+        "feat5": ""
+      },
+      "specifications": {
+        "spec1": "",
+        "spec2": "",
+        "spec3": "",
+        "spec4": "",
+        "spec5": ""
+      }
     },
     {
       "id": "ariya",
@@ -200,9 +536,30 @@
       "image": "src/assets/images/ariya.avif",
       "profilephoto": "src/assets/profilephotos/ariya-profile.avif",
       "alt": "Ariya",
-      "features": "",
-      "description": "",
-      "price": ""
+      "price": "",
+      "overview": "",
+      "performance": {
+        "value1": "",
+        "detail1": "",
+        "value2": "",
+        "detail2": "",
+        "value3": "",
+        "detail3": ""
+      },
+      "features": {
+        "feat1": "",
+        "feat2": "",
+        "feat3": "",
+        "feat4": "",
+        "feat5": ""
+      },
+      "specifications": {
+        "spec1": "",
+        "spec2": "",
+        "spec3": "",
+        "spec4": "",
+        "spec5": ""
+      }
     }
   ]
 }
