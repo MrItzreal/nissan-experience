@@ -19,18 +19,18 @@
         "detail3": "lb-ft of Torque"
       },
       "features": {
-        "feat1": "",
-        "feat2": "",
-        "feat3": "",
-        "feat4": "",
-        "feat5": ""
+        "feat1": "5 Drive Modes",
+        "feat2": "All Wheel Drive (AWD) Capability",
+        "feat3": "Seats Up To Five",
+        "feat4": "Practical Cargo Space",
+        "feat5": "Automatic Braking with Pedestrian Detection"
       },
       "specifications": {
-        "spec1": "",
-        "spec2": "",
-        "spec3": "",
-        "spec4": "",
-        "spec5": ""
+        "spec1": "19&quot; Unique aluminum-alloy wheels",
+        "spec2": "Dual Panel Panoramic Moonroof",
+        "spec3": "Quilted semi-aniline leather-appointed seats",
+        "spec4": "Wireless Apple CarPlay® integration",
+        "spec5": "ProPILOT Assist 1.1"
       }
     },
     {
@@ -41,29 +41,29 @@
       "image": "src/assets/images/pathfinder.avif",
       "profilephoto": "src/assets/profilephotos/pathfinder-profile.jpg",
       "alt": "Pathfinder",
-      "price": "",
-      "overview": "",
+      "price": "36,650",
+      "overview": "When adventure calls, answer with the 2024 Nissan Pathfinder. Whether it’s the thrill of new experiences or new destinations — or both — this mid-size SUV comes ready to play with room for up to 8 passengers, an expansive cargo capacity, and advanced available 4x4 capability.",
       "performance": {
-        "value1": "",
-        "detail1": "",
-        "value2": "",
-        "detail2": "",
-        "value3": "",
-        "detail3": ""
+        "value1": "284",
+        "detail1": "Horsepower",
+        "value2": "6,000",
+        "detail2": "Up to — Lbs. Maximum Towing",
+        "value3": "21/27",
+        "detail3": "Up to — MPG City/Highway"
       },
       "features": {
-        "feat1": "",
-        "feat2": "",
-        "feat3": "",
-        "feat4": "",
-        "feat5": ""
+        "feat1": "6,000 Lbs",
+        "feat2": "7 Drive Modes",
+        "feat3": "Intelligent 4x4",
+        "feat4": "Hill Start Assist & Hill Descent Control",
+        "feat5": "Seating For Up To Eight Passengers"
       },
       "specifications": {
-        "spec1": "",
-        "spec2": "",
-        "spec3": "",
-        "spec4": "",
-        "spec5": ""
+        "spec1": "Climate-controlled front seats and heated steering wheel",
+        "spec2": "NissanConnect® 9 display with Navigation and Services featuring Apple CarPlay® integration and wireless charging",
+        "spec3": "13-speaker Bose Premium Audio System",
+        "spec4": "Intelligent Around View® Monitor",
+        "spec5": "Panoramic moonroof"
       }
     },
     {
@@ -74,29 +74,29 @@
       "image": "src/assets/images/ariya.avif",
       "profilephoto": "src/assets/profilephotos/ariya-profile.avif",
       "alt": "Ariya",
-      "price": "",
-      "overview": "",
+      "price": "39,590",
+      "overview": "The 2024 Nissan ARIYA is a thrilling, all-electric SUV. Fierce, yet refined. Elegant, yet exhilarating. It’s a totally new way to see electric driving. Experience the future of mobility, today!",
       "performance": {
-        "value1": "",
-        "detail1": "",
-        "value2": "",
-        "detail2": "",
-        "value3": "",
-        "detail3": ""
+        "value1": "304",
+        "detail1": "Miles of Range — up to 304 miles",
+        "value2": "4.8",
+        "detail2": "0-60 mph in 4.8 seconds",
+        "value3": "389",
+        "detail3": "Horsepower"
       },
       "features": {
-        "feat1": "",
-        "feat2": "",
-        "feat3": "",
-        "feat4": "",
-        "feat5": ""
+        "feat1": "Up to 1,500 lbs of towing capacity",
+        "feat2": "3 Drive Modes",
+        "feat3": "0-60 mph in 4.8s",
+        "feat4": "Up to 304 miles of range",
+        "feat5": "Fastest — 480-V Public DC Quick Charging"
       },
       "specifications": {
-        "spec1": "",
-        "spec2": "",
-        "spec3": "",
-        "spec4": "",
-        "spec5": ""
+        "spec1": "Intelligent Around View® Monitor",
+        "spec2": "Two USB-A ports, two USB-C ports and wireless charger",
+        "spec3": "ProPILOT Assist 2.0 and ProPILOT Park",
+        "spec4": "Panoramic Moonroof",
+        "spec5": "Heated leather-wrapped steering wheel and climate-controlled seats"
       }
     },
     {
@@ -107,29 +107,29 @@
       "image": "src/assets/images/kicks.avif",
       "profilephoto": "src/assets/profilephotos/kicks-profile.avif",
       "alt": "Kicks",
-      "price": "",
-      "overview": "",
+      "price": "21,340",
+      "overview": "Cut through city streets with satisfying precision. Feel your playlist like never before with an available premium sound system. Connect in an instant with compatible smartphone integration. Style meets technology in the 2024 Nissan Kicks.",
       "performance": {
-        "value1": "",
-        "detail1": "",
-        "value2": "",
-        "detail2": "",
-        "value3": "",
-        "detail3": ""
+        "value1": "122",
+        "detail1": "Horsepower",
+        "value2": "31/36",
+        "detail2": "MPG City/Highway — up to",
+        "value3": "114",
+        "detail3": "Lb-ft of Torque"
       },
       "features": {
-        "feat1": "",
-        "feat2": "",
-        "feat3": "",
-        "feat4": "",
-        "feat5": ""
+        "feat1": "Electric Power Steering",
+        "feat2": "Integrated Dynamics-control Module",
+        "feat3": "Hill Start Assist",
+        "feat4": "Automatic Brake Hold",
+        "feat5": "Front Wheel Drive"
       },
       "specifications": {
-        "spec1": "",
-        "spec2": "",
-        "spec3": "",
-        "spec4": "",
-        "spec5": ""
+        "spec1": "Intelligent Key with Remote Engine Start System",
+        "spec2": "Intelligent Around View® Monitor",
+        "spec3": "Safety Shield® 360",
+        "spec4": "LED headlights with LED signature",
+        "spec5": "Apple CarPlay® integration"
       }
     },
     {
@@ -140,29 +140,29 @@
       "image": "src/assets/images/murano.webp",
       "profilephoto": "src/assets/profilephotos/murano-profile.webp",
       "alt": "Murano",
-      "price": "",
-      "overview": "",
+      "price": "38,740",
+      "overview": "Designed to thrill and ready to make a statement. Add in tech such as available Intelligent All-Wheel Drive and the connectivity of Apple CarPlay® integration, and the 2024 Murano is the luxury SUV that makes every commute a memorable one.",
       "performance": {
-        "value1": "",
-        "detail1": "",
-        "value2": "",
-        "detail2": "",
-        "value3": "",
-        "detail3": ""
+        "value1": "260",
+        "detail1": "Horsepower",
+        "value2": "20/28",
+        "detail2": "MPG City/Highway — up to",
+        "value3": "240",
+        "detail3": "Lb-ft of Torque"
       },
       "features": {
-        "feat1": "",
-        "feat2": "",
-        "feat3": "",
-        "feat4": "",
-        "feat5": ""
+        "feat1": "Hill Start Assist",
+        "feat2": "Intelligent AWD",
+        "feat3": "1,500 lbs Maximum Towing Capacity",
+        "feat4": "3 Drive Mode",
+        "feat5": "Large, flat cargo area with 60/40-split rear seats"
       },
       "specifications": {
-        "spec1": "",
-        "spec2": "",
-        "spec3": "",
-        "spec4": "",
-        "spec5": ""
+        "spec1": "Climate-controlled front seats and heated steering wheel",
+        "spec2": "NissanConnect® with navigation featuring Apple CarPlay integration",
+        "spec3": "Intelligent Around View® Monitor",
+        "spec4": "Safety Shield® 360",
+        "spec5": "Panoramic moonroof"
       }
     },
     {
@@ -173,29 +173,29 @@
       "image": "src/assets/images/armada.avif",
       "profilephoto": "src/assets/profilephotos/armada-profile.avif",
       "alt": "Armada",
-      "price": "",
-      "overview": "",
+      "price": "56,520",
+      "overview": "Imagine a hard-core, rugged 4x4 SUV that can seat up to eight in first-class luxury and style. This is Armada, and it will change what you expect from a full-size SUV. Tow bigger, explore farther, and feel more confident in the 2024 Armada.",
       "performance": {
-        "value1": "",
-        "detail1": "",
-        "value2": "",
-        "detail2": "",
-        "value3": "",
-        "detail3": ""
+        "value1": "V8",
+        "detail1": "5.6-liter Engine",
+        "value2": "8,500",
+        "detail2": "Lbs. Max. Towing Capacity —  up to",
+        "value3": "400",
+        "detail3": "Horsepower"
       },
       "features": {
-        "feat1": "",
-        "feat2": "",
-        "feat3": "",
-        "feat4": "",
-        "feat5": ""
+        "feat1": "Intelligent 4x4",
+        "feat2": "Hill Start Assist",
+        "feat3": "Active Brake Limited Slip",
+        "feat4": "Seating For Up To 8",
+        "feat5": "Intelligent Rear View Mirror"
       },
       "specifications": {
-        "spec1": "",
-        "spec2": "",
-        "spec3": "",
-        "spec4": "",
-        "spec5": ""
+        "spec1": "Quilted leather-appointed seats",
+        "spec2": "13-speaker Bose Premium Audio System",
+        "spec3": "Safety Shield® 360",
+        "spec4": "Climate-controlled front seats (heated & cooled)",
+        "spec5": "Moonroof"
       }
     },
     {
@@ -206,29 +206,29 @@
       "image": "src/assets/images/altima.avif",
       "profilephoto": "src/assets/profilephotos/altima-profile.avif",
       "alt": "Altima",
-      "price": "",
-      "overview": "",
+      "price": "26,370",
+      "overview": "The 2024 Nissan Altima has arrived. Allow it to accelerate your life with thrilling performance, a style that elevates, and contemporary technology that helps meet your needs. Now, grab the wheel, and let this midsize sedan propel you toward life’s greatest adventures.",
       "performance": {
-        "value1": "",
-        "detail1": "",
-        "value2": "",
-        "detail2": "",
-        "value3": "",
-        "detail3": ""
+        "value1": "248",
+        "detail1": "Horsepower",
+        "value2": "27/39",
+        "detail2": "MPG City/Highway",
+        "value3": "273",
+        "detail3": "Lb-ft of Torque"
       },
       "features": {
-        "feat1": "",
-        "feat2": "",
-        "feat3": "",
-        "feat4": "",
-        "feat5": ""
+        "feat1": "Dynamic Driving",
+        "feat2": "Intelligent AWD",
+        "feat3": "Handling & stability while maintaining a smooth ride",
+        "feat4": "Remote Engine Start System",
+        "feat5": "Altima features ample trunk space"
       },
       "specifications": {
-        "spec1": "",
-        "spec2": "",
-        "spec3": "",
-        "spec4": "",
-        "spec5": ""
+        "spec1": "Safety Shield® 360",
+        "spec2": "Wireless Apple CarPlay® integration",
+        "spec3": "Sport leather-appointed seats",
+        "spec4": "Nine speaker Bose Premium Audio System",
+        "spec5": "Moonroof"
       }
     },
     {
@@ -239,29 +239,29 @@
       "image": "src/assets/images/sentra.avif",
       "profilephoto": "src/assets/profilephotos/sentra-profile.avif",
       "alt": "Sentra",
-      "price": "",
-      "overview": "",
+      "price": "21,180",
+      "overview": "With available advanced technology, bold styling, agile performance, and a premium feel inside and out, the 2024 Nissan Sentra brings more to every drive.",
       "performance": {
-        "value1": "",
-        "detail1": "",
-        "value2": "",
-        "detail2": "",
-        "value3": "",
-        "detail3": ""
+        "value1": "149",
+        "detail1": "Horsepower",
+        "value2": "30/40",
+        "detail2": "MPG City/Highway ",
+        "value3": "146",
+        "detail3": "Lb-ft of Torque"
       },
       "features": {
-        "feat1": "",
-        "feat2": "",
-        "feat3": "",
-        "feat4": "",
-        "feat5": ""
+        "feat1": "Responsive Handling",
+        "feat2": "Intelligent Engine Brake",
+        "feat3": "Active Ride Control",
+        "feat4": "Hill Start Assist",
+        "feat5": "Responsive Transmission"
       },
       "specifications": {
-        "spec1": "",
-        "spec2": "",
-        "spec3": "",
-        "spec4": "",
-        "spec5": ""
+        "spec1": "Apple CarPlay® Integration",
+        "spec2": "Safety Shield® 360",
+        "spec3": "Optional Eight-speaker Bose Premium Audio System",
+        "spec4": "Sport cloth seat trim",
+        "spec5": "Intelligent Key with Remote Engine Start System"
       }
     },
     {
@@ -272,29 +272,29 @@
       "image": "src/assets/images/versa.avif",
       "profilephoto": "src/assets/profilephotos/versa-profile.avif",
       "alt": "Versa",
-      "price": "",
-      "overview": "",
+      "price": "16,680",
+      "overview": "The impressive-handling Versa dares you to reach higher. This subcompact car offers 3 trims with a starting MSRP under $20,000, striking looks, wallet-friendly EPA-estimated mpg numbers, and an astounding selection of available driver assist features.",
       "performance": {
-        "value1": "",
-        "detail1": "",
-        "value2": "",
-        "detail2": "",
-        "value3": "",
-        "detail3": ""
+        "value1": "122",
+        "detail1": "Horsepower",
+        "value2": "32/40",
+        "detail2": "EPA-estimated MPG",
+        "value3": "114",
+        "detail3": "Lb-ft of Torque"
       },
       "features": {
-        "feat1": "",
-        "feat2": "",
-        "feat3": "",
-        "feat4": "",
-        "feat5": ""
+        "feat1": "5-speed Manual-Transmission",
+        "feat2": "Hill Start Assist",
+        "feat3": "Controlled and Responsive",
+        "feat4": "Room For Up To 5",
+        "feat5": "High Beam Assist"
       },
       "specifications": {
-        "spec1": "",
-        "spec2": "",
-        "spec3": "",
-        "spec4": "",
-        "spec5": ""
+        "spec1": "Automatic Temperature Control and heated front seats",
+        "spec2": "Remote Engine Start System with Intelligent Climate Control",
+        "spec3": "Automatic Emergency Braking with Pedestrian Detection",
+        "spec4": "RearView Monitor",
+        "spec5": "Apple CarPlay® integration"
       }
     },
     {
@@ -305,29 +305,29 @@
       "image": "src/assets/images/leaf.avif",
       "profilephoto": "src/assets/profilephotos/leaf-profile.avif",
       "alt": "Nissan-Leaf",
-      "price": "",
-      "overview": "",
+      "price": "28,140",
+      "overview": "Potential Federal Tax Credit of up to $3,750 on a qualifying new 2024 Nissan LEAF purchase. It's a legend for a reason. Discover the instant acceleration, impressive range, and nimble handling of the all-electric 2024 Nissan LEAF.",
       "performance": {
-        "value1": "",
-        "detail1": "",
-        "value2": "",
-        "detail2": "",
-        "value3": "",
-        "detail3": ""
+        "value1": "121",
+        "detail1": "Up to- MPGe City",
+        "value2": "212",
+        "detail2": "Up to- Miles ",
+        "value3": "40",
+        "detail3": "or available 60 kWh battery"
       },
       "features": {
-        "feat1": "",
-        "feat2": "",
-        "feat3": "",
-        "feat4": "",
-        "feat5": ""
+        "feat1": "Eco Mode",
+        "feat2": "Instant torque",
+        "feat3": "Fastest—480-V Public DC quick charging",
+        "feat4": "Seating For Up To 5",
+        "feat5": "Automatic Emergency Braking"
       },
       "specifications": {
-        "spec1": "",
-        "spec2": "",
-        "spec3": "",
-        "spec4": "",
-        "spec5": ""
+        "spec1": "High-output Quick Charge Port – 100 kW",
+        "spec2": "160 kW AC synchronous electric motor",
+        "spec3": "Nissan Door to Door Navigation with Premium Traffic",
+        "spec4": "NissanConnect EV® with Services",
+        "spec5": "ProPILOT Assist"
       }
     },
     {
@@ -338,29 +338,29 @@
       "image": "src/assets/images/maxima.jpg",
       "profilephoto": "src/assets/profilephotos/maxima-profile.avif",
       "alt": "Maxima",
-      "price": "",
-      "overview": "",
+      "price": "38,340",
+      "overview": "This isn’t just the 4-Door Sports Car, it’s a high-tech powerhouse. At the touch of a button, it can change from a luxury sedan to a canyon carver. Feel confident with available advanced driver assist technologies, and for seamless connectivity, just plug in your compatible smartphone. All so you can focus on the thrill that comes on that next straightaway.",
       "performance": {
-        "value1": "",
-        "detail1": "",
-        "value2": "",
-        "detail2": "",
-        "value3": "",
-        "detail3": ""
+        "value1": "20/30",
+        "detail1": "MPG City/Highway",
+        "value2": "300",
+        "detail2": "Horsepower",
+        "value3": "14.3 cu. ft.",
+        "detail3": "Cargo Space"
       },
       "features": {
-        "feat1": "",
-        "feat2": "",
-        "feat3": "",
-        "feat4": "",
-        "feat5": ""
+        "feat1": "Maxima Sport Mode",
+        "feat2": "Intelligent Engine Brake",
+        "feat3": "Active Ride Control",
+        "feat4": "Drive-focused Suspension and Chassis",
+        "feat5": "Continuously Variable Transmission"
       },
       "specifications": {
-        "spec1": "",
-        "spec2": "",
-        "spec3": "",
-        "spec4": "",
-        "spec5": ""
+        "spec1": "Rain-sensing variable intermittent windshield wipers",
+        "spec2": "Rear-window power sunshade",
+        "spec3": "Electronic Brake force Distribution (EBD)",
+        "spec4": "Vehicle Dynamic Control (VDC) with Traction Control System (TCS)",
+        "spec5": "Traffic Sign Recognition"
       }
     },
     {
@@ -371,29 +371,29 @@
       "image": "src/assets/images/frontier.avif",
       "profilephoto": "src/assets/profilephotos/frontier-profile.avif",
       "alt": "Frontier",
-      "price": "",
-      "overview": "",
+      "price": "30,510",
+      "overview": "Plan your route, pack your bags, and prep your gear, because your true domain awaits. It’s time to go out and find it. Redefine your idea of a midsize pickup truck, and see how rock-solid Nissan capability can redefine your idea of freedom. This is the 2024 Nissan Frontier.",
       "performance": {
-        "value1": "",
-        "detail1": "",
-        "value2": "",
-        "detail2": "",
-        "value3": "",
-        "detail3": ""
+        "value1": "310",
+        "detail1": "Horsepower",
+        "value2": "6,640",
+        "detail2": "Lbs. Maximum Towing Capacity",
+        "value3": "281",
+        "detail3": "Lb-ft of Torque"
       },
       "features": {
-        "feat1": "",
-        "feat2": "",
-        "feat3": "",
-        "feat4": "",
-        "feat5": ""
+        "feat1": "Boxed Ladder Frame",
+        "feat2": "Off-road Tech",
+        "feat3": "Hill Descent Control",
+        "feat4": "Hill Start Assist",
+        "feat5": "Maximum Payload Of Up To 1,620 lbs"
       },
       "specifications": {
-        "spec1": "",
-        "spec2": "",
-        "spec3": "",
-        "spec4": "",
-        "spec5": ""
+        "spec1": "Automatic Emergency Braking with Pedestrian Detection",
+        "spec2": "Optional Utili-track® Channel System and spray-on bedliner",
+        "spec3": "Remote keyless entry",
+        "spec4": "Premium cloth seat trim",
+        "spec5": "NissanConnect® 8 touch-screen display"
       }
     },
     {
@@ -404,29 +404,29 @@
       "image": "src/assets/images/titan.avif",
       "profilephoto": "src/assets/profilephotos/titan-profile.avif",
       "alt": "TITAN",
-      "price": "",
-      "overview": "",
+      "price": "46,690",
+      "overview": "TITAN and TITAN XD® boast so many ways to get the job done. Flex your muscles, command attention, and tackle jobs and projects in this fearless full-size pickup truck. TITAN’s mission? To help you accomplish yours.",
       "performance": {
-        "value1": "",
-        "detail1": "",
-        "value2": "",
-        "detail2": "",
-        "value3": "",
-        "detail3": ""
+        "value1": "400",
+        "detail1": "Horsepower ",
+        "value2": "11,050",
+        "detail2": "Lbs. Maximum Towing Capacity ",
+        "value3": "413",
+        "detail3": "Lb-ft of Torque"
       },
       "features": {
-        "feat1": "",
-        "feat2": "",
-        "feat3": "",
-        "feat4": "",
-        "feat5": ""
+        "feat1": "2,360 lbs Maximum Payload",
+        "feat2": "Active Brake Limited Slip",
+        "feat3": "Hill Start Assist",
+        "feat4": "Hill Descent Control",
+        "feat5": "Off-road Capability"
       },
       "specifications": {
-        "spec1": "",
-        "spec2": "",
-        "spec3": "",
-        "spec4": "",
-        "spec5": ""
+        "spec1": "Independent double-wishbone front suspension",
+        "spec2": "Automatic Emergency Braking with Pedestrian Detection",
+        "spec3": "Nissan Intelligent Key® with Push Button Ignition",
+        "spec4": "8-way power adjustable driver's seat",
+        "spec5": "Nissan Door to Door Navigation with Premium Traffic"
       }
     },
     {
@@ -437,29 +437,29 @@
       "image": "src/assets/images/nissan-z.avif",
       "profilephoto": "src/assets/profilephotos/nissan-z-profile.avif",
       "alt": "Nissan Z",
-      "price": "",
-      "overview": "",
+      "price": "42,970",
+      "overview": "A powerful, twin-turbo V6 up front, a manual transmission in the middle, and the ideal balance of rear-wheel drive in the back. All this is wrapped in a stunning body with a cockpit that’s focused on the drive.",
       "performance": {
-        "value1": "",
-        "detail1": "",
-        "value2": "",
-        "detail2": "",
-        "value3": "",
-        "detail3": ""
+        "value1": "400",
+        "detail1": "Horsepower",
+        "value2": "3.0",
+        "detail2": "Liter Twin-turbo",
+        "value3": "6",
+        "detail3": "Speed MT"
       },
       "features": {
-        "feat1": "",
-        "feat2": "",
-        "feat3": "",
-        "feat4": "",
-        "feat5": ""
+        "feat1": "6-speed Manual or 9-speed Automatic",
+        "feat2": "Enhance Acceleration",
+        "feat3": "Double-wishbone Front / Multi-link Rear",
+        "feat4": "Powerful Braking With an Excellent Pedal Feel,",
+        "feat5": "Lightweight, Forged-alloy Wheels"
       },
       "specifications": {
-        "spec1": "",
-        "spec2": "",
-        "spec3": "",
-        "spec4": "",
-        "spec5": ""
+        "spec1": "420 hp NISMO®-tuned 3.0-liter twin-turbo V6",
+        "spec2": "NISMO aerodynamic body design",
+        "spec3": "NissanConnect® 9 touch-screen display with navigation",
+        "spec4": "Wireless Apple CarPlay® integration",
+        "spec5": "Eight speaker Bose Premium Audio System"
       }
     },
     {
@@ -470,29 +470,29 @@
       "image": "src/assets/images/gt-r.avif",
       "profilephoto": "src/assets/profilephotos/gt-r-profile.avif",
       "alt": "GT-R",
-      "price": "",
-      "overview": "",
+      "price": "121,090",
+      "overview": "An unmatched blend of power and soul: the Nissan GT-R. Experience the singular supercar that sculpts the wind, with enhanced aerodynamics to improve ride and handling for 2024.",
       "performance": {
-        "value1": "",
-        "detail1": "",
-        "value2": "",
-        "detail2": "",
-        "value3": "",
-        "detail3": ""
+        "value1": "565",
+        "detail1": "Horsepower",
+        "value2": "6",
+        "detail2": "Speed Dual-clutch Transmission",
+        "value3": "467",
+        "detail3": "Lb-ft of Torque"
       },
       "features": {
-        "feat1": "",
-        "feat2": "",
-        "feat3": "",
-        "feat4": "",
-        "feat5": ""
+        "feat1": "Dual-clutch Transmission",
+        "feat2": "AWD: Handling for all seasons",
+        "feat3": "6-Speed Dual-clutch Transmission",
+        "feat4": "3 Mode System for Dynamic Control",
+        "feat5": "Advanced Design"
       },
       "specifications": {
-        "spec1": "",
-        "spec2": "",
-        "spec3": "",
-        "spec4": "",
-        "spec5": ""
+        "spec1": "600 hp NISMO®-tuned 3.8L twin-turbocharged V6",
+        "spec2": "Nissan/Brembo® Carbon Ceramic Braking System",
+        "spec3": "NISMO-tuned suspension",
+        "spec4": "RECARO® leather-appointed seats",
+        "spec5": "Apple CarPlay® integration"
       }
     },
     {
@@ -503,29 +503,29 @@
       "image": "src/assets/images/leaf.avif",
       "profilephoto": "src/assets/profilephotos/leaf-profile.avif",
       "alt": "Nissan-Leaf",
-      "price": "",
-      "overview": "",
+      "price": "28,140",
+      "overview": "Potential Federal Tax Credit of up to $3,750 on a qualifying new 2024 Nissan LEAF purchase. It's a legend for a reason. Discover the instant acceleration, impressive range, and nimble handling of the all-electric 2024 Nissan LEAF.",
       "performance": {
-        "value1": "",
-        "detail1": "",
-        "value2": "",
-        "detail2": "",
-        "value3": "",
-        "detail3": ""
+        "value1": "121",
+        "detail1": "Up to- MPGe City",
+        "value2": "212",
+        "detail2": "Up to- Miles ",
+        "value3": "40",
+        "detail3": "or available 60 kWh battery"
       },
       "features": {
-        "feat1": "",
-        "feat2": "",
-        "feat3": "",
-        "feat4": "",
-        "feat5": ""
+        "feat1": "Eco Mode",
+        "feat2": "Instant torque",
+        "feat3": "Fastest—480-V Public DC quick charging",
+        "feat4": "Seating For Up To 5",
+        "feat5": "Automatic Emergency Braking"
       },
       "specifications": {
-        "spec1": "",
-        "spec2": "",
-        "spec3": "",
-        "spec4": "",
-        "spec5": ""
+        "spec1": "High-output Quick Charge Port – 100 kW",
+        "spec2": "160 kW AC synchronous electric motor",
+        "spec3": "Nissan Door to Door Navigation with Premium Traffic",
+        "spec4": "NissanConnect EV® with Services",
+        "spec5": "ProPILOT Assist"
       }
     },
     {
@@ -536,29 +536,29 @@
       "image": "src/assets/images/ariya.avif",
       "profilephoto": "src/assets/profilephotos/ariya-profile.avif",
       "alt": "Ariya",
-      "price": "",
-      "overview": "",
+      "price": "39,590",
+      "overview": "The 2024 Nissan ARIYA is a thrilling, all-electric SUV. Fierce, yet refined. Elegant, yet exhilarating. It’s a totally new way to see electric driving. Experience the future of mobility, today!",
       "performance": {
-        "value1": "",
-        "detail1": "",
-        "value2": "",
-        "detail2": "",
-        "value3": "",
-        "detail3": ""
+        "value1": "304",
+        "detail1": "Miles of Range — up to 304 miles",
+        "value2": "4.8",
+        "detail2": "0-60 mph in 4.8 seconds",
+        "value3": "389",
+        "detail3": "Horsepower"
       },
       "features": {
-        "feat1": "",
-        "feat2": "",
-        "feat3": "",
-        "feat4": "",
-        "feat5": ""
+        "feat1": "Up to 1,500 lbs of towing capacity",
+        "feat2": "3 Drive Modes",
+        "feat3": "0-60 mph in 4.8s",
+        "feat4": "Up to 304 miles of range",
+        "feat5": "Fastest — 480-V Public DC Quick Charging"
       },
       "specifications": {
-        "spec1": "",
-        "spec2": "",
-        "spec3": "",
-        "spec4": "",
-        "spec5": ""
+        "spec1": "Intelligent Around View® Monitor",
+        "spec2": "Two USB-A ports, two USB-C ports and wireless charger",
+        "spec3": "ProPILOT Assist 2.0 and ProPILOT Park",
+        "spec4": "Panoramic Moonroof",
+        "spec5": "Heated leather-wrapped steering wheel and climate-controlled seats"
       }
     }
   ]
