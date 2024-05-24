@@ -51,7 +51,8 @@ const CarGrids = () => {
 
               <button className="absolute bottom-0 left-0 h-16  w-full  rounded border border-gray-100 bg-gray-800 hover:bg-red-700 duration-700">
                 <NavLink
-                  to="/cardetails"
+                  key={car.id}
+                  to={`/cardetails/${car.id}`}
                   className="text-white text-base md:text-lg"
                 >
                   Details
