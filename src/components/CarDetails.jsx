@@ -3,9 +3,9 @@ import { NavLink, Link, useParams } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
-import logo from "../../assets/logos/logo.svg";
+import logo from "../assets/logos/logo.svg";
 import { motion } from "framer-motion";
-import carData from "../../data/cars.json";
+import carData from "../data/cars.json";
 
 const NavLinks = () => {
   return (
