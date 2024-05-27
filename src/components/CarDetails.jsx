@@ -50,6 +50,7 @@ const CarDetails = () => {
             <div>
               <motion.img
                 src={car.xlargephoto}
+                alt="Background Image (Large)"
                 className="absolute top-0 left-0 w-full h-full object-cover z-0"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
