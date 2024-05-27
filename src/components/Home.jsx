@@ -31,9 +31,7 @@ const NavLinks = () => {
 
 const Home = () => {
   //name of state, function name of state.
-  const [backgroundImage, setBackgroundImage] = useState(
-    "src/assets/images/rogue.avif"
-  );
+  const [backgroundImage, setBackgroundImage] = useState("images/rogue.avif");
 
   const setCarBackgroundImage = (car) => {
     setBackgroundImage(car);
