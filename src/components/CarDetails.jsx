@@ -16,9 +16,9 @@ const NavLinks = () => {
 
       <NavLink
         to="/"
-        className="flex items-center justify-center text-[13.5px] border border-gray-100 rounded-full h-10 w-40 -my-2 hover:bg-red-700 hover:border-none duration-700"
+        className="flex items-center justify-center  border border-gray-100 rounded-full h-10 w-40 -my-2 hover:bg-red-700 hover:border-none duration-700"
       >
-        Buy Now
+        Sign In
         <FaArrowRightLong className="ml-3 text-xl" />
       </NavLink>
     </>
@@ -106,15 +106,15 @@ const CarDetails = () => {
                 <motion.div
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
-                  className="relative h-full flex flex-col items-center gap-4 -my-6 py-24 text-white md:hidden bg-gradient-to-r from-slate-600 to-slate-950"
+                  className="relative h-full flex flex-col items-center gap-4 -my-6 py-40 border-4 text-white md:hidden bg-gradient-to-r from-slate-600 to-slate-950"
                 >
                   <NavLinks />
                 </motion.div>
               )}
             </>
 
-            {/* Car Model Display */}
-            <div className="relative p-6 top-96 py-40 md:p-80 md:top-20 md:py-10 lg:p-80 lg:top-20 lg:py-10  italic ">
+            {/* Car Model Display & Mobile Drop Down Menu*/}
+            <div className="relative p-6 top-96 py-40 md:p-80 md:top-20 md:py-10 lg:p-80 lg:top-20 lg:py-10 italic ">
               <div
                 className={`absolute flex flex-col items-center whitespace-nowrap ${
                   isOpen ? "hidden" : ""
@@ -213,9 +213,9 @@ const CarDetails = () => {
 
             {/* SPECIFICATIONS & FEATURES */}
             <div className="flex justify-center my-8">
-              <div className="grid grid-cols-1 md:grid-cols-2  items-center text-white  whitespace-nowrap gap-12 p-4 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-stone-500 via-neutral-900 to-stone-900 w-full rounded-xl">
+              <div className="grid grid-cols-1 md:grid-cols-2  items-center text-white gap-12 p-4 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-stone-500 via-neutral-900 to-stone-900 w-full rounded-xl">
                 <h2 className="text-center text-3xl sm:text-5xl">FEATURES:</h2>
-                <ul className="text-base sm:text-xl list-disc whitespace-nowrap p-2">
+                <ul className="text-base sm:text-xl list-disc p-2">
                   <li>
                     <span>{car.features.feat1}.</span>
                   </li>
@@ -237,7 +237,7 @@ const CarDetails = () => {
                   SPECIFICATIONS:
                 </h2>
 
-                <ul className="text-base sm:text-xl list-disc whitespace-nowrap p-2 ">
+                <ul className="text-base sm:text-xl list-disc p-2 ">
                   <li>
                     <span>{car.specifications.spec1}.</span>
                   </li>
