@@ -256,32 +256,32 @@ const Footer = () => {
           <ul className="flex">
             <li className="bg-white rounded-md mx-2">
               <a href="blank_">
-                <img src="./src/assets/logos/tiktok.svg" />
+                <img src="/src/assets/logos/tiktok.svg" />
               </a>
             </li>
             <li className="bg-white rounded-md mx-2">
               <a href="blank_">
-                <img src="./src/assets/logos/instagram.svg" />
+                <img src="/src/assets/logos/instagram.svg" />
               </a>
             </li>
             <li className="bg-white rounded-md mx-2">
               <a href="blank_">
-                <img src="./src/assets/logos/youtube.svg" />
+                <img src="/src/assets/logos/youtube.svg" />
               </a>
             </li>
             <li className="rounded-md bg-white mx-2">
               <a href="blank_">
-                <img src="./src/assets/logos/x.svg" />
+                <img src="/src/assets/logos/x.svg" />
               </a>
             </li>
             <li className="bg-white rounded-md mx-2">
               <a href="blank_">
-                <img src="./src/assets/logos/facebook.svg" />
+                <img src="/src/assets/logos/facebook.svg" />
               </a>
             </li>
             <li className="bg-white rounded-md mx-2">
               <a href="blank_">
-                <img src="./src/assets/logos/pinterest.svg" />
+                <img src="/src/assets/logos/pinterest.svg" />
               </a>
             </li>
           </ul>
