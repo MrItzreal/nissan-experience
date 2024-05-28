@@ -7,22 +7,25 @@ import CarGrids from "./CarGrids";
 import carData from "../data/cars.json";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
-import { IoChevronForward } from "react-icons/io5";
+import {
+  IoChevronBack,
+  IoChevronDown,
+  IoChevronForward,
+} from "react-icons/io5";
 import { motion } from "framer-motion";
 
 const NavLinks = () => {
   return (
     <>
       <NavLink to="/">Vehicles</NavLink>
-      <NavLink to="/">Shop</NavLink>
-      <NavLink to="/">Electric</NavLink>
+
       <NavLink to="/">Owners</NavLink>
       <NavLink to="/">Dealers</NavLink>
       <NavLink
         to="/"
         className="flex items-center justify-center text-[13.5px] border border-gray-100 rounded-full h-10 w-40 -my-2 hover:bg-red-700 hover:border-none duration-700"
       >
-        Build & Price
+        Sign In
         <FaArrowRightLong className="ml-3 text-xl" />
       </NavLink>
     </>
@@ -79,7 +82,7 @@ const Home = () => {
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              className="relative h-full flex flex-col items-center gap-4 -my-6 py-24 text-white md:hidden bg-gradient-to-r from-slate-600 to-slate-950 "
+              className="relative h-full flex flex-col items-center gap-4 -my-6 py-36 text-white md:hidden bg-gradient-to-r from-slate-600 to-slate-950 "
             >
               <NavLinks />
             </motion.div>
@@ -87,18 +90,22 @@ const Home = () => {
         </>
 
         <section className="text-white absolute inset-x-0 bottom-1/4">
-          <h2 className="text-4xl text-center">Adventure Ready</h2>
+          <h2 className="text-4xl text-center">Adventure Ready?</h2>
           <div className="flex justify-center mt-4">
-            <NavLink to="/" className="flex items-center">
-              View Offers <IoChevronForward className="text-xl" />
-            </NavLink>
+            <span className="flex items-center text-xl italic">
+              <IoChevronBack className="text-xl" />
+              Find YOUR Nissan! <IoChevronForward className="text-xl" />
+            </span>
           </div>
 
           <div className="flex justify-center mt-8">
-            <div className="flex items-center justify-center text-[14.5px] border border-gray-100 rounded-full h-12 w-48 hover:bg-white hover:text-red-700 hover:border-none duration-300">
+            <button
+              onClick={console.log}
+              className="flex flex-col items-center justify-center text-[14.5px] border border-gray-100 rounded-full h-12 w-48 hover:bg-white hover:text-red-700 hover:border-none duration-300"
+            >
               <NavLink to="/">Explore Vehicles®</NavLink>
-              <FaArrowRightLong className="ml-2 text-xl" />
-            </div>
+              <IoChevronDown className="text-xl -my-1" />
+            </button>
           </div>
 
           {/* Car Model's Preview */}
