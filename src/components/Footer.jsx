@@ -29,27 +29,24 @@ const Footer = () => {
             <p className="ml-2 font-bold">Home</p>
           </span>
 
-          <div className="flex sm:flex-row sm:items-center sm:justify-center">
-            <div className="flex justify-between items-center w-full">
+          <div>
+            <div className="flex justify-center items-center w-full">
               <p className="flex text-sm p-4 font-bold tracking-wide text-white hover:underline">
                 {selectedLanguage}
               </p>
 
-              <button
-                className="flex	justify-center mx-4"
-                onClick={toggleLanguage}
-              >
+              <button className="flex	justify-center" onClick={toggleLanguage}>
                 {selectedLanguage === "English" ? (
-                  <FaChevronDown className="text-xl text-neutral-500 " />
+                  <FaChevronDown className="-mx-2 text-lg text-neutral-500 " />
                 ) : (
-                  <FaChevronUp className="text-xl text-neutral-500  " />
+                  <FaChevronUp className="-mx-2 text-lg text-neutral-500  " />
                 )}
               </button>
             </div>
 
             <a
               href="#"
-              className="flex items-center whitespace-nowrap text-sm text-white"
+              className="flex justify-center items-center text-sm text-white whitespace-nowrap"
             >
               Live Chat <IoChatbubbleOutline className="ml-1" />
             </a>
