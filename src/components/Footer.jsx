@@ -2,6 +2,12 @@ import { useState } from "react";
 import { TiChevronRight } from "react-icons/ti";
 import { IoChatbubbleOutline } from "react-icons/io5";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import Tiktok from "../assets/logos/tiktok.svg";
+import Instagram from "../assets/logos/instagram.svg";
+import YouTube from "../assets/logos/youtube.svg";
+import X from "../assets/logos/x.svg";
+import Facebook from "../assets/logos/facebook.svg";
+import Pinterest from "../assets/logos/pinterest.svg";
 
 const Footer = () => {
   //name of state, function name of state.
@@ -256,32 +262,32 @@ const Footer = () => {
           <ul className="flex">
             <li className="bg-white rounded-md mx-2">
               <a href="blank_">
-                <img src="/src/assets/logos/tiktok.svg" />
+                <img src={Tiktok} />
               </a>
             </li>
             <li className="bg-white rounded-md mx-2">
               <a href="blank_">
-                <img src="/src/assets/logos/instagram.svg" />
+                <img src={Instagram} />
               </a>
             </li>
             <li className="bg-white rounded-md mx-2">
               <a href="blank_">
-                <img src="/src/assets/logos/youtube.svg" />
+                <img src={YouTube} />
               </a>
             </li>
             <li className="rounded-md bg-white mx-2">
               <a href="blank_">
-                <img src="/src/assets/logos/x.svg" />
+                <img src={X} />
               </a>
             </li>
             <li className="bg-white rounded-md mx-2">
               <a href="blank_">
-                <img src="/src/assets/logos/facebook.svg" />
+                <img src={Facebook} />
               </a>
             </li>
             <li className="bg-white rounded-md mx-2">
               <a href="blank_">
-                <img src="/src/assets/logos/pinterest.svg" />
+                <img src={Pinterest} />
               </a>
             </li>
           </ul>
