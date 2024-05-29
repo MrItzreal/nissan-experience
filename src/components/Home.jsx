@@ -82,7 +82,7 @@ const Home = () => {
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              className="relative h-full flex flex-col items-center gap-4 -my-6 py-36 text-white md:hidden bg-gradient-to-r from-slate-600 to-slate-950 "
+              className="relative h-full flex flex-col items-center gap-4 -my-6 py-36 border-4 text-white md:hidden bg-gradient-to-r from-slate-600 to-slate-950 "
             >
               <NavLinks />
             </motion.div>
