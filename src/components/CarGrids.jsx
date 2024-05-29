@@ -33,7 +33,7 @@ const CarGrids = () => {
             <div key={car.id} className="relative mb-12">
               <img
                 src={car.profilephoto}
-                className="rounded-2xl border h-full"
+                className="rounded-2xl border"
               />
               <div className="absolute bottom-0 left-0 right-0 my-24 ml-8">
                 <div className="flex flex-col items-center mr-6 -my-4 whitespace-nowrap">
