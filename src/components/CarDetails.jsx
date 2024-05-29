@@ -147,7 +147,7 @@ const CarDetails = () => {
                 <p className="-mx-8 sm:-mx-0 text-3xl sm:text-5xl">
                   <span>${car.price}</span>
                 </p>
-                <p className="text-base md:text-lg text-pretty">
+                <p className="flex justify-center text-base md:text-lg text-wrap">
                   <span>{car.overview}</span>
                 </p>
               </div>
