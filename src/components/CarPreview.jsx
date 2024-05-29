@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { IoChevronDownOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
 
 //eslint-disable-next-line react/prop-types
@@ -89,9 +88,6 @@ const CarPreview = ({ carData, setCarBackgroundImage }) => {
             </button>
           ))}
         </section>
-        <div className="flex justify-center text-2xl text-gray-500 mt-2">
-          <IoChevronDownOutline />
-        </div>
       </nav>
     </main>
   );
