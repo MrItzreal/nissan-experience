@@ -37,8 +37,8 @@ const CarGrids = () => {
               />
               <div className="absolute bottom-0 left-0 right-0 my-24 ml-8">
                 <div className="flex flex-col items-center mr-6 -my-4 whitespace-nowrap">
-                  <h2 className="text-white text-xs md:text-base">
-                    2024 NISSAN {car.model}
+                  <h2 className="text-white text-xs md:text-base font-extrabold uppercase">
+                    {car.model}
                   </h2>
                   <h2 className=" text-white text-xs md:text-base ">
                     Starting at ${car.price}
