@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
 import logo from "../assets/logos/logo.svg";
@@ -46,6 +46,9 @@ const Home = () => {
   const toggleNavbar = () => {
     setIsOpen(!isOpen); //Toggles navigation bar icons.
   };
+
+  //Creates the reference so when button is clicked the transition takes place.
+  const carGridsRef = useRef(null);
 
   return (
     <>
@@ -100,10 +103,12 @@ const Home = () => {
 
           <div className="flex justify-center mt-8">
             <button
-              onClick={console.log}
+              onClick={() =>
+                carGridsRef.current.scrollIntoView({ behavior: "smooth" })
+              }
               className="flex flex-col items-center justify-center text-[14.5px] border border-gray-100 rounded-full h-12 w-48 hover:bg-white hover:text-red-700 hover:border-none duration-300"
             >
-              <NavLink to="/">Explore Vehicles®</NavLink>
+              <span>Explore Vehicles®</span>
               <IoChevronDown className="text-xl -my-1" />
             </button>
           </div>
@@ -116,7 +121,7 @@ const Home = () => {
         </section>
       </main>
       {/* Displays All Nissan Vehicles */}
-      <CarGrids />
+      <CarGrids ref={carGridsRef} />
     </>
   );
 };
