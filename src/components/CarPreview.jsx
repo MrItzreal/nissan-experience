@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 //eslint-disable-next-line react/prop-types
@@ -21,6 +21,15 @@ const CarPreview = ({ carData, setCarBackgroundImage }) => {
   const handleCarClick = (car) => {
     setCarBackgroundImage(car);
   };
+
+  //Handles the main background image based on size
+  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 1024);
+
+  useEffect(() => {
+    const handleResize = () => setIsLargeScreen(window.innerWidth > 1024);
+    window.addEventListener("resize", handleResize);
+    return () => removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     // categories
@@ -76,7 +85,9 @@ const CarPreview = ({ carData, setCarBackgroundImage }) => {
             <button
               key={car.id}
               className="flex relative justify-center"
-              onClick={() => handleCarClick(car.image)}
+              onClick={() =>
+                handleCarClick(isLargeScreen ? car.image : car.smallphoto)
+              }
             >
               <img
                 src={car.thumbnail}
