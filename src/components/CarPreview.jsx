@@ -22,15 +22,6 @@ const CarPreview = ({ carData, setCarBackgroundImage }) => {
     setCarBackgroundImage(car);
   };
 
-  //Handles the main background image based on size
-  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 1024);
-
-  useEffect(() => {
-    const handleResize = () => setIsLargeScreen(window.innerWidth > 1024);
-    window.addEventListener("resize", handleResize);
-    return () => removeEventListener("resize", handleResize);
-  }, []);
-
   return (
     // categories
     <main className="flex justify-center">
@@ -85,9 +76,7 @@ const CarPreview = ({ carData, setCarBackgroundImage }) => {
             <button
               key={car.id}
               className="flex relative justify-center"
-              onClick={() =>
-                handleCarClick(isLargeScreen ? car.image : car.smallphoto)
-              }
+              onClick={() => handleCarClick(car.image)}
             >
               <img
                 src={car.thumbnail}
@@ -105,3 +94,13 @@ const CarPreview = ({ carData, setCarBackgroundImage }) => {
 };
 
 export default CarPreview;
+
+// Just in case I want to use it:
+//Handles the main background image based on size with a ternary operator
+// const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 1024);
+
+// useEffect(() => {
+//   const handleResize = () => setIsLargeScreen(window.innerWidth > 1024);
+//   window.addEventListener("resize", handleResize);
+//   return () => removeEventListener("resize", handleResize);
+// }, []);
