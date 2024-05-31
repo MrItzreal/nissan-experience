@@ -7,11 +7,7 @@ import CarGrids from "./CarGrids";
 import carData from "../data/cars.json";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
-import {
-  IoChevronBack,
-  IoChevronDown,
-  IoChevronForward,
-} from "react-icons/io5";
+import { IoChevronDown } from "react-icons/io5";
 import { motion } from "framer-motion";
 
 const NavLinks = () => {
@@ -96,8 +92,7 @@ const Home = () => {
           <h2 className="text-4xl text-center">Adventure Ready?</h2>
           <div className="flex justify-center mt-4">
             <span className="flex items-center text-xl italic">
-              <IoChevronBack className="text-xl" />
-              Find YOUR Nissan! <IoChevronForward className="text-xl" />
+              Find YOUR Nissan!
             </span>
           </div>
 
