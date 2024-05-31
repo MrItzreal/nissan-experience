@@ -45,7 +45,11 @@ const Home = () => {
 
   //Creates the reference so when button is clicked the transition takes place.
   const carGridsRef = useRef(null);
-  
+
+  // location & useEffect hooks also utilize the carGridsRef
+  // but differ in the button triggered to scroll down to the CarGrids component.
+  // Explore Vehicles & Vehicles are 2 different buttons but scroll to the CarGrids component.
+
   const location = useLocation();
 
   useEffect(() => {
