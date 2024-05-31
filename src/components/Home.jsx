@@ -1,5 +1,5 @@
-import { useState, useRef } from "react";
-import { NavLink } from "react-router-dom";
+import { useState, useRef, useEffect } from "react";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
 import logo from "../assets/logos/logo.svg";
 import CarPreview from "./CarPreview";
@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 const NavLinks = () => {
   return (
     <>
-      <NavLink to="/">Vehicles</NavLink>
+      <NavLink to="/#vehicles">Vehicles</NavLink>
 
       <NavLink to="/">Owners</NavLink>
       <NavLink to="/">Dealers</NavLink>
@@ -45,6 +45,14 @@ const Home = () => {
 
   //Creates the reference so when button is clicked the transition takes place.
   const carGridsRef = useRef(null);
+  
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === "#vehicles") {
+      carGridsRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [location]);
 
   return (
     <>
@@ -56,11 +64,14 @@ const Home = () => {
           whileInView={{ opacity: 1 }}
         />
 
-        <img
-          src={logo}
-          alt="Logo"
-          className="absolute left-4 h-30 top-7 z-10"
-        />
+        {/* NISSAN LOGO DO NOT TOUCH THIS */}
+        <Link to="/">
+          <img
+            src={logo}
+            alt="Logo"
+            className="absolute left-4 h-30 top-7 z-20"
+          />
+        </Link>
 
         <>
           <nav className="flex justify-end">
@@ -116,7 +127,7 @@ const Home = () => {
         </section>
       </main>
       {/* Displays All Nissan Vehicles */}
-      <CarGrids ref={carGridsRef} />
+      <CarGrids ref={carGridsRef} id="vehicles" />
     </>
   );
 };
