@@ -91,18 +91,6 @@ const Footer = () => {
               >
                 Nissan Rental Car Program
               </a>
-              <a
-                href="#"
-                className="text-sm text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600"
-              >
-                Accessibility
-              </a>
-              <a
-                href="#"
-                className="text-sm text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600"
-              >
-                Cookie Settings
-              </a>
             </div>
           </div>
 
@@ -141,24 +129,6 @@ const Footer = () => {
                 className="text-sm text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600"
               >
                 Compare Competitors
-              </a>
-              <a
-                href="#"
-                className="text-sm text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600"
-              >
-                Build & Price
-              </a>
-              <a
-                href="#"
-                className="text-sm text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600"
-              >
-                Locate a Dealer
-              </a>
-              <a
-                href="#"
-                className="text-sm text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600"
-              >
-                Parts & Accessories
               </a>
             </div>
           </div>
@@ -199,12 +169,6 @@ const Footer = () => {
               >
                 NissanConnect
               </a>
-              <a
-                href="#"
-                className="text-sm text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600"
-              >
-                Extended Protection Plans
-              </a>
             </div>
           </div>
           <div>
@@ -242,12 +206,6 @@ const Footer = () => {
                 className="text-sm text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600"
               >
                 Estimate Credit Scores
-              </a>
-              <a
-                href="#"
-                className="text-sm text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600"
-              >
-                Get Internet Quote
               </a>
             </div>
           </div>
