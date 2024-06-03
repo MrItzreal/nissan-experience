@@ -8,32 +8,17 @@ import { motion } from "framer-motion";
 import carData from "../data/cars.json";
 
 const NavLinks = () => {
+  
+  function scrollToSection(sectionId) {
+    const element = document.getElementById(sectionId);
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+
   return (
     <>
-      <NavLink
-        onClick={() => {
-          const element = document.getElementById("overview");
-          element.scrollIntoView({ behavior: "smooth" });
-        }}
-      >
-        Overview
-      </NavLink>
-      <NavLink
-        onClick={() => {
-          const element = document.getElementById("features");
-          element.scrollIntoView({ behavior: "smooth" });
-        }}
-      >
-        Features
-      </NavLink>
-      <NavLink
-        onClick={() => {
-          const element = document.getElementById("specs");
-          element.scrollIntoView({ behavior: "smooth" });
-        }}
-      >
-        Specs
-      </NavLink>
+      <NavLink onClick={() => scrollToSection("overview")}>Overview</NavLink>
+      <NavLink onClick={() => scrollToSection("features")}>Features</NavLink>
+      <NavLink onClick={() => scrollToSection("specs")}>Specs</NavLink>
 
       <NavLink
         to="/"
