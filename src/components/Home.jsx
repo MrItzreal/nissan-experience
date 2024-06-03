@@ -14,7 +14,7 @@ const NavLinks = () => {
   return (
     <>
       <NavLink to="/#vehicles">Vehicles</NavLink>
-      <NavLink to="/">Owners</NavLink>
+      <NavLink to="/owners">Owners</NavLink>
       <NavLink to="/">Dealers</NavLink>
       <NavLink
         to="/"
