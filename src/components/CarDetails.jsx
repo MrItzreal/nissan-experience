@@ -10,9 +10,30 @@ import carData from "../data/cars.json";
 const NavLinks = () => {
   return (
     <>
-      <NavLink to="">Overview</NavLink>
-      <NavLink to="">Features</NavLink>
-      <NavLink to="">Specs</NavLink>
+      <NavLink
+        onClick={() => {
+          const element = document.getElementById("overview");
+          element.scrollIntoView({ behavior: "smooth" });
+        }}
+      >
+        Overview
+      </NavLink>
+      <NavLink
+        onClick={() => {
+          const element = document.getElementById("features");
+          element.scrollIntoView({ behavior: "smooth" });
+        }}
+      >
+        Features
+      </NavLink>
+      <NavLink
+        onClick={() => {
+          const element = document.getElementById("specs");
+          element.scrollIntoView({ behavior: "smooth" });
+        }}
+      >
+        Specs
+      </NavLink>
 
       <NavLink
         to="/"
@@ -33,6 +54,8 @@ const CarDetails = () => {
     setIsOpen(!isOpen); //Toggles navigation bar icons.
   };
 
+  //This fetches the JSON file info for the images and text info.
+  //When vehicle is selected through the "details" button.
   const { id } = useParams();
   const [car, setCar] = useState(null);
 
@@ -44,7 +67,7 @@ const CarDetails = () => {
   return (
     <>
       {car && (
-        <main className="relative h-svh bg-gradient-to-r from-stone-200 to-slate-800 ">
+        <main className="relative h-svh bg-gradient-to-r from-stone-200 to-slate-800">
           <div className="absolute top-0 left-0 w-full h-full">
             {/* Large Background (Large Screens) */}
             <div>
@@ -137,7 +160,10 @@ const CarDetails = () => {
       {car && (
         <section className="bg-neutral-900">
           <div className="container mx-auto px-14">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center text-white md:whitespace-normal whitespace-nowrap	text-center md:text-left">
+            <div
+              className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center text-white md:whitespace-normal whitespace-nowrap text-center md:text-left"
+              id="overview"
+            >
               <div className="-mx-8 text-lg md:text-7xl">
                 <p>Where To Explore Next?</p>
               </div>
@@ -208,7 +234,10 @@ const CarDetails = () => {
             </div>
 
             {/* HERO TEXT */}
-            <h2 className="text-white text-center py-6 text-xl sm:text-3xl italic font-medium	">
+            <h2
+              className="text-white text-center py-6 text-xl sm:text-3xl italic font-medium"
+              id="features"
+            >
               BUILT TO MOVE YOU!
             </h2>
 
@@ -239,7 +268,7 @@ const CarDetails = () => {
                   </li>
                 </ul>
 
-                <h2 className="text-center text-2xl sm:text-5xl">
+                <h2 className="text-center text-2xl sm:text-5xl" id="specs">
                   SPECIFICATIONS:
                 </h2>
 
