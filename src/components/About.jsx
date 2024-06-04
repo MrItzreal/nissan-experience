@@ -124,7 +124,7 @@ const Owner = () => {
         </div>
       </main>
 
-      {/*VEHICLE OVERVIEW */}
+      {/*MISSION STATEMENT*/}
 
       <section className="bg-neutral-900">
         <div className="container mx-auto px-14">
@@ -154,7 +154,7 @@ const Owner = () => {
           <hr className="border-gray-200  mx-auto mt-8" />
         </div>
 
-        {/* PERFORMANCE SECTION */}
+        {/* WHAT NISSAN HAS TO OFFER? */}
 
         <div className="text-white text-center">
           <div className="m-4 p-2 text-lg sm:text-2xl mb-4">
@@ -179,7 +179,7 @@ const Owner = () => {
           </div>
         </div>
 
-        {/* CAR IMAGES */}
+        {/* NISSAN FOR EVERYONE */}
         <div className="container mx-auto py-14 text-white ">
           <h2 className="text-white text-center text-xl sm:text-3xl italic font-medium">
             A Nissan For Everyone
@@ -196,6 +196,8 @@ const Owner = () => {
           <div className="flex justify-center shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
             <img src={imgbanner} className="rounded" />
           </div>
+
+          {/* ORIGINS OF NISSAN*/}
 
           <div className="container mx-auto px-14">
             <div
@@ -245,6 +247,8 @@ const Owner = () => {
               />
             </>
           </div>
+
+          {/* NISSAN HAS YOU COVERED*/}
 
           <div className="container mx-auto px-14">
             <div
