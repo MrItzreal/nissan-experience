@@ -9,6 +9,9 @@ import aboutXl from "/xlargephotos/about-xl.webp";
 import aboutMd from "/mediumphotos/about-md.webp";
 import aboutSm from "/smallphotos/about-sm.webp";
 import imgbanner from "/bannerphotos/nissans-banner.webp";
+import interiorProfile from "/profilephotos/interior-profile.png";
+import outsideProfile from "/profilephotos/outside-profile.jpg";
+import nissansMd from "/mediumphotos/nissans-md.webp";
 
 const NavLinks = () => {
   return (
@@ -135,7 +138,7 @@ const Owner = () => {
 
             <div className="flex flex-col justify-center gap-4 md:gap-6">
               <p className="flex justify-center text-lg sm:text-xl -mt-8 md:mt-4">
-                NISSAN MISSION STATEMENT
+                OUR MISSION STATEMENT
               </p>
 
               <p className="flex justify-center text-base md:text-lg text-wrap">
@@ -194,13 +197,52 @@ const Owner = () => {
             <img src={imgbanner} className="rounded" />
           </div>
 
+          <div className="container mx-auto px-14">
+            <div
+              className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center text-white md:whitespace-normal whitespace-nowrap text-center md:text-left"
+              id="overview"
+            >
+              <div className="-mx-8 py-4 text-lg md:text-7xl italic">
+                <p>THE STORY BEGINS</p>
+              </div>
+
+              <div className="flex flex-col justify-center gap-4 md:gap-6">
+                <p className="flex justify-center text-lg sm:text-xl -mt-8 md:mt-4">
+                  Origins of Nissan
+                </p>
+
+                <p className="flex justify-center text-base md:text-lg text-wrap">
+                  <span>
+                    The global automotive manufacturer known today as Nissan
+                    first debuted in 1911 when the Kwaishinsha (Kaishinsha)
+                    Motor Car Works was founded in Tokyo. 3 years later its
+                    first DAT model — an acronym of the initial investors
+                    surnames — was produced. The 70s were a great decade for
+                    Nissan. Nissan sold the one-millionth Datsun and became the
+                    top vehicle importer in the United States by 1975.
+                  </span>
+                </p>
+              </div>
+            </div>
+            <hr className="border-gray-200  mx-auto mt-8" />
+          </div>
+
           {/*MORE CAR IMAGES */}
           <div className="flex flex-col lg:flex-row shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] py-6">
             <>
-              <img src="" className="h-[650px] w-[450px] object-cover " />
+              <img
+                src={interiorProfile}
+                className="h-[650px] w-[450px] object-cover "
+              />
 
-              <img src="" className="h-[650px] w-[450px] object-cover " />
-              <img src="" className=" w-[650px] object-cover " />
+              <img
+                src={outsideProfile}
+                className="h-[650px] w-[450px] object-cover "
+              />
+              <img
+                src={nissansMd}
+                className=" h-[650px]  w-[650px] object-cover "
+              />
             </>
           </div>
 
