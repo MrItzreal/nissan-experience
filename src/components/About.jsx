@@ -202,13 +202,13 @@ const Owner = () => {
               className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center text-white md:whitespace-normal whitespace-nowrap text-center md:text-left"
               id="overview"
             >
-              <div className="-mx-8 py-4 text-lg md:text-7xl italic">
-                <p>THE STORY BEGINS</p>
+              <div className="-mx-8 py-4 text-base md:text-6xl italic">
+                <p>A Legacy of Innovation</p>
               </div>
 
               <div className="flex flex-col justify-center gap-4 md:gap-6">
-                <p className="flex justify-center text-lg sm:text-xl -mt-8 md:mt-4">
-                  Origins of Nissan
+                <p className="flex justify-center text-base sm:text-xl -mt-8 md:mt-4">
+                  Origins of Nissan:
                 </p>
 
                 <p className="flex justify-center text-base md:text-lg text-wrap">
@@ -246,49 +246,37 @@ const Owner = () => {
             </>
           </div>
 
-          {/* SPECIFICATIONS & FEATURES */}
-          <div className="flex justify-center my-8">
-            <div className="grid grid-cols-1 md:grid-cols-2  items-center text-white gap-12 p-4 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-stone-500 via-neutral-900 to-stone-900 w-full rounded-xl">
-              <h2 className="text-center text-2xl sm:text-5xl">FEATURES:</h2>
-              <ul className="text-base sm:text-xl list-disc p-2">
-                <li>
-                  <span>.</span>
-                </li>
-                <li>
-                  <span>. </span>
-                </li>
-                <li>
-                  <span>.</span>
-                </li>
-                <li>
-                  <span>.</span>
-                </li>
-                <li>
-                  <span>.</span>
-                </li>
-              </ul>
+          <div className="container mx-auto px-14">
+            <div
+              className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center text-white md:whitespace-normal whitespace-nowrap text-center md:text-left"
+              id="overview"
+            >
+              <div className="-mx-8 py-4 text-base md:text-6xl italic">
+                <p>Regardless of Speed or Power</p>
+              </div>
 
-              <h2 className="text-center text-2xl sm:text-5xl" id="specs">
-                SPECIFICATIONS:
-              </h2>
+              <div className="flex flex-col justify-center gap-4 md:gap-6">
+                <p className="flex justify-center text-base sm:text-3xl -mt-8 md:mt-4 ">
+                  Nissan Has You Covered!
+                </p>
 
-              <ul className="text-base sm:text-xl list-disc p-2 ">
-                <li>
-                  <span>.</span>
-                </li>
-                <li>
-                  <span>.</span>
-                </li>
-                <li>
-                  <span>.</span>
-                </li>
-                <li>
-                  <span>.</span>
-                </li>
-                <li>
-                  <span>.</span>
-                </li>
-              </ul>
+                <p className="flex justify-center text-base md:text-lg text-wrap">
+                  <span>
+                    From the rugged capability of our trucks to the electrifying
+                    efficiency of our EVs, the versatile comfort of our SUVs,
+                    the spirited drive of our sports cars. Nissan's diverse
+                    lineup is engineered to match your lifestyle and ambitions.
+                    <br />
+                    Whether you're conquering tough terrain, commuting through
+                    city streets, embarking on a cross-country adventure, or
+                    simply seeking the thrill of the open road, there's a Nissan
+                    perfectly suited to your needs. Explore our range and
+                    discover the innovation, reliability, and performance that
+                    have made Nissan a trusted name in automotive excellence for
+                    over <span className="font-bold">100 years</span>.
+                  </span>
+                </p>
+              </div>
             </div>
           </div>
         </div>
