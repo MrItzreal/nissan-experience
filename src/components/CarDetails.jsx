@@ -8,7 +8,6 @@ import { motion } from "framer-motion";
 import carData from "../data/cars.json";
 
 const NavLinks = () => {
-  
   function scrollToSection(sectionId) {
     const element = document.getElementById(sectionId);
     element.scrollIntoView({ behavior: "smooth" });

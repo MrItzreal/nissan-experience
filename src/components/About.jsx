@@ -8,12 +8,13 @@ import logo from "../assets/logos/logo.svg";
 import ownersXl from "/xlargephotos/owners-xl.webp";
 import ownersMd from "/mediumphotos/owners-md.webp";
 import ownersSm from "/smallphotos/owners-sm.webp";
+import imgbanner from "/bannerphotos/nissans-banner.webp";
 
 const NavLinks = () => {
   return (
     <>
       <NavLink to="/#vehicles">Vehicles</NavLink>
-      <NavLink to="/owners">Owners</NavLink>
+      <NavLink to="/about">About</NavLink>
       <NavLink to="/">Dealers</NavLink>
       <NavLink
         to="/"
@@ -108,10 +109,11 @@ const Owner = () => {
                 isOpen ? "hidden" : ""
               }`}
             >
-              <span className="text-white text-lg">Reimagine Your Drive</span>
+              <span className="text-white text-xl">Reimagine Your Drive</span>
               <span className="relative text-white text-3xl sm:text-5xl">
+                <p>With a Nissan</p>
                 <p className="absolute top-0 right-0 -mx-4 text-white text-xs md:text-sm lg:text-base">
-                  With a Nissan ®
+                  ®
                 </p>
               </span>
             </div>
@@ -127,17 +129,22 @@ const Owner = () => {
             className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center text-white md:whitespace-normal whitespace-nowrap text-center md:text-left"
             id="overview"
           >
-            <div className="-mx-8 text-lg md:text-7xl">
-              <p>Where To Explore Next?</p>
+            <div className="-mx-8 text-lg md:text-7xl italic">
+              <p>Innovation That Excites!</p>
             </div>
 
             <div className="flex flex-col justify-center gap-4 md:gap-6">
-              <p className="text-lg sm:text-xl -mt-8 md:mt-4">Starting At</p>
-              <p className="-mx-8 sm:-mx-0 text-3xl sm:text-5xl">
-                <span>$</span>
+              <p className="flex justify-center text-lg sm:text-xl -mt-8 md:mt-4">
+                NISSAN MISSION STATEMENT
               </p>
+
               <p className="flex justify-center text-base md:text-lg text-wrap">
-                <span></span>
+                <span>
+                  The power of movement. The thrill of being in the driver’s
+                  seat. Innovation without reservation. This is the promise
+                  built into every Nissan car, truck, SUV, sports car and EV —
+                  one that’s fulfilled every time you take the wheel.
+                </span>
               </p>
             </div>
           </div>
@@ -148,21 +155,23 @@ const Owner = () => {
 
         <div className="text-white text-center">
           <div className="m-4 p-2 text-lg sm:text-2xl mb-4">
-            <span>PERFORMANCE</span>
+            <span>What Does Nissan Have To Offer?</span>
           </div>
 
           <div className="flex flex-col lg:flex-row justify-center gap-4 md:gap-6">
             <div className="flex flex-col">
-              <span className="text-3xl md:text-8xl"></span>
-              <p className="text-lg sm:text-xl mt-2"></p>
+              <span className="text-3xl md:text-8xl">15</span>
+              <p className="text-lg sm:text-xl mt-2">Models To Choose From</p>
             </div>
             <div className="flex flex-col border-l border-gray-200 pl-4 md:pl-8">
-              <span className="text-3xl md:text-8xl"></span>
-              <p className="text-lg sm:text-xl mt-2"></p>
+              <span className="text-3xl md:text-8xl">5</span>
+              <p className="text-lg sm:text-xl mt-2">Vehicle Categories</p>
             </div>
             <div className="flex flex-col border-l border-gray-200 pl-4 md:pl-8">
-              <span className="text-3xl md:text-8xl"></span>
-              <p className="text-lg sm:text-xl mt-2"></p>
+              <span className="text-3xl md:text-8xl">110</span>
+              <p className="text-lg sm:text-xl mt-2">
+                Years of Manufacturing Experience
+              </p>
             </div>
           </div>
         </div>
@@ -179,16 +188,13 @@ const Owner = () => {
           </div>
 
           {/* HERO TEXT */}
-          <h2
-            className="text-white text-center py-6 text-xl sm:text-3xl italic font-medium"
-            id="features"
-          >
-            BUILT TO MOVE YOU!
+          <h2 className="text-white text-center py-6 text-xl sm:text-3xl italic font-medium">
+            NISSAN: BUILT TO THRILL
           </h2>
 
           {/* BANNER PHOTO */}
           <div className="flex justify-center shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
-            <img src="" />
+            <img src={imgbanner} />
           </div>
 
           {/* SPECIFICATIONS & FEATURES */}
