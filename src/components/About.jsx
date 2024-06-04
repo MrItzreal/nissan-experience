@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
 import logo from "../assets/logos/logo.svg";
-import ownersXl from "/xlargephotos/owners-xl.webp";
-import ownersMd from "/mediumphotos/owners-md.webp";
-import ownersSm from "/smallphotos/owners-sm.webp";
+import aboutXl from "/xlargephotos/about-xl.webp";
+import aboutMd from "/mediumphotos/about-md.webp";
+import aboutSm from "/smallphotos/about-sm.webp";
 import imgbanner from "/bannerphotos/nissans-banner.webp";
 
 const NavLinks = () => {
@@ -41,7 +41,7 @@ const Owner = () => {
           {/* Large Background (Large Screens) */}
           <div>
             <motion.img
-              src={ownersXl}
+              src={aboutXl}
               alt="Background Image (Large)"
               className="absolute top-0 left-0 w-full h-full object-cover z-0"
               initial={{ opacity: 0 }}
@@ -52,7 +52,7 @@ const Owner = () => {
           {/* Medium Background (Medium Screens) */}
           <div className="lg:hidden">
             <img
-              src={ownersMd}
+              src={aboutMd}
               alt="Background Image (Medium)"
               className="absolute top-0 left-0 w-full h-full object-cover z-1"
             />
@@ -61,7 +61,7 @@ const Owner = () => {
           {/* Small Background (Small Screens) */}
           <div className="md:hidden lg:hidden xl:hidden">
             <img
-              src={ownersSm}
+              src={aboutSm}
               alt="Background Image (Small)"
               className="absolute top-0 left-0 w-full h-full object-cover z-2"
             />
@@ -178,23 +178,30 @@ const Owner = () => {
 
         {/* CAR IMAGES */}
         <div className="container mx-auto py-14 text-white ">
-          <div className="flex flex-col lg:flex-row shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
+          <h2 className="text-white text-center text-xl sm:text-3xl italic font-medium">
+            A Nissan For Everyone
+          </h2>
+
+          <p className="sm:mx-16 md:mx-36 lg:mx-48 text-center text-wrap text-base sm:text-xl py-4">
+            Whether you're a new driver, a family adventurer, a creature of
+            comfort or just about any other kind of driver, there's a Nissan
+            with the tech, the fuel efficiency and the features you need to
+            drive your way
+          </p>
+
+          {/* BANNER PHOTO */}
+          <div className="flex justify-center shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
+            <img src={imgbanner} className="rounded" />
+          </div>
+
+          {/*MORE CAR IMAGES */}
+          <div className="flex flex-col lg:flex-row shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] py-6">
             <>
               <img src="" className="h-[650px] w-[450px] object-cover " />
 
               <img src="" className="h-[650px] w-[450px] object-cover " />
               <img src="" className=" w-[650px] object-cover " />
             </>
-          </div>
-
-          {/* HERO TEXT */}
-          <h2 className="text-white text-center py-6 text-xl sm:text-3xl italic font-medium">
-            NISSAN: BUILT TO THRILL
-          </h2>
-
-          {/* BANNER PHOTO */}
-          <div className="flex justify-center shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
-            <img src={imgbanner} />
           </div>
 
           {/* SPECIFICATIONS & FEATURES */}
