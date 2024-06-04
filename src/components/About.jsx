@@ -132,7 +132,7 @@ const Owner = () => {
             className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center text-white md:whitespace-normal whitespace-nowrap text-center md:text-left"
             id="overview"
           >
-            <div className="-mx-8 text-lg md:text-7xl italic">
+            <div className="-mx-8 text-lg md:text-7xl py-2 italic">
               <p>Innovation That Excites!</p>
             </div>
 
