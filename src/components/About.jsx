@@ -10,7 +10,7 @@ import aboutMd from "/mediumphotos/about-md.webp";
 import aboutSm from "/smallphotos/about-sm.webp";
 import imgbanner from "/bannerphotos/nissans-banner.webp";
 import interiorProfile from "/profilephotos/interior-profile.png";
-import outsideProfile from "/profilephotos/outside-profile.jpg";
+import outsideProfile from "/profilephotos/outside-profile.webp";
 import nissansMd from "/mediumphotos/nissans-md.webp";
 
 const NavLinks = () => {
