@@ -1,6 +1,8 @@
 import { useState } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import logo from "../assets/logos/logo.svg";
 import { IoChevronForward } from "react-icons/io5";
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -24,7 +26,8 @@ const NavLinks = () => {
   );
 };
 
-const ContactUs = () => {
+// eslint-disable-next-line react/prop-types
+const ContactUs = ({ addFormSubmit }) => {
   //name of state, function name of state.
   const [isOpen, setIsOpen] = useState(false);
   const toggleNavbar = () => {
@@ -32,6 +35,7 @@ const ContactUs = () => {
   };
 
   //useState for formData.json
+  //NOTE: adding a state for every field in your form is good practice.
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -40,6 +44,32 @@ const ContactUs = () => {
   const [nissanOwner, setNissanOwner] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+
+  //useNavigate allows you to navigate to a different URL within a functional component
+  //We have to initialize this hook before using it.
+  const navigate = useNavigate();
+
+  const submitForm = (e) => {
+    e.preventDefault();
+
+    const newForm = {
+      //Object has to match the same structure of our mock API.
+      firstName,
+      lastName,
+      email,
+      phone,
+      location,
+      nissanOwner,
+      subject,
+      message,
+    };
+
+    addFormSubmit(newForm); //1st, This submits the form
+
+    toast.success("Form has been submitted!"); //gives a beautiful pop-up
+
+    return navigate("/contactus"); //2nd,This redirects to contact us page.
+  };
 
   return (
     <>
@@ -82,7 +112,7 @@ const ContactUs = () => {
         {/*SUBMIT FORM  */}
         <div className="container m-auto max-w-2xl py-16">
           <div className="bg-gray-300 px-6 py-8 mb-4 shadow-md rounded-md border m-8 md:m-0">
-            <form>
+            <form onSubmit={submitForm}>
               <h2 className="text-3xl text-center font-semibold mb-6">
                 Contact Nissan
               </h2>
@@ -124,6 +154,8 @@ const ContactUs = () => {
                   id="last_name"
                   name="last_name"
                   className="border rounded w-full py-2 px-3"
+                  value={lastName}
+                  onChange={(e) => setLastName(e.target.value)}
                 />
               </div>
 
@@ -141,6 +173,8 @@ const ContactUs = () => {
                   className="border rounded w-full py-2 px-3"
                   placeholder="Email address"
                   required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
 
@@ -157,6 +191,8 @@ const ContactUs = () => {
                   name="contact_phone"
                   className="border rounded w-full py-2 px-3"
                   placeholder="Optional phone number"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
                 />
               </div>
 
@@ -173,6 +209,8 @@ const ContactUs = () => {
                   name="location"
                   className="border rounded w-full py-2 px-3"
                   placeholder="ex: Country/State/City"
+                  value={location}
+                  onChange={(e) => setLocation(e.target.value)}
                 />
               </div>
 
@@ -188,6 +226,8 @@ const ContactUs = () => {
                   name="type"
                   className="border rounded w-full py-2 px-3 font-semibold"
                   required
+                  value={nissanOwner}
+                  onChange={(e) => setNissanOwner(e.target.value)}
                 >
                   <option value="options">Select an option</option>
                   <option value="yes">Yes</option>
@@ -207,6 +247,8 @@ const ContactUs = () => {
                   name="type"
                   className="border rounded w-full py-2 px-3 font-semibold"
                   required
+                  value={subject}
+                  onChange={(e) => setSubject(e.target.value)}
                 >
                   <option value="options">I have a question/comment...</option>
                   <option value="options">Shopping for a Nissan Vehicle</option>
@@ -231,6 +273,8 @@ const ContactUs = () => {
                   rows="4"
                   placeholder="How can we assist you?"
                   required
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
               </div>
 
