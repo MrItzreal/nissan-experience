@@ -39,7 +39,7 @@ const ContactUs = () => {
           <img
             src={logo}
             alt="Logo"
-            className="absolute left-4 h-30 top-7 z-10"
+            className="absolute left-4 h-30 top-7 z-20"
           />
         </Link>
 
