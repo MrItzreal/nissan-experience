@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-
 import logo from "../assets/logos/logo.svg";
+import { IoChevronForward } from "react-icons/io5";
 
 const ContactUs = () => {
   return (
@@ -22,128 +22,42 @@ const ContactUs = () => {
                 Contact Nissan
               </h2>
 
-              <div className="mb-4">
-                <label
-                  htmlFor="type"
-                  className="block text-gray-700 font-bold mb-2"
-                >
-                  Job Type
-                </label>
-                <select
-                  id="type"
-                  name="type"
-                  className="border rounded w-full py-2 px-3"
-                  required
-                >
-                  <option value="Full-Time">Full-Time</option>
-                  <option value="Part-Time">Part-Time</option>
-                  <option value="Remote">Remote</option>
-                  <option value="Internship">Internship</option>
-                </select>
-              </div>
+              <h2 className="mb-6">
+                <span className="font-bold">SEND US A MESSAGE: </span>If you
+                would like to send a question or comment to Nissan, please
+                complete the form below.
+              </h2>
 
-              <div className="mb-4">
-                <label className="block text-gray-700 font-bold mb-2">
-                  Job Listing Name
-                </label>
-                <input
-                  type="text"
-                  id="title"
-                  name="title"
-                  className="border rounded w-full py-2 px-3 mb-2"
-                  placeholder="eg. Beautiful Apartment In Miami"
-                  required
-                />
-              </div>
-              <div className="mb-4">
-                <label
-                  htmlFor="description"
-                  className="block text-gray-700 font-bold mb-2"
-                >
-                  Description
-                </label>
-                <textarea
-                  id="description"
-                  name="description"
-                  className="border rounded w-full py-2 px-3"
-                  rows="4"
-                  placeholder="Add any job duties, expectations, requirements, etc"
-                ></textarea>
-              </div>
-
-              <div className="mb-4">
-                <label
-                  htmlFor="type"
-                  className="block text-gray-700 font-bold mb-2"
-                >
-                  Salary
-                </label>
-                <select
-                  id="salary"
-                  name="salary"
-                  className="border rounded w-full py-2 px-3"
-                  required
-                >
-                  <option value="Under $50K">Under $50K</option>
-                  <option value="$50K - 60K">$50K - $60K</option>
-                  <option value="$60K - 70K">$60K - $70K</option>
-                  <option value="$70K - 80K">$70K - $80K</option>
-                  <option value="$80K - 90K">$80K - $90K</option>
-                  <option value="$90K - 100K">$90K - $100K</option>
-                  <option value="$100K - 125K">$100K - $125K</option>
-                  <option value="$125K - 150K">$125K - $150K</option>
-                  <option value="$150K - 175K">$150K - $175K</option>
-                  <option value="$175K - 200K">$175K - $200K</option>
-                  <option value="Over $200K">Over $200K</option>
-                </select>
-              </div>
-
-              <div className="mb-4">
-                <label className="block text-gray-700 font-bold mb-2">
-                  Location
-                </label>
-                <input
-                  type="text"
-                  id="location"
-                  name="location"
-                  className="border rounded w-full py-2 px-3 mb-2"
-                  placeholder="Company Location"
-                  required
-                />
-              </div>
-
-              <h3 className="text-2xl mb-5">Company Info</h3>
+              <h3 className="font-semibold mb-6">*Required Fields</h3>
 
               <div className="mb-4">
                 <label
                   htmlFor="company"
                   className="block text-gray-700 font-bold mb-2"
                 >
-                  Company Name
+                  First Name
                 </label>
                 <input
                   type="text"
                   id="company"
                   name="company"
                   className="border rounded w-full py-2 px-3"
-                  placeholder="Company Name"
                 />
               </div>
 
               <div className="mb-4">
                 <label
-                  htmlFor="company_description"
+                  htmlFor="company"
                   className="block text-gray-700 font-bold mb-2"
                 >
-                  Company Description
+                  Last Name
                 </label>
-                <textarea
-                  id="company_description"
-                  name="company_description"
+                <input
+                  type="text"
+                  id="company"
+                  name="company"
                   className="border rounded w-full py-2 px-3"
-                  rows="4"
-                  placeholder="What does your company do?"
-                ></textarea>
+                />
               </div>
 
               <div className="mb-4">
@@ -158,10 +72,11 @@ const ContactUs = () => {
                   id="contact_email"
                   name="contact_email"
                   className="border rounded w-full py-2 px-3"
-                  placeholder="Email address for applicants"
+                  placeholder="Email address"
                   required
                 />
               </div>
+
               <div className="mb-4">
                 <label
                   htmlFor="contact_phone"
@@ -174,16 +89,89 @@ const ContactUs = () => {
                   id="contact_phone"
                   name="contact_phone"
                   className="border rounded w-full py-2 px-3"
-                  placeholder="Optional phone for applicants"
+                  placeholder="Optional phone number"
                 />
+              </div>
+
+              <div className="mb-4">
+                <label
+                  htmlFor="contact_phone"
+                  className="block text-gray-700 font-bold mb-2"
+                >
+                  Location
+                </label>
+                <input
+                  type="tel"
+                  id="contact_phone"
+                  name="contact_phone"
+                  className="border rounded w-full py-2 px-3"
+                  placeholder="ex: Country/State/City"
+                />
+              </div>
+
+              <div className="mb-4">
+                <label
+                  htmlFor="type"
+                  className="block text-gray-700 font-bold mb-2"
+                >
+                  Are You a Nissan Owner?
+                </label>
+                <select
+                  id="type"
+                  name="type"
+                  className="border rounded w-full py-2 px-3 font-semibold"
+                  required
+                >
+                  <option value="options">Select an option</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+              </div>
+
+              <div className="mb-4">
+                <label
+                  htmlFor="type"
+                  className="block text-gray-700 font-bold mb-2"
+                >
+                  Select a Subject
+                </label>
+                <select
+                  id="type"
+                  name="type"
+                  className="border rounded w-full py-2 px-3 font-semibold"
+                  required
+                >
+                  <option value="options">I have a question/comment...</option>
+                  <option value="options">Shopping for a Nissan Vehicle</option>
+                  <option value="options">My current Nissan Vehicle</option>
+                  <option value="options">NissanConnect Services</option>
+                  <option value="options">A Nissan Dealer</option>
+                  <option value="options">Other</option>
+                </select>
+              </div>
+
+              <div className="mb-4">
+                <label
+                  htmlFor="description"
+                  className="block text-gray-700 font-bold mb-2"
+                >
+                  Message
+                </label>
+                <textarea
+                  id="description"
+                  name="description"
+                  className="border rounded w-full py-2 px-3"
+                  rows="4"
+                  placeholder="How can we assist you?"
+                ></textarea>
               </div>
 
               <div>
                 <button
-                  className="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline"
+                  className="flex items-center border border-gray-900 rounded-lg hover:bg-red-700 hover:text-white hover:border-none duration-700 font-bold py-2 px-4 focus:outline-none focus:shadow-outline "
                   type="submit"
                 >
-                  Add Job
+                  Submit <IoChevronForward className="ml-1" />
                 </button>
               </div>
             </form>
