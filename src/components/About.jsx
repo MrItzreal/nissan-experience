@@ -18,7 +18,7 @@ const NavLinks = () => {
     <>
       <NavLink to="/#vehicles">Vehicles</NavLink>
       <NavLink to="/about">About</NavLink>
-      <NavLink to="/">Dealers</NavLink>
+      <NavLink to="/contactus">Contact Us</NavLink>
       <NavLink
         to="/"
         className="flex items-center justify-center text-[13.5px] border border-gray-100 rounded-full h-10 w-40 -my-2 hover:bg-red-700 hover:border-none duration-700"
