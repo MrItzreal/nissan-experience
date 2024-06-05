@@ -87,30 +87,30 @@ const ContactUs = () => {
 
               <div className="mb-4">
                 <label
-                  htmlFor="company"
+                  htmlFor="first_name"
                   className="block text-gray-700 font-bold mb-2"
                 >
                   First Name
                 </label>
                 <input
                   type="text"
-                  id="company"
-                  name="company"
+                  id="first_name"
+                  name="first_name"
                   className="border rounded w-full py-2 px-3"
                 />
               </div>
 
               <div className="mb-4">
                 <label
-                  htmlFor="company"
+                  htmlFor="last_name"
                   className="block text-gray-700 font-bold mb-2"
                 >
                   Last Name
                 </label>
                 <input
                   type="text"
-                  id="company"
-                  name="company"
+                  id="last_name"
+                  name="last_name"
                   className="border rounded w-full py-2 px-3"
                 />
               </div>
@@ -150,15 +150,15 @@ const ContactUs = () => {
 
               <div className="mb-4">
                 <label
-                  htmlFor="contact_phone"
+                  htmlFor="location"
                   className="block text-gray-700 font-bold mb-2"
                 >
                   Location
                 </label>
                 <input
-                  type="tel"
-                  id="contact_phone"
-                  name="contact_phone"
+                  type="text"
+                  id="location"
+                  name="location"
                   className="border rounded w-full py-2 px-3"
                   placeholder="ex: Country/State/City"
                 />
