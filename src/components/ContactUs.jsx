@@ -222,9 +222,9 @@ const ContactUs = () => {
                 ></textarea>
               </div>
 
-              <div>
+              <div className="flex justify-center">
                 <button
-                  className="flex items-center border border-gray-900 rounded-lg hover:bg-red-700 hover:text-white hover:border-none duration-700 font-bold py-2 px-4 focus:outline-none focus:shadow-outline "
+                  className="flex items-center border border-gray-900 rounded-lg hover:bg-red-700 hover:text-white hover:border-none duration-700 font-bold py-2 px-4 focus:outline-none focus:shadow-outline"
                   type="submit"
                 >
                   Submit <IoChevronForward className="ml-1" />
