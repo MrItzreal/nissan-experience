@@ -1,11 +1,39 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { NavLink, Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import logo from "../assets/logos/logo.svg";
 import { IoChevronForward } from "react-icons/io5";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import { IoMdClose } from "react-icons/io";
 
-const ContactUs = () => {
+const NavLinks = () => {
   return (
     <>
-      <main className="relative bg-gradient-to-r from-slate-800 to-stone-200 ">
+      <NavLink to="/#vehicles">Vehicles</NavLink>
+      <NavLink to="/about">About</NavLink>
+      <NavLink to="/contactus">Contact Us</NavLink>
+      <NavLink
+        to="/"
+        className="flex items-center justify-center text-[13.5px] border border-gray-100 rounded-full h-10 w-40 -my-2 hover:bg-red-700 hover:border-none duration-700"
+      >
+        Sign In
+        <FaArrowRightLong className="ml-3 text-xl" />
+      </NavLink>
+    </>
+  );
+};
+
+const ContactUs = () => {
+  //name of state, function name of state.
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen); //Toggles navigation bar icons.
+  };
+  return (
+    <>
+      <main className="relative bg-gradient-to-r from-slate-800 to-stone-400">
         {/* NISSAN LOGO DO NOT TOUCH THIS */}
         <Link to="/">
           <img
@@ -15,8 +43,35 @@ const ContactUs = () => {
           />
         </Link>
 
-        <div className="container m-auto max-w-2xl py-32">
-          <div className="bg-white px-6 py-8 mb-4 shadow-md rounded-md border m-8 md:m-0">
+        <>
+          <nav className="flex justify-end">
+            <div className="hidden w-full justify-end z-10 md:flex gap-6 text-white font-medium px-10 py-16">
+              <NavLinks />
+            </div>
+            <div className="md:hidden z-10">
+              <motion.button whileTap={{ rotate: 20 }} onClick={toggleNavbar}>
+                {isOpen ? (
+                  <IoMdClose className="absolute right-4 text-3xl text-white" />
+                ) : (
+                  <HiOutlineMenuAlt3 className="text-white text-3xl mr-3 mt-4" />
+                )}
+              </motion.button>
+            </div>
+          </nav>
+          {isOpen && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              className="relative h-full flex flex-col items-center gap-4 mt-36 text-white md:hidden bg-gradient-to-r from-slate-800 to-stone-400"
+            >
+              <NavLinks />
+            </motion.div>
+          )}
+        </>
+
+        {/*SUBMIT FORM  */}
+        <div className="container m-auto max-w-2xl py-16">
+          <div className="bg-gray-300 px-6 py-8 mb-4 shadow-md rounded-md border m-8 md:m-0">
             <form>
               <h2 className="text-3xl text-center font-semibold mb-6">
                 Contact Nissan
@@ -65,7 +120,7 @@ const ContactUs = () => {
                   htmlFor="contact_email"
                   className="block text-gray-700 font-bold mb-2"
                 >
-                  Contact Email
+                  *Contact Email
                 </label>
                 <input
                   type="email"
@@ -114,7 +169,7 @@ const ContactUs = () => {
                   htmlFor="type"
                   className="block text-gray-700 font-bold mb-2"
                 >
-                  Are You a Nissan Owner?
+                  *Are You a Nissan Owner?
                 </label>
                 <select
                   id="type"
@@ -133,7 +188,7 @@ const ContactUs = () => {
                   htmlFor="type"
                   className="block text-gray-700 font-bold mb-2"
                 >
-                  Select a Subject
+                  *Select a Subject
                 </label>
                 <select
                   id="type"
@@ -155,7 +210,7 @@ const ContactUs = () => {
                   htmlFor="description"
                   className="block text-gray-700 font-bold mb-2"
                 >
-                  Message
+                  *Message
                 </label>
                 <textarea
                   id="description"
@@ -163,6 +218,7 @@ const ContactUs = () => {
                   className="border rounded w-full py-2 px-3"
                   rows="4"
                   placeholder="How can we assist you?"
+                  required
                 ></textarea>
               </div>
 
