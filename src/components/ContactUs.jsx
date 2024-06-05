@@ -27,10 +27,20 @@ const NavLinks = () => {
 const ContactUs = () => {
   //name of state, function name of state.
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleNavbar = () => {
     setIsOpen(!isOpen); //Toggles navigation bar icons.
   };
+
+  //useState for formData.json
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [location, setLocation] = useState("");
+  const [nissanOwner, setNissanOwner] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
   return (
     <>
       <main className="relative bg-gradient-to-r from-slate-800 to-stone-400">
@@ -96,6 +106,8 @@ const ContactUs = () => {
                   type="text"
                   id="first_name"
                   name="first_name"
+                  value={firstName}
+                  onChange={(e) => setFirstName(e.target.value)}
                   className="border rounded w-full py-2 px-3"
                 />
               </div>
