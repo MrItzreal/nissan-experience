@@ -31,7 +31,15 @@ const ContactUs = ({ addFormSubmit }) => {
   const [forms, setForms] = useState([]);
   const [loading, setLoading] = useState(true);
 
- 
+  useEffect(() => {
+    const fetchForms = async () => {
+      const res = await fetch("http://localhost:8000/forms");
+      const data = await res.json();
+      setForms(data);
+    };
+
+    fetchForms();
+  }, []);
 
   //name of state, function name of state.
   const [isOpen, setIsOpen] = useState(false);
