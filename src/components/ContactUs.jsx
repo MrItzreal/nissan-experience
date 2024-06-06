@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NavLink, Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { toast } from "react-toastify";
@@ -28,6 +28,11 @@ const NavLinks = () => {
 
 // eslint-disable-next-line react/prop-types
 const ContactUs = ({ addFormSubmit }) => {
+  const [forms, setForms] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+ 
+
   //name of state, function name of state.
   const [isOpen, setIsOpen] = useState(false);
   const toggleNavbar = () => {
