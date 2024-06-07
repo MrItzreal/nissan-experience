@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import Home from "./components/Home";
@@ -7,9 +8,16 @@ import About from "./components/About";
 import ContactUs from "./components/ContactUs";
 
 const App = () => {
-  // Add New Form
+  // POST's New Form
   const addForm = async (newForm) => {
-    console.log(newForm);
+    const res = await fetch("http://localhost:8000/forms", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newForm),
+    });
+    return;
   };
 
   return (

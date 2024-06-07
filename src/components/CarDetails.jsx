@@ -21,9 +21,9 @@ const NavLinks = () => {
 
       <NavLink
         to="/"
-        className="flex items-center justify-center  border border-gray-100 rounded-full h-10 w-40 -my-2 hover:bg-red-700 hover:border-none duration-700"
+        className="flex items-center justify-center border border-gray-100 rounded-full h-10 w-40 -my-2 hover:bg-red-700 hover:border-none duration-700"
       >
-        Sign In
+        Buy a Nissan
         <FaArrowRightLong className="ml-3 text-xl" />
       </NavLink>
     </>

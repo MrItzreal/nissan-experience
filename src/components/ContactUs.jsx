@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import { useState, useEffect } from "react";
 import { NavLink, Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -17,35 +19,35 @@ const NavLinks = () => {
       <NavLink to="/contactus">Contact Us</NavLink>
       <NavLink
         to="/"
-        className="flex items-center justify-center text-[13.5px] border border-gray-100 rounded-full h-10 w-40 -my-2 hover:bg-red-700 hover:border-none duration-700"
+        className="flex items-center justify-center border border-gray-100 rounded-full h-10 w-40 -my-2 hover:bg-red-700 hover:border-none duration-700"
       >
-        Sign In
+        Buy a Nissan
         <FaArrowRightLong className="ml-3 text-xl" />
       </NavLink>
     </>
   );
 };
 
-// eslint-disable-next-line react/prop-types
 const ContactUs = ({ addFormSubmit }) => {
-  const [forms, setForms] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchForms = async () => {
-      const res = await fetch("http://localhost:8000/forms");
-      const data = await res.json();
-      setForms(data);
-    };
-
-    fetchForms();
-  }, []);
-
   //name of state, function name of state.
   const [isOpen, setIsOpen] = useState(false);
   const toggleNavbar = () => {
     setIsOpen(!isOpen); //Toggles navigation bar icons.
   };
+
+  //Submits New Form
+  useEffect(() => {
+    const fetchForms = async () => {
+      try {
+        const res = await fetch("http://localhost:8000/forms");
+        const data = await res.json();
+      } catch (error) {
+        console.log("Error submitting form", error);
+      }
+    };
+
+    fetchForms();
+  }, []);
 
   //useState for formData.json
   //NOTE: adding a state for every field in your form is good practice.
@@ -81,7 +83,7 @@ const ContactUs = ({ addFormSubmit }) => {
 
     toast.success("Form has been submitted!"); //gives a beautiful pop-up
 
-    return navigate("/contactus"); //2nd,This redirects to contact us page.
+    return navigate("/"); //2nd,This redirects to home page.
   };
 
   return (
@@ -95,7 +97,6 @@ const ContactUs = ({ addFormSubmit }) => {
             className="absolute left-4 h-30 top-7 z-20"
           />
         </Link>
-
         <>
           <nav className="flex justify-end">
             <div className="hidden w-full justify-end z-10 md:flex gap-6 text-white font-medium px-10 py-16">
@@ -121,7 +122,6 @@ const ContactUs = ({ addFormSubmit }) => {
             </motion.div>
           )}
         </>
-
         {/*SUBMIT FORM  */}
         <div className="container m-auto max-w-2xl py-16">
           <div className="bg-gray-300 px-6 py-8 mb-4 shadow-md rounded-md border m-8 md:m-0">
@@ -243,8 +243,8 @@ const ContactUs = ({ addFormSubmit }) => {
                   onChange={(e) => setNissanOwner(e.target.value)}
                 >
                   <option value="options">Select an option</option>
-                  <option value="yes">Yes</option>
-                  <option value="no">No</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
                 </select>
               </div>
 
@@ -263,12 +263,20 @@ const ContactUs = ({ addFormSubmit }) => {
                   value={subject}
                   onChange={(e) => setSubject(e.target.value)}
                 >
-                  <option value="options">I have a question/comment...</option>
-                  <option value="options">Shopping for a Nissan Vehicle</option>
-                  <option value="options">My current Nissan Vehicle</option>
-                  <option value="options">NissanConnect Services</option>
-                  <option value="options">A Nissan Dealer</option>
-                  <option value="options">Other</option>
+                  <option value="I have a question/comment...">
+                    I have a question/comment...
+                  </option>
+                  <option value="Shopping for a Nissan Vehicle">
+                    Shopping for a Nissan Vehicle
+                  </option>
+                  <option value="My current Nissan Vehicle">
+                    My current Nissan Vehicle
+                  </option>
+                  <option value="NissanConnect Services">
+                    NissanConnect Services
+                  </option>
+                  <option value="A Nissan Dealer">A Nissan Dealer</option>
+                  <option value="Other">Other</option>
                 </select>
               </div>
 
