@@ -122,6 +122,7 @@ const ContactUs = ({ addFormSubmit }) => {
             </motion.div>
           )}
         </>
+
         {/*SUBMIT FORM  */}
         <div className="container m-auto max-w-2xl py-16">
           <div className="bg-gray-300 px-6 py-8 mb-4 shadow-md rounded-md border m-8 md:m-0">

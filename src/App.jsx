@@ -38,3 +38,7 @@ const App = () => {
 };
 
 export default App;
+
+// NOTES ABOUT HTTP methods:
+// POST adds data, GET requests data &
+// PUT updates data & DELETE deletes data.
