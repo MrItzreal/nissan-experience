@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { NavLink, Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { toast } from "react-toastify";
@@ -34,20 +34,6 @@ const ContactUs = ({ addFormSubmit }) => {
   const toggleNavbar = () => {
     setIsOpen(!isOpen); //Toggles navigation bar icons.
   };
-
-  //Submits New Form
-  useEffect(() => {
-    const fetchForms = async () => {
-      try {
-        const res = await fetch("http://localhost:8000/forms");
-        const data = await res.json();
-      } catch (error) {
-        console.log("Error submitting form", error);
-      }
-    };
-
-    fetchForms();
-  }, []);
 
   //useState for formData.json
   //NOTE: adding a state for every field in your form is good practice.
