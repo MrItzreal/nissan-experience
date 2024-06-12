@@ -26,7 +26,9 @@ const Footer = () => {
           <span className="flex items-center text-sm text-gray-800 dark:text-white tracking-wide">
             Nissan USA
             <TiChevronRight className="text-xl text-neutral-500" />
-            <p className="ml-2 font-bold">Home</p>
+            <a href="/" className="ml-2 font-bold hover:underline">
+              Home
+            </a>
           </span>
 
           <div>
