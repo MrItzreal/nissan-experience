@@ -62,35 +62,52 @@ const Checkout = () => {
         </>
 
         {/* CHECKOUT SECTION */}
-        <div className="container mx-auto py-14 text-white ">
-          <div className="flex flex-col lg:flex-row shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
+        <div className="container mx-auto py-14 text-white">
+          <div
+            className={`flex flex-col lg:flex-row shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] ${
+              isOpen ? "hidden" : ""
+            }`}
+          >
             <img
               src={profilephoto}
-              className="h-[650px] w-[450px] object-cover "
+              className="h-[650px] w-[650px] object-cover "
             />
 
-            <div className="flex flex-col border rounded-md bg-neutral-900 ">
-              <h4>Model: PATHFINDER.</h4>
-              <h4>Category: Crossover & SUVs.</h4>
-              <h4>Trim: AWD.</h4>
-              <h4>Quantity: 1.</h4>
-              <h4>Total: $36,650.</h4>
-              <h4 className="">
-                Disclaimer: This website is a demonstration project created for
-                educational purposes only. It is not affiliated with, endorsed
-                by, or representative of Nissan Motor Corporation. No actual
-                transactions or purchases can be made on this site.
-              </h4>
+            <div className="flex flex-col border rounded-md bg-gradient-to-r from-slate-800 to-stone-700">
+              <div className="relative m-8 text-xl">
+                <div className="">
+                  <img
+                    src={logo}
+                    alt="Logo"
+                    className="absolute right-4 h-30 z-10 "
+                  />
+                  <h4>Model: PATHFINDER.</h4>
+                  <h4>Category: Crossover & SUVs.</h4>
+                  <h4>Trim: AWD.</h4>
+                  <h4>Quantity: 1.</h4>
+                  <h4>Total: $36,650.</h4>
+                  <h4 className="text-balance leading-normal py-8">
+                    Disclaimer: This website is a demonstration project created
+                    for educational purposes only. It is not affiliated with,
+                    endorsed by, or representative of Nissan Motor Corporation.
+                    No actual transactions or purchases can be made on this
+                    site.
+                  </h4>
+                </div>
+              </div>
 
               {/* BUTTON */}
-              <div className="flex justify-center items-cen">
+              <div className="flex justify-center">
                 <NavLink
                   to="/"
-                  className="flex items-center justify-center  border border-gray-100 rounded-xl h-10 w-80  hover:bg-red-700 hover:border-none duration-700"
+                  className="flex items-center justify-center  border border-gray-100 rounded-xl h-12 w-80  hover:bg-red-700 hover:border-none duration-700"
                 >
                   CHECKOUT
                 </NavLink>
               </div>
+              <p className="flex justify-center text-xl mt-4 m-8 text-center">
+                We appreciate your business and hope to see you soon!
+              </p>
             </div>
           </div>
         </div>
