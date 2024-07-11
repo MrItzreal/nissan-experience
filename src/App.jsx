@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import CarDetails from "./components/CarDetails";
 import About from "./components/About";
 import ContactUs from "./components/ContactUs";
+import Checkout from "./components/Checkout";
 
 const App = () => {
   // POST's New Form
@@ -30,6 +31,7 @@ const App = () => {
           path="/contactus"
           element={<ContactUs addFormSubmit={addForm} />}
         />
+        <Route path="/checkout" element={<Checkout />} />
       </Routes>
       <Footer />
       <ToastContainer />
