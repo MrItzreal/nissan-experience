@@ -34,6 +34,7 @@ const Checkout = () => {
         />
       </Link>
 
+      {/* NAV BAR */}
       <>
         <nav className="flex justify-end mb-16">
           <div className="hidden justify-end md:flex gap-6 text-white font-medium px-12 py-12 z-10">
@@ -42,7 +43,7 @@ const Checkout = () => {
           <div className="md:hidden z-10">
             <motion.button whileTap={{ rotate: 20 }} onClick={toggleNavbar}>
               {isOpen ? (
-                <IoMdClose className="text-3xl text-white" />
+                <IoMdClose className="absolute right-4 text-3xl text-white" />
               ) : (
                 <HiOutlineMenuAlt3 className="text-white text-3xl mr-3 mt-4" />
               )}
@@ -60,8 +61,17 @@ const Checkout = () => {
         )}
       </>
 
+      {/* PRE-CHECKOUT SECTION */}
+      <div
+        className={`flex justify-center items-center text-white text-xl sm:text-6xl mb-2 ${
+          isOpen ? "hidden" : ""
+        }`}
+      >
+        <p>Review Your Order Details:</p>
+      </div>
+
       {/* CHECKOUT SECTION */}
-      <section className="container mx-auto text-white">
+      <section className="container mx-auto text-white ">
         <div
           className={`flex flex-col lg:flex-row shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] ${
             isOpen ? "hidden" : ""
@@ -83,14 +93,24 @@ const Checkout = () => {
                   Order Summary
                 </h4>
                 <hr className="mx-16" />
-                <h4>Model: Pathfinder</h4>
-                <h4>Category: Crossover & SUVs</h4>
-                <h4>Trim: FWD/AWD</h4>
-                <h4>Quantity: 1</h4>
-                <h4>Total: $36,650</h4>
+                <h4>
+                  <strong>Model:</strong> Pathfinder.
+                </h4>
+                <h4>
+                  <strong>Category:</strong> Crossover & SUVs.
+                </h4>
+                <h4>
+                  <strong>Trim:</strong> FWD/AWD.
+                </h4>
+                <h4>
+                  <strong>Quantity:</strong> 1.
+                </h4>
+                <h4>
+                  <strong>Total:</strong> $36,650.
+                </h4>
               </div>
 
-              <p className="text-base text-justify text-gray-200 mt-7">
+              <p className="container mx-auto text-base text-justify text-gray-200 mt-7">
                 <strong>Disclaimer:</strong> This website is a demonstration
                 project created for educational purposes only. It is not
                 affiliated with, endorsed by, or representative of Nissan Motor
@@ -108,7 +128,7 @@ const Checkout = () => {
                 CHECKOUT
               </NavLink>
             </div>
-            <p className="flex justify-center text-base mt-2 text-center">
+            <p className="flex justify-center text-sm sm:text-base mt-2 text-center">
               We appreciate your business and hope to see you soon!
             </p>
             <p className="text-end text-xs sm:text-sm text-gray-500 dark:text-gray-300 m-2 mr-2">
