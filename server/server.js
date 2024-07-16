@@ -31,8 +31,10 @@ async function connectToDatabase() {
 (async () => {
   try {
     const pool = await connectToDatabase(); // Wait for connection before starting the server
-    app.get("vehicles", async (req, res) => {
-      // Removed '#' from the route
+
+    // GET all vehicles (with details). Below /api/vehicles code needs to be updated
+
+    app.get("/api/vehicles", async (req, res) => {
       try {
         const result = await pool.query("SELECT * FROM vehicles");
         res.json(result.rows);
@@ -42,7 +44,11 @@ async function connectToDatabase() {
       }
     });
 
-    const port = process.env.PORT || 3000; // Use port from environment variable if set
+    // GET a single vehicle by ID (with details)
+
+
+
+    const port = PGPORT || 3000; // Use port from environment variable if set
     app.listen(port, () => {
       console.log(`Server running on port ${port}`);
     });
