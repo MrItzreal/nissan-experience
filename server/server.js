@@ -2,13 +2,15 @@ import express from "express";
 import pg from "pg";
 import dotenv from "dotenv";
 import process from "process";
+import cors from "cors"; //Cross-Origin Resource Sharing 
 
 const { Pool } = pg;
 dotenv.config();
 
-const { PGUSER, PGHOST, PGDATABASE, PGPASSWORD, PGPORT } = process.env;
+const { PGUSER, PGHOST, PGDATABASE, PGPASSWORD, PGPORT, DBPORT } = process.env;
 
 const app = express();
+app.use(cors());
 
 async function connectToDatabase() {
   try {
@@ -17,9 +19,8 @@ async function connectToDatabase() {
       host: PGHOST,
       database: PGDATABASE,
       password: PGPASSWORD,
-      port: PGPORT,
+      port: DBPORT,
     });
-
     await pool.query("SELECT NOW()");
     console.log("Database connected successfully!");
     return pool;
@@ -36,7 +37,10 @@ async function connectToDatabase() {
     // GET all vehicles (with details).
     app.get("/api/vehicles", async (req, res) => {
       try {
-        const allVehiclesResult = await pool.query("SELECT * FROM vehicles");
+        const allVehiclesResult = await pool.query(
+          "SELECT * FROM cars_details.vehicles"
+        );
+
         const vehicleIds = allVehiclesResult.rows.map(
           (vehicle) => vehicle.car_id
         );
@@ -50,24 +54,35 @@ async function connectToDatabase() {
               featuresData,
               specificationsData,
             ] = await Promise.all([
-              pool.query("SELECT * FROM images WHERE car_id = $1", [carId]),
-              pool.query("SELECT * FROM performance WHERE car_id = $1", [
-                carId,
-              ]),
-              pool.query("SELECT * FROM features WHERE car_id = $1", [carId]),
-              pool.query("SELECT * FROM specifications WHERE car_id = $1", [
-                carId,
-              ]),
+              pool.query(
+                "SELECT * FROM cars_details.images WHERE car_id = $1",
+                [carId]
+              ),
+              pool.query(
+                "SELECT * FROM cars_details.performance WHERE car_id = $1",
+                [carId]
+              ),
+              pool.query(
+                "SELECT * FROM cars_details.features WHERE car_id = $1",
+                [carId]
+              ),
+              pool.query(
+                "SELECT * FROM cars_details.specifications WHERE car_id = $1",
+                [carId]
+              ),
             ]);
 
+            const mainProps = allVehiclesResult.rows.find(
+              (vehicle) => vehicle.car_id === carId
+            );
+
             return {
-              ...allVehiclesResult.rows.find(
-                (vehicle) => vehicle.car_id === carId
-              ),
-              images: imageData.rows,
-              performance: performanceData.rows,
-              features: featuresData.rows,
-              specifications: specificationsData.rows,
+              ...mainProps,
+              id: mainProps.car_id,
+              images: imageData.rows[0],
+              performance: performanceData.rows[0],
+              features: featuresData.rows[0],
+              specifications: specificationsData.rows[0],
             };
           })
         );
@@ -83,7 +98,7 @@ async function connectToDatabase() {
       try {
         const carId = req.params.car_id;
         const vehicleResult = await pool.query(
-          "SELECT * FROM vehicles WHERE car_id = $1",
+          "SELECT * FROM cars_details.vehicles WHERE car_id = $1",
           [carId]
         );
 
@@ -96,12 +111,21 @@ async function connectToDatabase() {
         // Fetch data from other tables for each vehicle
         const [imageData, performanceData, featuresData, specificationsData] =
           await Promise.all([
-            pool.query("SELECT * FROM images WHERE car_id = $1", [carId]),
-            pool.query("SELECT * FROM performance WHERE car_id = $1", [carId]),
-            pool.query("SELECT * FROM features WHERE car_id = $1", [carId]),
-            pool.query("SELECT * FROM specifications WHERE car_id = $1", [
+            pool.query("SELECT * FROM cars_details.images WHERE car_id = $1", [
               carId,
             ]),
+            pool.query(
+              "SELECT * FROM cars_details.performance WHERE car_id = $1",
+              [carId]
+            ),
+            pool.query(
+              "SELECT * FROM cars_details.features WHERE car_id = $1",
+              [carId]
+            ),
+            pool.query(
+              "SELECT * FROM cars_details.specifications WHERE car_id = $1",
+              [carId]
+            ),
           ]);
 
         res.json({
@@ -123,7 +147,6 @@ async function connectToDatabase() {
       console.log(`Server running on port ${port}`);
     });
   } catch (err) {
-    // Catch errors from connectToDatabase() and prevent the server from starting
     console.error(
       "Server could not start due to database connection failure:",
       err

@@ -9,10 +9,11 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "server": "json-server --watch src/data/formData.json --port 8000",
-    "start": "node server.js",
-    "server-watch": "node --watch --env-file .env server.js"
+    "start": "node server/server.js",
+    "server-watch": "node --watch --env-file .env server/server.js"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "framer-motion": "^11.1.7",

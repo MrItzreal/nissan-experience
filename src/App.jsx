@@ -7,6 +7,7 @@ import CarDetails from "./components/CarDetails";
 import About from "./components/About";
 import ContactUs from "./components/ContactUs";
 import Checkout from "./components/Checkout";
+import { AppContextProvider } from "./context";
 
 const App = () => {
   // POST's New Form
@@ -22,25 +23,24 @@ const App = () => {
   };
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/cardetails/:id" element={<CarDetails />} />
-        <Route path="/about" element={<About />} />
-        <Route
-          path="/contactus"
-          element={<ContactUs addFormSubmit={addForm} />}
-        />
-        <Route path="/checkout" element={<Checkout />} />
-      </Routes>
-      <Footer />
-      <ToastContainer />
-    </BrowserRouter>
+    <AppContextProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/cardetails/:id" element={<CarDetails />} />
+          <Route path="/about" element={<About />} />
+          <Route
+            path="/contactus"
+            element={<ContactUs addFormSubmit={addForm} />}
+          />
+          <Route path="/checkout" element={<Checkout />} />
+        </Routes>
+        <Footer />
+        <ToastContainer />
+      </BrowserRouter>
+    </AppContextProvider>
   );
 };
 
 export default App;
 
-// NOTES ABOUT HTTP methods:
-// POST adds data, GET requests data &
-// PUT updates data & DELETE deletes data.

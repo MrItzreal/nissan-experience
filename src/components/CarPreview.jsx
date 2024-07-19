@@ -1,14 +1,17 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import useAppContext from "../context";
 
 //eslint-disable-next-line react/prop-types
-const CarPreview = ({ carData, setCarBackgroundImage }) => {
+const CarPreview = ({ setCarBackgroundImage }) => {
+  const { vehicles } = useAppContext();
+
   //name of state, function name of state.
   const [selectedCategory, setSelectedCategory] = useState("Crossover & SUVs"); // Initial state
 
   //filters by category
   // eslint-disable-next-line react/prop-types
-  const filteredCars = carData.cars.filter(
+  const filteredCars = vehicles.filter(
     (car) => car.category === selectedCategory || selectedCategory === "All"
   );
 
@@ -76,10 +79,10 @@ const CarPreview = ({ carData, setCarBackgroundImage }) => {
             <button
               key={car.id}
               className="flex relative justify-center"
-              onClick={() => handleCarClick(car.image)}
+              onClick={() => handleCarClick(car.images.image)}
             >
               <img
-                src={car.thumbnail}
+                src={car.images.thumbnail}
                 alt={car.alt}
                 className="w-44 hover:transition duration-75 ease-in-out transform 
                 hover:translate-y-1 hover:scale-110"

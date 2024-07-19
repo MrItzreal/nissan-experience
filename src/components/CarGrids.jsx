@@ -1,22 +1,24 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
-import carData from "../data/cars.json";
 import { NavLink } from "react-router-dom";
+import useAppContext from "../context";
 
-//This will filter and remove duplicate car objects with the same ID.
+//This will filter and remove duplicate car objects with the same Model.
 const filterDuplicateCars = (cars) => {
-  const seenIds = new Set();
+  const seenModels = new Set();
   return cars.filter((car) => {
-    const hasSeenId = seenIds.has(car.id);
-    seenIds.add(car.id);
-    return !hasSeenId;
+    const hasSeenModels = seenModels.has(car.model);
+    seenModels.add(car.model);
+    return !hasSeenModels;
   });
 };
 
-//This will display all vehicles through map array.
-const displayCars = filterDuplicateCars(carData.cars);
-
 const CarGrids = React.forwardRef((props, ref) => {
+  const { vehicles } = useAppContext();
+
+  //This will display all vehicles through map array.
+  const displayCars = filterDuplicateCars(vehicles);
+
   return (
     <div ref={ref}>
       <main className="bg-neutral-900">
@@ -33,7 +35,10 @@ const CarGrids = React.forwardRef((props, ref) => {
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-6 justify-center gap-6">
             {displayCars.map((car) => (
               <div key={car.id} className="relative mb-12">
-                <img src={car.profilephoto} className="rounded-2xl border" />
+                <img
+                  src={car.images.profilephoto}
+                  className="rounded-2xl border"
+                />
                 <div className="absolute bottom-0 left-0 right-0 my-24 ml-8">
                   <div className="flex flex-col items-center mr-6 -my-4 whitespace-nowrap">
                     <h2 className="text-white text-xs md:text-base font-extrabold uppercase">

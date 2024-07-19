@@ -1,14 +1,13 @@
 import { useState, useRef, useEffect } from "react";
 import { NavLink, Link, useLocation } from "react-router-dom";
-import { FaArrowRightLong } from "react-icons/fa6";
 import logo from "../assets/logos/logo.svg";
 import CarPreview from "./CarPreview";
 import CarGrids from "./CarGrids";
-import carData from "../data/cars.json";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
 import { IoChevronDown } from "react-icons/io5";
 import { motion } from "framer-motion";
+import useAppContext from "../context";
 
 const NavLinks = () => {
   return (
@@ -16,18 +15,13 @@ const NavLinks = () => {
       <NavLink to="/#vehicles">Vehicles</NavLink>
       <NavLink to="/about">About</NavLink>
       <NavLink to="/contactus">Contact Us</NavLink>
-      <NavLink
-        to="/"
-        className="flex items-center justify-center  border border-gray-100 rounded-full h-10 w-40 -my-2 hover:bg-red-700 hover:border-none duration-700"
-      >
-        Buy a Nissan
-        <FaArrowRightLong className="ml-3 text-xl" />
-      </NavLink>
     </>
   );
 };
 
 const Home = () => {
+  const { vehicles, loading } = useAppContext();
+
   //name of state, function name of state.
   const [backgroundImage, setBackgroundImage] = useState("images/rogue.avif");
 
@@ -56,6 +50,9 @@ const Home = () => {
       carGridsRef.current.scrollIntoView({ behavior: "smooth" });
     }
   }, [location]);
+
+  // I called this console so the loading & vehicles are called if not I'll get an error
+  console.log({ loading, vehicles });
 
   return (
     <>
@@ -123,10 +120,7 @@ const Home = () => {
           </div>
 
           {/* Car Model's Preview */}
-          <CarPreview
-            carData={carData}
-            setCarBackgroundImage={setCarBackgroundImage}
-          />
+          <CarPreview setCarBackgroundImage={setCarBackgroundImage} />
         </section>
       </main>
       {/* Displays All Nissan Vehicles */}
