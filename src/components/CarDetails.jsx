@@ -13,6 +13,16 @@ const NavLinks = () => {
     element.scrollIntoView({ behavior: "smooth" });
   }
 
+  //Retrieves car details from DB for current route.
+  const { id } = useParams();
+  const { vehicles } = useAppContext();
+  const car = useMemo(
+    () => vehicles.find(({ car_id }) => car_id === id),
+    [id, vehicles]
+  );
+
+  if (!car) return null;
+
   return (
     <>
       <NavLink onClick={() => scrollToSection("overview")}>Overview</NavLink>
@@ -20,10 +30,11 @@ const NavLinks = () => {
       <NavLink onClick={() => scrollToSection("specs")}>Specs</NavLink>
 
       <NavLink
-        to="/"
+        key={car.id}
+        to={`/checkout/${car.id}`}
         className="flex items-center justify-center border border-gray-100 rounded-full h-10 w-40 -my-2 hover:bg-red-700 hover:border-none duration-700"
       >
-        Buy a Nissan
+        Buy {car.model}
         <FaArrowRightLong className="ml-3 text-xl" />
       </NavLink>
     </>

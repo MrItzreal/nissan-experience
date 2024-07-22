@@ -2,7 +2,7 @@ import express from "express";
 import pg from "pg";
 import dotenv from "dotenv";
 import process from "process";
-import cors from "cors"; //Cross-Origin Resource Sharing 
+import cors from "cors"; //Cross-Origin Resource Sharing
 
 const { Pool } = pg;
 dotenv.config();
@@ -77,7 +77,7 @@ async function connectToDatabase() {
             );
 
             return {
-              ...mainProps,
+              ...mainProps, //... = js spread syntax
               id: mainProps.car_id,
               images: imageData.rows[0],
               performance: performanceData.rows[0],
@@ -129,7 +129,7 @@ async function connectToDatabase() {
           ]);
 
         res.json({
-          ...vehicle,
+          ...vehicle, //... = js spread syntax
           images: imageData.rows,
           performance: performanceData.rows,
           features: featuresData.rows,
