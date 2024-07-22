@@ -1,10 +1,10 @@
-import { useState } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { useState, useMemo } from "react";
+import { NavLink, Link, useParams } from "react-router-dom";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
 import logo from "../assets/logos/logo.svg";
 import { motion } from "framer-motion";
-import profilephoto from "/profilephotos/pathfinder-profile.jpg";
+import useAppContext from "../context";
 
 const NavLinks = () => {
   return (
@@ -23,6 +23,17 @@ const Checkout = () => {
   const toggleNavbar = () => {
     setIsOpen(!isOpen); //Toggles navigation bar icons.
   };
+
+  //Retrieves car details from DB for current route.
+  const { id } = useParams();
+  const { vehicles } = useAppContext();
+  const car = useMemo(
+    () => vehicles.find(({ car_id }) => car_id === id),
+    [id, vehicles]
+  );
+
+  if (!car) return null;
+
   return (
     <main className="sm:py-6 bg-gradient-to-r from-slate-800 to-stone-700">
       {/* NISSAN LOGO DO NOT TOUCH THIS */}
@@ -78,7 +89,7 @@ const Checkout = () => {
           }`}
         >
           <img
-            src={profilephoto}
+            src={car.images.profilephoto}
             className="h-[650px] w-[850px] object-cover"
           />
 
@@ -94,10 +105,10 @@ const Checkout = () => {
                 </h4>
                 <hr className="mx-16" />
                 <h4>
-                  <strong>Model:</strong> Pathfinder.
+                  <strong>Model:</strong> {car.model}.
                 </h4>
                 <h4>
-                  <strong>Category:</strong> Crossover & SUVs.
+                  <strong>Category:</strong> {car.category}.
                 </h4>
                 <h4>
                   <strong>Trim:</strong> FWD/AWD.
@@ -106,7 +117,7 @@ const Checkout = () => {
                   <strong>Quantity:</strong> 1.
                 </h4>
                 <h4>
-                  <strong>Total:</strong> $36,650.
+                  <strong>Total:</strong> ${car.price}.
                 </h4>
               </div>
 
