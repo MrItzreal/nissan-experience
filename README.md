@@ -1,8 +1,9 @@
-# React + Vite
+<!-- Stripe NPM's -->
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1- stripe (for Node.js): Provides the Stripe Node.js library to interact with the Stripe API from your backend server (creating payment intents, etc.). Used only in your backend (Node.js/Express).
+NPM: npm i stripe.
 
-Currently, two official plugins are available:
+2- @stripe/stripe-js: Provides the core Stripe.js library to interact with the Stripe API (creating payment methods, tokens, etc.). Used in both frontend and backend. NPM: npm i @stripe/stripe-js
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+3- @stripe/react-stripe-js: Provides React components (e.g., CardElement, PaymentElement) for building payment forms.Used in your React frontend components.
+NPM: npm i @stripe/react-stripe-js

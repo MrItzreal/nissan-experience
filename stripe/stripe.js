@@ -7,7 +7,7 @@ import cors from "cors"; //Cross-Origin Resource Sharing
 dotenv.config();
 
 // Destructuring
-const { STRIPE_SECRET_KEY, DOMAIN } = process.env;
+const { STRIPE_SECRET_KEY, DOMAIN, PORT } = process.env;
 
 // Secret Stripe Key
 const stripe = new Stripe(STRIPE_SECRET_KEY);
@@ -18,6 +18,7 @@ app.use(express.json()); //parse JSON request bodies
 
 app.post("/stripe-payment", async (req, res) => {
   try {
+    const { car } = req.body;
     const session = await stripe.checkout.sessions.create({
       line_items: [
         {
@@ -34,14 +35,13 @@ app.post("/stripe-payment", async (req, res) => {
       cancel_url: `${DOMAIN}?canceled=true&car_id=${car.car_id}`,
     });
     res.json({ url: session.url });
+    console.log(session);
   } catch (err) {
     console.error("Error creating checkout session:", err);
     res.status(500).json({ error: "Internal server error" });
   }
 });
-const port = DOMAIN || 4242;
-app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
-});
 
-// will my endpoint and stripe.checkout.sessions.create be an issue?
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
