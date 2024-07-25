@@ -9,7 +9,8 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "server": "json-server --watch src/data/formData.json --port 8000",
-    "start": "node server/server.js",
+    "database": "node server/server.js",
+    "stripe": "node --watch stripe/stripe.js",
     "server-watch": "node --watch --env-file .env server/server.js"
   },
   "dependencies": {

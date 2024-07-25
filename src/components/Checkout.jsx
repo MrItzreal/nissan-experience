@@ -5,16 +5,6 @@ import { IoMdClose } from "react-icons/io";
 import logo from "../assets/logos/logo.svg";
 import { motion } from "framer-motion";
 import useAppContext from "../context";
-import {
-  Elements,
-  CardElement,
-  useStripe,
-  useElements,
-} from "@stripe/react-stripe-js";
-import { loadStripe } from "@stripe/stripe-js";
-
-// Publishable Stripe Key
-const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY);
 
 const NavLinks = () => {
   return (
@@ -27,41 +17,22 @@ const NavLinks = () => {
 };
 
 const Checkout = () => {
-  const stripe = useStripe();
-  const elements = useElements();
+  const handleCheckoutClick = async () => {
+    try {
+      const res = await fetch("http://localhost:4242/stripe-payment", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ car }),
+      });
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    if (!stripe || !elements) {
-      // Stripe.js has not loaded yet
-      return;
-    }
-
-    const { error, paymentMethod } = await stripe.createPaymentMethod({
-      type: "card",
-      card: elements.getElement(CardElement),
-    });
-
-    if (error) {
-      console.log("[error]", error);
-    } else {
-      try {
-        const res = await fetch("/stripe-payment", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ paymentMethod: paymentMethod.id, car }),
-        });
-
-        if (res.ok) {
-          const { url } = await res.json();
-          window.location.href = url;
-        } else {
-          console.error("Error from backend:", res.statusText);
-        }
-      } catch (err) {
-        console.error("Error sending payment info to backend", err);
+      if (res.ok) {
+        const { url } = await res.json();
+        window.location.href = url;
+      } else {
+        console.error("Error from backend:", res.statusText);
       }
+    } catch (err) {
+      console.error("Error sending payment info to backend", err);
     }
   };
 
@@ -179,17 +150,15 @@ const Checkout = () => {
             </div>
 
             {/*CHECKOUT BUTTON */}
-            <form className="flex justify-center">
-              <CardElement />
+            <div className="flex justify-center">
               <button
-                type="submit"
-                onClick={handleSubmit}
-                disabled={!stripe}
+                type="button"
+                onClick={handleCheckoutClick}
                 className="flex items-center justify-center  border border-gray-100 rounded-xl h-12 w-2/3 sm:w-80 hover:bg-red-700 hover:border-none duration-700"
               >
                 CHECKOUT
               </button>
-            </form>
+            </div>
             <p className="flex justify-center text-sm sm:text-base mt-2 text-center">
               We appreciate your business and hope to see you soon!
             </p>
@@ -203,15 +172,4 @@ const Checkout = () => {
   );
 };
 
-// Export the wrapper component instead of Checkout
-const CheckoutWrapper = () => {
-  return (
-    <Elements stripe={stripePromise}>
-      <Checkout />
-    </Elements>
-  );
-};
-
-export default CheckoutWrapper;
-
-// export default Checkout;
+export default Checkout;

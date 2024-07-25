@@ -19,23 +19,29 @@ app.use(express.json()); //parse JSON request bodies
 app.post("/stripe-payment", async (req, res) => {
   try {
     const { car } = req.body;
+
+    // Converts the price from a comma-separated string to an integer in cents
+    const priceInCents = parseInt(car.price.replace(/,/g, ""), 10) * 100;
+
     const session = await stripe.checkout.sessions.create({
       line_items: [
         {
-          name: car.model, // Set product name
-          description: car.category,
-          images: [car.images.profilephoto],
-          amount: car.price * 100, // Stripe expects amount in cents
-          currency: "usd",
+          price_data: {
+            currency: "usd",
+            unit_amount: priceInCents,
+            product_data: {
+              name: car.model,
+              description: car.category,
+            },
+          },
           quantity: 1,
         },
       ],
       mode: "payment",
-      success_url: `${DOMAIN}?success=true&car_id=${car.car_id}`,
-      cancel_url: `${DOMAIN}?canceled=true&car_id=${car.car_id}`,
+      success_url: `${DOMAIN}/success?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${DOMAIN}?cancel`,
     });
     res.json({ url: session.url });
-    console.log(session);
   } catch (err) {
     console.error("Error creating checkout session:", err);
     res.status(500).json({ error: "Internal server error" });
