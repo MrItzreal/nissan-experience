@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useState, useMemo } from "react";
 import { NavLink, Link, useParams } from "react-router-dom";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
@@ -17,6 +18,7 @@ const NavLinks = () => {
 };
 
 const Checkout = () => {
+  // This function connects to our stripe.js file
   const handleCheckoutClick = async () => {
     try {
       const res = await fetch("http://localhost:4242/stripe-payment", {
@@ -84,7 +86,7 @@ const Checkout = () => {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            className="relative h-full flex flex-col items-center gap-4 py-8 text-white md:hidden bg-gradient-to-r from-slate-800 to-stone-700"
+            className="relative h-full flex flex-col items-center gap-4 py-24 text-white md:hidden bg-gradient-to-r from-slate-800 to-stone-700"
           >
             <NavLinks />
           </motion.div>
@@ -93,7 +95,7 @@ const Checkout = () => {
 
       {/* PRE-CHECKOUT SECTION */}
       <div
-        className={`flex justify-center items-center text-white text-xl sm:text-6xl mb-2 ${
+        className={`flex justify-center items-center text-white text-xl sm:text-5xl mb-2 ${
           isOpen ? "hidden" : ""
         }`}
       >
@@ -168,6 +170,58 @@ const Checkout = () => {
           </div>
         </div>
       </section>
+
+      {/* LEGAL SECTION & COPYWRITE */}
+      <div className={`container mx-auto px-14 py-4 ${isOpen ? "hidden" : ""}`}>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center text-white md:whitespace-normal whitespace-nowrap text-center md:text-left">
+          <div className="-mx-8 text-lg md:text-6xl py-2 text-balance	">
+            <p>Legal Website Terms Of Use</p>
+          </div>
+
+          <div className="flex flex-col justify-center gap-4 md:gap-6">
+            <p className="flex justify-center text-lg sm:text-xl -mt-8 md:mt-4">
+              LEGAL NOTICE
+            </p>
+
+            <p className="flex justify-center text-base md:text-lg text-balance">
+              <span>
+                These Terms of Use govern the use of Nissan North America,
+                Inc.'s websites and mobile apps. The information provided is for
+                general purposes only and is subject to change without notice.
+                Nissan makes no guarantees about the accuracy of the information
+                and users are advised to confirm details with a dealer before
+                making a purchase decision. Due to various factors, actual
+                vehicles may differ from what is presented on the platforms.
+                Specifications and availability may also vary by location.
+              </span>
+            </p>
+          </div>
+        </div>
+        <hr className="border-gray-200  mx-auto mt-8" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center text-white md:whitespace-normal whitespace-nowrap text-center md:text-left">
+          <div className="-mx-8 text-lg md:text-6xl py-2 text-balance	">
+            <p>Copyright / Trademark Information</p>
+          </div>
+
+          <div className="flex flex-col justify-center gap-4 md:gap-6">
+            <p className="flex justify-center text-lg sm:text-xl -mt-8 md:mt-4">
+              COPYRIGHT NOTICE
+            </p>
+
+            <p className="flex justify-center text-base md:text-lg text-balance">
+              <span>
+                The Nissan names, logos and slogans are trademarks owned by or
+                licensed to Nissan Motor Co. Ltd. and/or its North American
+                subsidiaries. Other trademarks and trade names are those of
+                their respective owners. ©2008-2023 Nissan North America, Inc.
+                All rights reserved. Materials contained on this website may not
+                be used or reproduced without written permission from Nissan
+                North America, Inc.
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
   );
 };

@@ -92,14 +92,18 @@ const Home = () => {
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              className="relative h-full flex flex-col items-center gap-4 -my-6 py-36 border-4 text-white md:hidden bg-gradient-to-r from-slate-600 to-slate-950 "
+              className="relative h-full flex flex-col text-xl items-center gap-4 -my-6 py-36 border-4 text-white md:hidden bg-gradient-to-r from-slate-600 to-slate-950 "
             >
               <NavLinks />
             </motion.div>
           )}
         </>
 
-        <section className="text-white absolute inset-x-0 bottom-1/4">
+        <section
+          className={`text-white absolute inset-x-0 bottom-1/4 ${
+            isOpen ? "hidden" : ""
+          }`}
+        >
           <h2 className="text-4xl text-center">Adventure Ready?</h2>
           <div className="flex justify-center mt-4">
             <span className="flex items-center text-xl italic">

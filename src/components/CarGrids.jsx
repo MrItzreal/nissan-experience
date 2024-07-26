@@ -19,6 +19,11 @@ const CarGrids = React.forwardRef((props, ref) => {
   //This will display all vehicles through map array.
   const displayCars = filterDuplicateCars(vehicles);
 
+  // Utility function to scroll the window to the top
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div ref={ref}>
       <main className="bg-neutral-900">
@@ -56,6 +61,7 @@ const CarGrids = React.forwardRef((props, ref) => {
                 <button className="absolute bottom-0 left-0 h-16  w-full  rounded border border-gray-100 bg-gray-800 hover:bg-red-700 duration-700">
                   <NavLink
                     key={car.id}
+                    onClick={scrollToTop}
                     to={`/cardetails/${car.id}`}
                     className="text-white text-base md:text-lg"
                   >
