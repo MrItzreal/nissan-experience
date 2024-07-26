@@ -7,7 +7,7 @@ import cors from "cors"; //Cross-Origin Resource Sharing
 dotenv.config();
 
 // Destructuring
-const { STRIPE_SECRET_KEY, DOMAIN, PORT } = process.env;
+const { STRIPE_SECRET_KEY, SUCCESS, CANCEL, PORT } = process.env;
 
 // Secret Stripe Key
 const stripe = new Stripe(STRIPE_SECRET_KEY);
@@ -38,8 +38,9 @@ app.post("/stripe-payment", async (req, res) => {
         },
       ],
       mode: "payment",
-      success_url: `${DOMAIN}/success?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${DOMAIN}?cancel`,
+      shipping_address_collection: { allowed_countries: ["US", "MX", "CA"] },
+      success_url: `${SUCCESS}`, //Redirects to Homepage
+      cancel_url: `${CANCEL}/${car.id}`, //Redirects to Checkout Page
     });
     res.json({ url: session.url });
   } catch (err) {
