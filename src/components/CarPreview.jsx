@@ -22,7 +22,7 @@ const CarPreview = ({ setCarBackgroundImage }) => {
 
   //handles car selection with our clicks
   const handleCarClick = (car) => {
-    setCarBackgroundImage(car);
+    setCarBackgroundImage(car.images);
   };
 
   return (
@@ -83,7 +83,7 @@ const CarPreview = ({ setCarBackgroundImage }) => {
               <button
                 key={car.id}
                 className="flex relative justify-center snap-center shrink-0"
-                onClick={() => handleCarClick(car.images.image)}
+                onClick={() => handleCarClick(car)}
               >
                 <img
                   src={car.images.thumbnail}

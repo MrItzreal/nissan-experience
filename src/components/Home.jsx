@@ -23,10 +23,23 @@ const Home = () => {
   const { vehicles, loading } = useAppContext();
 
   //name of state, function name of state.
-  const [backgroundImage, setBackgroundImage] = useState("images/rogue.avif");
+  const [backgroundImage, setBackgroundImage] = useState({
+    large: "/images/rogue.avif",
+    small: "/profilephotos/rogue-profile.avif",
+  });
+  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 768);
 
-  const setCarBackgroundImage = (car) => {
-    setBackgroundImage(car);
+  useEffect(() => {
+    const handleResize = () => setIsLargeScreen(window.innerWidth > 768);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const setCarBackgroundImage = (images) => {
+    setBackgroundImage({
+      large: images.image,
+      small: images.profilephoto,
+    });
   };
 
   //name of state, function name of state.
@@ -58,7 +71,7 @@ const Home = () => {
     <>
       <main className="h-screen relative">
         <motion.img
-          src={backgroundImage}
+          src={isLargeScreen ? backgroundImage.large : backgroundImage.small}
           className="absolute w-full h-full object-cover"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
