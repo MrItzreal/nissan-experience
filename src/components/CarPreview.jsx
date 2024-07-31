@@ -102,13 +102,3 @@ const CarPreview = ({ setCarBackgroundImage }) => {
 };
 
 export default CarPreview;
-
-// Just in case I want to use it:
-//Handles the main background image based on size with a ternary operator
-// const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 1024);
-
-// useEffect(() => {
-//   const handleResize = () => setIsLargeScreen(window.innerWidth > 1024);
-//   window.addEventListener("resize", handleResize);
-//   return () => removeEventListener("resize", handleResize);
-// }, []);

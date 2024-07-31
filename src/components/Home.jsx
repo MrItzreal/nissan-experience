@@ -20,13 +20,14 @@ const NavLinks = () => {
 };
 
 const Home = () => {
-  const { vehicles, loading } = useAppContext();
+  const { vehicles, loading } = useAppContext(); //gives access to all vehicles
 
-  //name of state, function name of state.
+  // Dynamically loads background image based on screen size (large/small).
   const [backgroundImage, setBackgroundImage] = useState({
     large: "/images/rogue.avif",
     small: "/profilephotos/rogue-profile.avif",
   });
+
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 768);
 
   useEffect(() => {
@@ -42,7 +43,7 @@ const Home = () => {
     });
   };
 
-  //name of state, function name of state.
+  //Provides the useState for the toggle effect.
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNavbar = () => {
