@@ -218,32 +218,38 @@ const Footer = () => {
         <section className="flex items-center justify-between sm:flex-row ">
           <ul className="flex">
             <li className="bg-white rounded-md mx-2">
-              <a href="blank_">
+              <a
+                href="https://www.tiktok.com/@nissanusa?lang=en"
+                target="blank_"
+              >
                 <img src={Tiktok} />
               </a>
             </li>
             <li className="bg-white rounded-md mx-2">
-              <a href="blank_">
+              <a href="https://www.instagram.com/nissanusa/" target="blank_">
                 <img src={Instagram} />
               </a>
             </li>
             <li className="bg-white rounded-md mx-2">
-              <a href="blank_">
+              <a
+                href="https://www.youtube.com/user/nissanusa/featured"
+                target="blank_"
+              >
                 <img src={YouTube} />
               </a>
             </li>
             <li className="rounded-md bg-white mx-2">
-              <a href="blank_">
+              <a href="https://twitter.com/NissanUSA" target="blank_">
                 <img src={X} />
               </a>
             </li>
             <li className="bg-white rounded-md mx-2">
-              <a href="blank_">
+              <a href="https://www.facebook.com/nissanusa/" target="blank_">
                 <img src={Facebook} />
               </a>
             </li>
             <li className="bg-white rounded-md mx-2">
-              <a href="blank_">
+              <a href="https://www.pinterest.com/nissanusa/" target="blank_">
                 <img src={Pinterest} />
               </a>
             </li>
