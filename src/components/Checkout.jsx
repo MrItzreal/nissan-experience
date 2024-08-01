@@ -93,15 +93,6 @@ const Checkout = () => {
         )}
       </>
 
-      {/* PRE-CHECKOUT SECTION */}
-      <div
-        className={`flex justify-center items-center text-white text-xl sm:text-5xl mb-2 ${
-          isOpen ? "hidden" : ""
-        }`}
-      >
-        <p>Review Your Order Details:</p>
-      </div>
-
       {/* CHECKOUT SECTION */}
       <section className="container mx-auto text-white ">
         <div
@@ -111,10 +102,10 @@ const Checkout = () => {
         >
           <img
             src={car.images.profilephoto}
-            className="h-[650px] w-[850px] object-cover"
+            className="h-[650px] w-[850px] object-cover rounded-md"
           />
 
-          <div className="flex flex-col border bg-gradient-to-r from-slate-800 to-stone-700">
+          <div className="flex flex-col border rounded-xl bg-gradient-to-r from-slate-800 to-stone-700">
             <div className="relative m-8 text-base sm:text-xl">
               <div className="flex justify-center items-center h-30 mb-4">
                 <img src={logo} alt="Logo" className="h-20 sm:h-[98px]" />

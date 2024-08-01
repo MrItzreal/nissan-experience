@@ -72,6 +72,11 @@ const ContactUs = ({ addFormSubmit }) => {
     return navigate("/"); //2nd,This redirects to home page.
   };
 
+  // Utility function to scroll the window to the top
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <>
       <main className="relative bg-gradient-to-r from-slate-800 to-stone-400">
@@ -289,6 +294,7 @@ const ContactUs = ({ addFormSubmit }) => {
               <div className="flex justify-center">
                 <button
                   className="flex items-center border border-gray-900 rounded-lg hover:bg-red-700 hover:text-white hover:border-none duration-700 font-bold py-2 px-4 focus:outline-none focus:shadow-outline"
+                  onClick={scrollToTop}
                   type="submit"
                 >
                   Submit <IoChevronForward className="ml-1" />
