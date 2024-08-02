@@ -77,7 +77,7 @@ const CarPreview = ({ setCarBackgroundImage }) => {
         </div>
 
         {/* THUMBNAILS for vehicles & Background Image when clicked */}
-        <div className="flex justify-center ">
+        <div className="flex justify-center">
           <section className="flex overflow-x-auto snap-x snap-mandatory whitespace-nowrap mt-5 px-4 no-scrollbar">
             {filteredCars.map((car) => (
               <button

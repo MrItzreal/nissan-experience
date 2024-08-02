@@ -144,6 +144,16 @@ const CarDetails = () => {
                   ®
                 </p>
               </span>
+
+              {/* BUY NOW BUTTON for Mobile Screens */}
+              <NavLink
+                key={car.id}
+                to={`/checkout/${car.id}`}
+                className="flex items-center justify-center border border-gray-100 rounded-full text-white h-10 w-40 my-2 hover:bg-red-700 hover:border-none duration-700 md:hidden"
+              >
+                Buy Now
+                <FaArrowRightLong className="ml-3 text-xl" />
+              </NavLink>
             </div>
           </div>
         </div>
