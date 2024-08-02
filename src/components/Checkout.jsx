@@ -56,7 +56,11 @@ const Checkout = () => {
   if (!car) return null;
 
   return (
-    <main className="sm:py-6 bg-gradient-to-r from-slate-800 to-stone-700">
+    <motion.main
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      className="sm:py-6 bg-gradient-to-r from-slate-800 to-stone-700"
+    >
       {/* NISSAN LOGO DO NOT TOUCH THIS */}
       <Link to="/">
         <img
@@ -213,7 +217,7 @@ const Checkout = () => {
           </div>
         </div>
       </div>
-    </main>
+    </motion.main>
   );
 };
 
