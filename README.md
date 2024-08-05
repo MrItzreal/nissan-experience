@@ -146,3 +146,7 @@ npm i -D json-server
 ```bash
 npm run server
 ```
+
+## License
+
+This project is licensed under the MIT License - see the [See the LICENSE file for details](LICENSE) file for details.
