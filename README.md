@@ -138,6 +138,12 @@ npm i react-toastify
 npm i -D json-server
 ```
 
+- **concurrently** (dev dependency): A utility for running multiple commands concurrently. Install it for development purposes with the `-D` flag:
+
+```bash
+npm i concurrently -D
+```
+
 **Note:**
 
 - Remember to add `json-server` to your `package.json` file before running the server.
