@@ -4,6 +4,26 @@ This guide details the process of exporting a single schema (**cars_details**) f
 
 ---
 
+### PG_DUMP vs PG_RESTORE
+
+`pg_dump`: It's a backup tool. It "dumps" your live PostgreSQL database—all your tables, schemas, and data—into a single, portable backup file.
+
+```bash
+pg_dump -Fc -h localhost -U postgres -d nissan_experience -p 5432 -n cars_details -f ~/Desktop/cars_details_backup.dump
+```
+
+#### Then,
+
+```bash
+cd ~/Desktop
+```
+
+`pg_restore`: It's the restore tool. It reads the special backup file created by pg_dump and rebuilds the database, tables, and data in a new location.
+
+```bash
+pg_restore --no-owner --clean -h db.....supabase.co -U postgres -d postgres -p 5432 cars_details_backup.dump
+```
+
 ## Step 1: Export the Local Schema using `pg_dump`
 
 The first goal is to create a backup file (`.dump`) that contains _only_ the schema we want to migrate, not the entire database.
