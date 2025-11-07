@@ -26,7 +26,7 @@ A responsive web application that showcases Nissan's vehicle lineup, provides de
 - Tailwind CSS (Styling)
 - Node.js (Back-end runtime)
 - Express.js (API framework)
-- PostgreSQL (Database)
+- PostgreSQL/Supabase (Database)
 - Stripe (Payment processing)
 
 ### Installation and Setup
