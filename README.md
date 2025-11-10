@@ -3,12 +3,7 @@
 **What is Nissan Experience?**
 A responsive web application that showcases Nissan's vehicle lineup, provides detailed information about each model, and offers a simulated purchase experience.
 
-![Homepage](https://github.com/user-attachments/assets/119e100a-b3dd-4bf7-a435-1991b9e2a905)
-![Car Grids](https://github.com/user-attachments/assets/c09579c0-d4ba-4c5e-858a-963918c1f29e)
-![Car Details](https://github.com/user-attachments/assets/eeac528a-5b96-4766-9ddb-e0b07a4cfcfb)
-![Checkout Page](https://github.com/user-attachments/assets/f788bd4c-14be-40ad-a20b-b320a469a601)
-![Stripe Payment](https://github.com/user-attachments/assets/a2b7d642-2b46-40c6-9bf7-a2dfb5755136)
-![Contact form](https://github.com/user-attachments/assets/9c6e06c4-cfad-4d25-98b3-7a0531d4f6e5)
+![Project Demo](/public/gif/Nissan.gif)
 
 ### Key Features
 
